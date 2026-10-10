@@ -63,7 +63,7 @@ body {
   content: "";
   position: absolute;
   top: 26px;
-  left: 4px;
+  right: 20px;
   width: 190px;
   height: 190px;
   background: url("azure.svg") center / contain no-repeat;
