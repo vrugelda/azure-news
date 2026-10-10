@@ -801,13 +801,13 @@
   "assessed_at": "2026-10-10T11:21:13.201753+00:00"
  },
  "blog-1c97118c7d9c": {
-  "hash": "59337cdd4deb24f9ffe8febf8c19305884ecd352",
+  "hash": "883d4cb08dd101b47d9aed12a8a547cd4c8c98da",
   "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 1,
   "architecture_relevance": 1,
-  "reason": "A thought-leadership post about Microsoft's use of AI in infrastructure operations, with no product change or transferable design guidance.",
-  "assessed_at": "2026-10-10T22:16:07.603614+00:00"
+  "reason": "A thought-leadership marketing post about Microsoft's internal use of AI in infrastructure operations, with no product change or transferable design guidance in the text.",
+  "assessed_at": "2026-10-10T22:17:44.945483+00:00"
  },
  "blog-f98827a38e97": {
   "hash": "ca3b84d4a386cb3c1ac2a2b06ee6f1833b09b67b",
