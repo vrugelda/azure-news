@@ -191,4 +191,22 @@ document.getElementById("search").addEventListener("input", (event) => {
   renderList();
 });
 
+// Scrolling about two wheel notches closes any hover preview; it can return once the
+// pointer moves again.
+const SCROLL_DISMISS_PX = 150;
+let scrollStart = window.scrollY;
+window.addEventListener(
+  "scroll",
+  () => {
+    if (Math.abs(window.scrollY - scrollStart) >= SCROLL_DISMISS_PX) {
+      document.documentElement.classList.add("no-preview");
+    }
+  },
+  { passive: true }
+);
+window.addEventListener("mousemove", () => {
+  scrollStart = window.scrollY;
+  document.documentElement.classList.remove("no-preview");
+});
+
 load();

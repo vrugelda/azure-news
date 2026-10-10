@@ -216,6 +216,9 @@ h1 em {
     box-shadow: 0 18px 30px rgba(0, 0, 0, 0.22);
     animation: reveal 0.15s 1s both;
   }
+  /* Set while the page is being scrolled; cleared when the pointer next moves. */
+  .no-preview .card:not(.open):hover { border-color: var(--border); }
+  .no-preview .card:not(.open):hover .details { display: none; }
 }
 
 .source {
