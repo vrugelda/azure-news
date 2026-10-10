@@ -146,7 +146,14 @@ class ClaudeSummarizer:
         for start in range(0, len(items), size):
             batch = items[start : start + size]
             try:
-                results.extend(self._assess_batch(batch))
+                assessed = self._assess_batch(batch)
+                # The model sometimes leaves items out of its answer; ask once more for those.
+                returned = {a.id for a in assessed}
+                missing = [item for item in batch if item.id not in returned]
+                if assessed and missing:
+                    log.warning("%d of %d items missing from the answer; retrying them", len(missing), len(batch))
+                    assessed += self._assess_batch(missing)
+                results.extend(assessed)
             except (
                 anthropic.RateLimitError,
                 anthropic.InternalServerError,
