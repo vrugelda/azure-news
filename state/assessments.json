@@ -190,174 +190,174 @@
  },
  "updates-6874841ee0e3": {
   "hash": "bf81e51462eb6d1be0b284426adfccd52d160b36",
-  "by": "claude-opus-5-5",
-  "kept": true,
-  "importance": 4,
-  "architecture_relevance": 3,
-  "reason": "A retirement with a firm deadline affecting confidential computing workloads on DCsv3/DCdsv3, a narrower but security-sensitive group.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "Routine retirement of a single confidential-computing VM series with a distant 2029 deadline; the migration targets are truncated in the text and need checking at the source.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-444785eaffb7": {
   "hash": "6d0911244bc49946317d875001759826486465bc",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 3,
   "architecture_relevance": 2,
-  "reason": "A preview of managed performance monitoring for SQL Server on VMs is an operational convenience with little design impact.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "Notable preview of managed monitoring for SQL Server on VMs, but it is operational tooling with little design consequence.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-621e778c4f93": {
   "hash": "b698572e3a1899867b81abe21c079c3b407f8ab9",
-  "by": "claude-opus-5-5",
-  "kept": true,
-  "importance": 4,
-  "architecture_relevance": 3,
-  "reason": "The NVv3 GPU VM sizes were retired on September 30, 2026, so any remaining workloads need urgent migration.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "Routine retirement of a single GPU VM series that has already passed its retirement date.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-b2a7f38f5b3d": {
   "hash": "8b9e6a1afc810704a2145d0463f56506056e37c8",
-  "by": "claude-opus-5-5",
-  "kept": true,
-  "importance": 4,
-  "architecture_relevance": 3,
-  "reason": "The NVv4 GPU VM sizes were retired on September 30, 2026, so any remaining workloads need urgent migration.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "Routine retirement of a single GPU VM series that has already passed its retirement date.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-761cf52b7b9a": {
   "hash": "3fb99e6baf9f9517cd989b10548c26a99f106f2b",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
-  "importance": 3,
+  "importance": 2,
   "architecture_relevance": 2,
-  "reason": "A preview of a new Ubuntu LTS node OS SKU in AKS is routine OS lifecycle maintenance.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "A new OS version preview for AKS node pools is a version bump with operational rather than design impact.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-496f5c54308f": {
   "hash": "626409e73af92cf3444cbbe0e08981679d9061a7",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 2,
   "architecture_relevance": 1,
-  "reason": "A developer tooling announcement for Copilot workspaces with no design consequence.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "A developer tooling announcement with no design consequence.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-e0c335e255fa": {
   "hash": "be9f51ea991d82e28955c24399d2f774511e4457",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": true,
-  "importance": 5,
+  "importance": 4,
   "architecture_relevance": 3,
-  "reason": "The retirement of the very widely used Dv3, Dsv3, Ev3 and Esv3 VM series forces migration for many customers.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "Retirement of four of the most widely deployed general-purpose and memory-optimized VM series affects a large share of Azure estates.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-419b8b82f3ab": {
   "hash": "36ff54d19cb3a81dc65854da8300b73597c0610c",
-  "by": "claude-opus-5-5",
-  "kept": true,
-  "importance": 4,
-  "architecture_relevance": 4,
-  "reason": "Functions on ACA V1 apps will stop running at retirement, which forces re-platforming of event-driven workloads.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Retirement of a specific hosting variant (Functions on ACA V1), which stops running on September 29, 2027 and is relevant to teams using that hosting model.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-8d18a8a0e3ea": {
   "hash": "219c8da65be78bf2db6bf1f386fc1a701157d197",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 3,
-  "architecture_relevance": 3,
-  "reason": "A new generation of storage-optimized VMs with large local NVMe is an incremental GA that is relevant when sizing data-heavy workloads.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "architecture_relevance": 2,
+  "reason": "Incremental GA of a new storage-optimized VM generation.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-4d44a6068b43": {
   "hash": "628fff1c85a58b1a4c8cc11294d27b7b671f0310",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 3,
-  "architecture_relevance": 4,
-  "reason": "Automatic zone selection for scale sets could simplify zonal resilience design, but it is only in preview.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "architecture_relevance": 3,
+  "reason": "Notable preview that simplifies zonal resilience for scale sets by letting the platform choose zones based on capacity.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-a0a1d75f6916": {
   "hash": "76233140109856e5596a0b640a2e052218531908",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 2,
   "architecture_relevance": 1,
-  "reason": "Arc-enabled SQL Server becomes available in one more region.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "Regional availability expansion for one service.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-686d03256e94": {
   "hash": "c93412f558a5625a62382cff2d05114ff40dca65",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 2,
   "architecture_relevance": 1,
-  "reason": "Arc-enabled SQL Server becomes available in one more region.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "Regional availability expansion for one service.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-595729325b3f": {
   "hash": "1da0212a54f4d2ca2ea89f62555caa5341374ac1",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 3,
-  "architecture_relevance": 3,
-  "reason": "A preview of Ultra Disk for PostgreSQL flexible server opens a higher-performance storage option for I/O-heavy workloads.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "architecture_relevance": 2,
+  "reason": "Notable preview of a higher-performance storage option for PostgreSQL flexible server.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-cb76cdbd70e7": {
   "hash": "3240b2544c3eef6ab627cbe92b8e88c0407668ef",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 3,
   "architecture_relevance": 2,
-  "reason": "A preview of managed performance monitoring for Azure SQL Database is an operational improvement.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "Preview of managed performance monitoring for Azure SQL Database is operational tooling.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-921e5feac25f": {
   "hash": "ebaffdf2a46e8bb935865da7a4b5715240bf0765",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 2,
   "architecture_relevance": 2,
-  "reason": "An incremental expansion of a preview monitoring feature for Arc-enabled SQL Server.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "Incremental enhancement to an existing monitoring preview.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-6a34f9cfe131": {
   "hash": "b25f9adfd2d34c6fcd1cae46ae290dfacf8b6bed",
-  "by": "claude-opus-5-5",
-  "kept": false,
-  "importance": 3,
-  "architecture_relevance": 3,
-  "reason": "Larger Hyperscale Premium vCore options raise the scale-up ceiling, which is an incremental but useful change.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
- },
- "updates-9bc24a63e457": {
-  "hash": "94c6dea0d2d3207a237812472288e91f1cf9d633",
-  "by": "claude-opus-5-5",
-  "kept": true,
-  "importance": 4,
-  "architecture_relevance": 4,
-  "reason": "Cross-tenant CMK GA for PostgreSQL enables key ownership to sit in a separate tenant, which matters for ISV and regulated designs.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
- },
- "updates-19e2b82c9d8a": {
-  "hash": "0d1f44125ee5b64a9d0c528fbd4d401823f8fb01",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": false,
   "importance": 3,
   "architecture_relevance": 2,
-  "reason": "A preview of script-based provisioning replacing marketplace images for SQL Server on Linux VMs, which is mostly a deployment-process change.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "A roundup of incremental Azure SQL GA updates, including larger Hyperscale Premium vCore sizes.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
+ },
+ "updates-9bc24a63e457": {
+  "hash": "94c6dea0d2d3207a237812472288e91f1cf9d633",
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Incremental GA of cross-tenant CMK, which helps ISV and multi-tenant key-ownership designs for PostgreSQL.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
+ },
+ "updates-19e2b82c9d8a": {
+  "hash": "0d1f44125ee5b64a9d0c528fbd4d401823f8fb01",
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A change in deployment tooling for SQL Server on Linux VMs with minor design impact.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-a3d932c3de5c": {
   "hash": "321681da12afb89e4b55b5c24dcc40b8571b38ef",
-  "by": "claude-opus-5-5",
+  "by": "claude-opus-5-5:d3fe2398a7",
   "kept": true,
   "importance": 4,
   "architecture_relevance": 4,
-  "reason": "GA of SQL Server on disconnected Azure Local opens an option for air-gapped and sovereign deployments.",
-  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+  "reason": "GA of SQL Server for disconnected Azure Local opens a supported data platform option for air-gapped and sovereign environments.",
+  "assessed_at": "2026-10-10T20:57:24.345984+00:00"
  },
  "updates-94e172b226d4": {
   "hash": "09f28983fbad8509831c8773c33ac93679ea1e53",

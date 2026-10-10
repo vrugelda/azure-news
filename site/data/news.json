@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-10T20:53:41.620391+00:00",
+ "updated_at": "2026-10-10T20:57:24.345984+00:00",
  "items": [
   {
    "id": "updates-10b7a22d550b",
@@ -132,39 +132,6 @@
    ]
   },
   {
-   "id": "updates-6874841ee0e3",
-   "source": "updates",
-   "source_name": "Azure Updates",
-   "title": "Retirement: DCsv3 and DCdsv3-series Azure Virtual Machines will be retired on October 31, 2029",
-   "link": "https://azure.microsoft.com/updates?id=569592",
-   "published": "2026-10-01T17:02:55+00:00",
-   "categories": [
-    "Compute",
-    "Linux Virtual Machines",
-    "Virtual Machines",
-    "Windows Virtual Machines",
-    "Retirements"
-   ],
-   "importance": 4,
-   "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "DCsv3 and DCdsv3-series confidential VMs retire on October 31, 2029",
-   "summary": "DCsv3 and DCdsv3-series Linux, Windows and Dedicated Host VMs will be retired on October 31, 2029, after which they cannot be used or purchased. Customers running confidential computing workloads on these series must migrate before that date.",
-   "architecture_impact": "Confidential workloads on these SKUs need a migration target that preserves the required trusted execution model. The recommended replacement series are truncated in the item and need checking at the source. Validate the attestation and enclave dependencies of the target series early, as they may require application changes.",
-   "status": "retirement",
-   "recommended_action": "plan-migration",
-   "services": [
-    "Virtual Machines",
-    "Azure Dedicated Host",
-    "Azure Confidential Computing"
-   ],
-   "pillars": [
-    "security",
-    "reliability",
-    "operations"
-   ]
-  },
-  {
    "id": "architecture-72dff44e5ba3",
    "source": "architecture",
    "source_name": "Azure Architecture Blog",
@@ -195,66 +162,6 @@
    ]
   },
   {
-   "id": "updates-621e778c4f93",
-   "source": "updates",
-   "source_name": "Azure Updates",
-   "title": "Retirement: NVv3-series Azure Virtual Machines",
-   "link": "https://azure.microsoft.com/updates?id=573414",
-   "published": "2026-09-30T18:26:47+00:00",
-   "categories": [
-    "Compute",
-    "Virtual Machines",
-    "Retirements"
-   ],
-   "importance": 4,
-   "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "NVv3-series GPU VMs have been retired as of September 30, 2026",
-   "summary": "Azure retired the NVv3-series sizes, including NV12s_v3, NV12hs_v3, NV24s_v3, NV24ms_v3, NV32ms_v3 and NV48s_v3, on September 30, 2026. The item is truncated on what happens to remaining NVv3 VMs, so that needs checking at the source.",
-   "architecture_impact": "GPU visualization and VDI workloads still on NVv3 must move to a current GPU series immediately. Revalidate GPU drivers, image compatibility and capacity in target regions.",
-   "status": "retirement",
-   "recommended_action": "plan-migration",
-   "services": [
-    "Virtual Machines",
-    "Azure Virtual Desktop"
-   ],
-   "pillars": [
-    "reliability",
-    "operations",
-    "cost"
-   ]
-  },
-  {
-   "id": "updates-b2a7f38f5b3d",
-   "source": "updates",
-   "source_name": "Azure Updates",
-   "title": "Retirement: NVv4-series Azure Virtual Machines",
-   "link": "https://azure.microsoft.com/updates?id=573415",
-   "published": "2026-09-30T18:24:01+00:00",
-   "categories": [
-    "Compute",
-    "Virtual Machines",
-    "Retirements"
-   ],
-   "importance": 4,
-   "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "NVv4-series GPU VMs have been retired as of September 30, 2026",
-   "summary": "Azure retired the NVv4-series sizes, from NV4as_v4 through NV32ahs_v4, on September 30, 2026. The item is truncated on the handling of remaining NVv4 VMs, so that needs checking at the source.",
-   "architecture_impact": "Partial-GPU VDI and visualization workloads on NVv4 must migrate to a supported GPU series now. Check that fractional GPU sizing options exist in the target series, as they may affect cost and density.",
-   "status": "retirement",
-   "recommended_action": "plan-migration",
-   "services": [
-    "Virtual Machines",
-    "Azure Virtual Desktop"
-   ],
-   "pillars": [
-    "reliability",
-    "cost",
-    "operations"
-   ]
-  },
-  {
    "id": "updates-e0c335e255fa",
    "source": "updates",
    "source_name": "Azure Updates",
@@ -266,84 +173,23 @@
     "Virtual Machines",
     "Retirements"
    ],
-   "importance": 5,
+   "tier": "detail",
+   "importance": 4,
    "architecture_relevance": 3,
    "summarised_by": "claude-opus-5-5",
-   "headline": "Dv3, Dsv3, Ev3 and Esv3 VM series retire on November 15, 2029",
-   "summary": "Microsoft is retiring the Dv3, Dsv3, Ev3 and Esv3 VM series in public Azure regions, with retirement on November 15, 2029. These general-purpose and memory-optimized series underpin many production estates.",
-   "architecture_impact": "Inventory VMs, scale sets and IaC templates that reference these sizes, and plan resizing to newer series. Account for differences in local temp disk and pricing, and update reservations or savings plans accordingly. Recommended targets need checking at the source.",
+   "headline": "Dv3, Dsv3, Ev3 and Esv3 VM series to retire on November 15, 2029",
+   "summary": "Under the Azure VM lifecycle policy, Microsoft is retiring the Dv3, Dsv3, Ev3 and Esv3 VM series in public cloud regions, and they now enter the End-of-Life stage. Retirement is scheduled for November 15, 2029, and affects any workload still running on these widely used sizes.",
+   "architecture_impact": "Inventory your Dv3/Ev3-family VMs, scale sets and IaC templates, and plan to move them to newer series before November 15, 2029; recommended target series and any purchase restrictions need checking at the source. New designs and reservation renewals should avoid these sizes.",
    "status": "retirement",
    "recommended_action": "plan-migration",
    "services": [
-    "Virtual Machines",
+    "Azure Virtual Machines",
     "Virtual Machine Scale Sets"
    ],
    "pillars": [
+    "reliability",
     "cost",
-    "reliability",
     "operations"
-   ]
-  },
-  {
-   "id": "updates-419b8b82f3ab",
-   "source": "updates",
-   "source_name": "Azure Updates",
-   "title": "Retirement: Functions on Azure Container Apps V1",
-   "link": "https://azure.microsoft.com/updates?id=570800",
-   "published": "2026-09-29T19:41:09+00:00",
-   "categories": [
-    "Containers",
-    "Azure Container Apps",
-    "Retirements"
-   ],
-   "importance": 4,
-   "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Functions on Azure Container Apps V1 retires on September 29, 2027",
-   "summary": "Functions on Azure Container Apps V1 will be retired on September 29, 2027. After that date, existing V1 apps stop running and no longer process requests or event-driven triggers.",
-   "architecture_impact": "Teams hosting Functions on ACA V1 must move to a supported hosting model before the deadline, or triggers will silently stop. The migration path is truncated in the item and needs checking at the source. Revisit scaling, networking and trigger configuration as part of the move.",
-   "status": "retirement",
-   "recommended_action": "plan-migration",
-   "services": [
-    "Azure Container Apps",
-    "Azure Functions"
-   ],
-   "pillars": [
-    "reliability",
-    "operations"
-   ]
-  },
-  {
-   "id": "updates-9bc24a63e457",
-   "source": "updates",
-   "source_name": "Azure Updates",
-   "title": "[Launched] Generally Available: Azure Database for PostgreSQL Flexible Server supports cross-tenant customer-managed keys (CMK)",
-   "link": "https://azure.microsoft.com/updates?id=571783",
-   "published": "2026-09-29T17:57:36+00:00",
-   "categories": [
-    "Launched",
-    "Databases",
-    "Hybrid + multicloud",
-    "Azure Database for PostgreSQL",
-    "Feature"
-   ],
-   "importance": 4,
-   "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "PostgreSQL Flexible Server supports customer-managed keys from another Entra tenant",
-   "summary": "Azure Database for PostgreSQL Flexible Server can now encrypt data with customer-managed keys held in Azure Key Vault or Managed HSM in a different Microsoft Entra tenant. This is generally available.",
-   "architecture_impact": "SaaS providers can host databases in their own tenant while customers retain control of encryption keys in theirs. This enables a cleaner separation of duties and bring-your-own-key models. Identity, permissions and key-availability dependencies across tenants need design attention.",
-   "status": "ga",
-   "recommended_action": "adopt",
-   "services": [
-    "Azure Database for PostgreSQL",
-    "Azure Key Vault",
-    "Azure Managed HSM",
-    "Microsoft Entra ID"
-   ],
-   "pillars": [
-    "security",
-    "reliability"
    ]
   },
   {
@@ -357,22 +203,24 @@
     "Launched",
     "Feature"
    ],
+   "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
    "summarised_by": "claude-opus-5-5",
-   "headline": "SQL Server on Azure Local Disconnected (ALDO) is generally available",
-   "summary": "SQL Server is now supported on Azure Local in disconnected mode, for environments that cannot maintain continuous connectivity to Azure. It targets highly regulated, secure, remote or air-gapped sites.",
-   "architecture_impact": "Architects can now design Azure-consistent data platforms for air-gapped or sovereignty-constrained sites, rather than running unmanaged standalone SQL Server. Which management, patching and licensing capabilities work offline needs checking at the source.",
+   "headline": "SQL Server on Azure Local Disconnected Operations (ALDO) is generally available",
+   "summary": "SQL Server support now extends to Azure Local running in disconnected operations (ALDO). This targets highly regulated, secure, remote or air-gapped environments where continuous connectivity to Azure is not possible.",
+   "architecture_impact": "Sovereign, defence and edge designs can now standardize on Azure Local with SQL Server without depending on a connection to Azure. Feature parity, licensing and management differences from connected deployments need checking at the source.",
    "status": "ga",
    "recommended_action": "evaluate",
    "services": [
     "Azure Local",
-    "SQL Server enabled by Azure Arc"
+    "SQL Server",
+    "Azure Arc"
    ],
    "pillars": [
     "security",
-    "operations",
-    "reliability"
+    "reliability",
+    "operations"
    ]
   },
   {
