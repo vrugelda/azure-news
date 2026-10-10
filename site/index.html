@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <meta name="referrer" content="no-referrer">
+  <title>Azure Architecture Brief</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <p class="eyebrow">Azure &middot; Architecture brief</p>
+    <h1>The Azure updates that change a design</h1>
+    <p class="lede">Major releases, retirements and guidance, filtered from the Azure feeds and summarised for architects.</p>
+    <p class="meta" id="meta" aria-live="polite">Loading&hellip;</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Filters">
+      <input type="search" id="search" placeholder="Search headlines, services, summaries" aria-label="Search">
+      <div class="chips" id="status-chips" role="group" aria-label="Status"></div>
+      <div class="chips" id="pillar-chips" role="group" aria-label="Well-Architected pillar"></div>
+    </section>
+
+    <div id="list"></div>
+    <p class="notice" id="notice" hidden></p>
+  </main>
+
+  <footer>
+    <p>Sources: Azure Updates, Azure Blog, Azure Architecture Blog. Summaries are generated and can be wrong; follow the link to the source before acting.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

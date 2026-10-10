@@ -1,0 +1,6 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+# Local feed cache; the rest of state/ is committed.
+state/feeds/
