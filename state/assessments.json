@@ -1,0 +1,974 @@
+{
+ "updates-2829dab4d785": {
+  "hash": "b59d8da5a3d77835310e89dad88754940fd1c1da",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A dated retirement of the Key Vault secrets integration for Arc-enabled Kubernetes forces affected hybrid clusters onto a different secrets extension.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-10b7a22d550b": {
+  "hash": "b7b44725698981cebb1036890e900c1127f5e945",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "The default managed egress SKU changes for new AKS clusters on AKS-managed virtual networks, which affects outbound network design.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-fbbd224fa92f": {
+  "hash": "76c52053696f6185d1adb46237ce0de352cba01a",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "This adds one service to one more region.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-80c91926df46": {
+  "hash": "1c649a8b6f29a56b64c1ea891e5dccbddbf1d37e",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A whole service is retiring, which forces developer-workstation platforms built on it to migrate.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-b2f20f7940d9": {
+  "hash": "3bd36e5d094e38e14ead6daffc372112707a8794",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A service retirement on a short timeline breaks platform-engineering and self-service environment provisioning built on it.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-9d9cdedcd2bc": {
+  "hash": "e33b61bfa2c88df0b949602689dca581695d2505",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A generally available WAF capability in two widely used edge services lets teams tune out false positives without weakening the whole rule set.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-967477f4806b": {
+  "hash": "a55d847827569f3ea4e23de3cdab3e6eae397f0c",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "This is a notable preview for governing MCP servers and agent tools through API Management, and it shapes AI agent gateway design.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-6d651c1b1e7a": {
+  "hash": "cdd6861b586cf1b8fd28c339749c21f3796a15d4",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "A commercial Marketplace programme is expanding to another market, with no design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-327038f25ff8": {
+  "hash": "6bc173691aaa366d5fa5801a18f9145749b7d08c",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A partner-managed Ray platform on AKS reaches general availability, which is useful for distributed Python and AI workloads but narrow in scope.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-3e23e013911d": {
+  "hash": "4aeb5301007c585de355246e3386c63659e923dc",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "This is a minor permission feature in SQL Server on Linux cumulative updates.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-d1e54dcc444f": {
+  "hash": "82ac0eaae62f025316129754ca1f937da495e9e5",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A metrics dimension is retiring, which affects monitoring and alerts rather than system design.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-ee11084be3e7": {
+  "hash": "d57e2b55b33b82be8b959419d72cdc1d049a698f",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "The retirement closes the App Service PaaS option on Azure Stack Hub for hybrid and disconnected designs, and new installations stop sooner.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-2b70464c78bf": {
+  "hash": "1b031c37c1990d32515e2394df6fbe26c6e89947",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "Ending support for three widely used Java versions on App Service affects many apps' security posture and upgrade roadmaps.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-5a9214bbdbcb": {
+  "hash": "54245c16b251fd55284b3d4a3d55d3a85c241a11",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "The retirement changes the confidential-computing basis for Always Encrypted enclaves and the hardware choices tied to it.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-698ae6fa52b8": {
+  "hash": "80d41fe6cffa26abd89872cbbf2bd4fee261bad8",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "This preview of AKS on bare-metal Ubuntu opens an on-premises option without a virtualization layer, but it is still in preview.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-f9aaec626ec0": {
+  "hash": "9b305877038deb655ec196081ee1901c7b4c8b80",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview service is expanding to more regions.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-84ca93281282": {
+  "hash": "6ba63790065b58934de2aaea14bf49764563ba89",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "One service becomes available in the French sovereign cloud, which matters for sovereignty-bound designs but is narrow in scope.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-c5ba0f3284ea": {
+  "hash": "dff03d1c5d72c64c8921fae20e7f6bad7e04dc81",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "This is a search usability improvement in Fabric.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-f5237d46a445": {
+  "hash": "b7aa08b71e8f1dcfafd8a4e5005bc6f5b26e3bc2",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "This preview brings vaulted long-term backup retention to PostgreSQL, which is relevant to data protection design.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-1d9cd5ac47f8": {
+  "hash": "2fd3df3f79275551c9cb5317516a6687d0b72602",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "This preview of IPv6 WAF inspection on Application Gateway matters for dual-stack ingress designs.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-57910c3bf445": {
+  "hash": "9bcc97224d32fd7e537f23af5aa35a041f3e0380",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An in-place major version upgrade preview for PostgreSQL elastic clusters is useful for lifecycle planning, but it is still a preview.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-6874841ee0e3": {
+  "hash": "bf81e51462eb6d1be0b284426adfccd52d160b36",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A retirement with a firm deadline affecting confidential computing workloads on DCsv3/DCdsv3, a narrower but security-sensitive group.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-444785eaffb7": {
+  "hash": "6d0911244bc49946317d875001759826486465bc",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of managed performance monitoring for SQL Server on VMs is an operational convenience with little design impact.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-621e778c4f93": {
+  "hash": "b698572e3a1899867b81abe21c079c3b407f8ab9",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "The NVv3 GPU VM sizes were retired on September 30, 2026, so any remaining workloads need urgent migration.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-b2a7f38f5b3d": {
+  "hash": "8b9e6a1afc810704a2145d0463f56506056e37c8",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "The NVv4 GPU VM sizes were retired on September 30, 2026, so any remaining workloads need urgent migration.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-761cf52b7b9a": {
+  "hash": "3fb99e6baf9f9517cd989b10548c26a99f106f2b",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of a new Ubuntu LTS node OS SKU in AKS is routine OS lifecycle maintenance.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-496f5c54308f": {
+  "hash": "626409e73af92cf3444cbbe0e08981679d9061a7",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A developer tooling announcement for Copilot workspaces with no design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-e0c335e255fa": {
+  "hash": "be9f51ea991d82e28955c24399d2f774511e4457",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 5,
+  "architecture_relevance": 3,
+  "reason": "The retirement of the very widely used Dv3, Dsv3, Ev3 and Esv3 VM series forces migration for many customers.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-419b8b82f3ab": {
+  "hash": "36ff54d19cb3a81dc65854da8300b73597c0610c",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Functions on ACA V1 apps will stop running at retirement, which forces re-platforming of event-driven workloads.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-8d18a8a0e3ea": {
+  "hash": "219c8da65be78bf2db6bf1f386fc1a701157d197",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A new generation of storage-optimized VMs with large local NVMe is an incremental GA that is relevant when sizing data-heavy workloads.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-4d44a6068b43": {
+  "hash": "628fff1c85a58b1a4c8cc11294d27b7b671f0310",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "Automatic zone selection for scale sets could simplify zonal resilience design, but it is only in preview.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-a0a1d75f6916": {
+  "hash": "76233140109856e5596a0b640a2e052218531908",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "Arc-enabled SQL Server becomes available in one more region.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-686d03256e94": {
+  "hash": "c93412f558a5625a62382cff2d05114ff40dca65",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "Arc-enabled SQL Server becomes available in one more region.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-595729325b3f": {
+  "hash": "1da0212a54f4d2ca2ea89f62555caa5341374ac1",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of Ultra Disk for PostgreSQL flexible server opens a higher-performance storage option for I/O-heavy workloads.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-cb76cdbd70e7": {
+  "hash": "3240b2544c3eef6ab627cbe92b8e88c0407668ef",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of managed performance monitoring for Azure SQL Database is an operational improvement.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-921e5feac25f": {
+  "hash": "ebaffdf2a46e8bb935865da7a4b5715240bf0765",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "An incremental expansion of a preview monitoring feature for Arc-enabled SQL Server.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-6a34f9cfe131": {
+  "hash": "b25f9adfd2d34c6fcd1cae46ae290dfacf8b6bed",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Larger Hyperscale Premium vCore options raise the scale-up ceiling, which is an incremental but useful change.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-9bc24a63e457": {
+  "hash": "94c6dea0d2d3207a237812472288e91f1cf9d633",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Cross-tenant CMK GA for PostgreSQL enables key ownership to sit in a separate tenant, which matters for ISV and regulated designs.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-19e2b82c9d8a": {
+  "hash": "0d1f44125ee5b64a9d0c528fbd4d401823f8fb01",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of script-based provisioning replacing marketplace images for SQL Server on Linux VMs, which is mostly a deployment-process change.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-a3d932c3de5c": {
+  "hash": "321681da12afb89e4b55b5c24dcc40b8571b38ef",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of SQL Server on disconnected Azure Local opens an option for air-gapped and sovereign deployments.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-94e172b226d4": {
+  "hash": "09f28983fbad8509831c8773c33ac93679ea1e53",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of SQL Server on Azure Local with Arc-based Azure management is a supported option for running governed SQL workloads on-premises or at the edge.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-4d834c6512ff": {
+  "hash": "292c6e0787cbf280c0b01e4652fd7c3a95341553",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview roundup led by a Fabric Database Hub management experience; it is mostly operational tooling with limited design impact.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-dbf0da8bd4ec": {
+  "hash": "bc197557f2badd5ddc9bd25433b7842868c2d043",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "SQL projects support in SSMS is a developer tooling improvement for database DevOps.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-28fc5a6e3602": {
+  "hash": "79369459eaafb2f9f682077a1659601cfd29c0ad",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that could change the cost model for intermittent Hyperscale workloads, but it is not yet GA.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-2c29e4d0d580": {
+  "hash": "bba3a8f58ed1e1320a6c3996fce41fb96fe3cba9",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A code formatting feature in VS Code with no design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-e7f8acfc1e8e": {
+  "hash": "e9940841abb399ecd91376bbb3d46e0db7bcbc01",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "AI-assisted migration tooling helps execution but does not change target architectures.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-e9fe7abcc952": {
+  "hash": "9cde7f15f0045bccdd6baa75a764bea3a9e374da",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "The retirement of Arc-enabled SCVMM forces customers who manage SCVMM estates through Azure to transition, with a long runway to September 2029.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-d50897b44bb9": {
+  "hash": "ed200ac4c0a6c5cae7d53c91125aff359fd79e56",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview that simplifies the migration workflow from Arc to Azure SQL Database; it is a tooling convenience rather than a design change.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-ec1edd428228": {
+  "hash": "4440b5311f3b7b004f952e353ffa49ad5078e474",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A preview of AI agent guidance skills for SQL with no design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-238754b62a6c": {
+  "hash": "081fc17c2ed3ebbea0ee245a4436385935601a04",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "The preview moves PostgreSQL long-term retention from logical dumps to snapshot backups in Backup Vaults, which matters for data protection design but is not yet GA.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-d033a6561fcf": {
+  "hash": "49567a2125f3b05dcd82f97ed3b565aae1cc9751",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "All versions of HPC Pack lose support on August 27, 2027, forcing HPC clusters built on it to move to another scheduler or orchestrator.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-70a4332cd8f2": {
+  "hash": "472774eb31c596f90317dcbd09c10a275f340569",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "The retirement of IoT Central forces solutions built on the managed IoT application platform to be re-platformed by September 2029.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-9a1273b54207": {
+  "hash": "f0844bad72465f8395d100ed9f5342597213bf8a",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of very large, high-throughput ANF volumes opens a new design option for demanding HPC and EDA file storage.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-228dd84dd6ff": {
+  "hash": "b9e2951e9365dc2fe3da0d29ccb7369bc4289e18",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "An incremental QoS improvement for ANF cool access on Premium and Ultra tiers; it is useful for tuning cost but has little design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-7e9b9cb30d38": {
+  "hash": "e350d6360aee8a6ad6eb021dacb5f40fce8fdcd9",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "Entra Kerberos for ANF SMB volumes could remove the AD DS dependency for cloud-only identities, a meaningful identity design option, but it is still in preview.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-cb04b7f0d323": {
+  "hash": "13eda2eab8098c7d860b1039b820b7de1305b4aa",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of native vector indexes and ANN search in Azure SQL Database lets AI retrieval workloads run inside the operational database.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-2b9ac87521ab": {
+  "hash": "d8ab57be8d2f08a0bbb76694b7d66611db20cab3",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A preview developer guidance portal for Azure SQL with no design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-d677a0441ad8": {
+  "hash": "58a4a86a28b7f86e616276709f88f0fbc98ba3ac",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "SQL MI updates including flexible memory allocation are useful for sizing and cost, but the change is incremental.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-4fb5733d701d": {
+  "hash": "8dba4725132dea40626b9d30c83ea1697a5eb840",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A new Extended Zone in Luxembourg adds an in-jurisdiction, low-latency placement option for residency-sensitive workloads.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-27c63dd32ba5": {
+  "hash": "b8b90ec56c31d4e2c02895a50be7fb68729b1213",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A PostgreSQL version support update in a preview service.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-3466d8d147b3": {
+  "hash": "8db8e46bd3870586b5f8302031a1ebcfb3ecd987",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A retirement of several standalone Azure Communication Services offerings forces migration for affected communication workloads, though the truncated text does not list which services are affected.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-980648645f79": {
+  "hash": "3151c0344bb00d7c7697341fa328087f08821855",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental GA that shortens restore time from application-consistent restore points for VMs using Premium v2 or Ultra data disks, which is relevant to recovery-time planning.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-b8fb9cd8ff4a": {
+  "hash": "1efc019d51903b387b6e71a6cdce32ac0410de55",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A runtime version end of support for PowerShell Function apps requires an upgrade to 7.6 but has no design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-d1fafa75f4e5": {
+  "hash": "de36f34fbe07f5b7fa8038eb06f4adac5207cdd6",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "The end of support for .NET 8 and .NET 9 on Azure Functions affects a very large number of apps on a short deadline and needs migration planning.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-e59647b32c4e": {
+  "hash": "47ac555e680e13a8c25a7e633bc4c222b6c9850d",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A routine runtime end of support for Node.js 22 on Functions, with a move to Node.js 24 required by April 2027 but no design impact.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-8a4ba4a83b12": {
+  "hash": "982e4be499f526df89fccd9f9afe8ccccba981c1",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview that lets hybrid and edge machines join an Azure-hosted AKS control plane as worker nodes, opening new hybrid topology options.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-f82f521733c5": {
+  "hash": "b5c83d50010f8a2ea5654168cb17d5e0127516ce",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A routine OS version update for Azure Sphere.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-6aecaf0b6f45": {
+  "hash": "fa2eaf17654a69515296666656678ce9dfcc5a79",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A developer tooling preview with no architectural consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-b148a03b73d8": {
+  "hash": "21ce9fefb4d05152b4d8a67fc53e28694de2ea2b",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A runtime version bump for Azure Functions.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-79744776f0ef": {
+  "hash": "926d0459571a5e9b70ae2ededf1da8d1203ed8f1",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of native schedule and event triggers for Foundry agents that could replace external orchestration glue.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-28f5f09604d3": {
+  "hash": "0bdc487d3dce1fae571540df2a0ce3d1e605d4ab",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of new memory-optimized VM series for SAP, which is a sizing option rather than a design change.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-e1cf873f168e": {
+  "hash": "ae47dcdd2d0c13479f14a3df9cfc417cace88abb",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "An incremental governance control that lets administrators enable or disable Foundry agents in Agent 365.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-e9d1bddb51b7": {
+  "hash": "06dfd0248a938d03db3ee24a45c774ba4828d2da",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview of FQDN-based egress rules for hosted agents that adds a meaningful network security boundary for agent workloads.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-6d0e8e2e1a86": {
+  "hash": "7375fbe75b8319944a4492e301931575b5f4b404",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A GA native path from Foundry to Microsoft 365 Copilot and Teams changes how agent solutions are delivered to end users.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-b8f9b89a1247": {
+  "hash": "d68f495941e9a3041799e97c81b016f8f7027d84",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A new monitoring metric for the sync status of logical replication slots on PostgreSQL Flexible Server.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-0df87d14b1a4": {
+  "hash": "146b15faf9d00188a7b90bdeae17d18530cd4728",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "A documentation update to PostgreSQL troubleshooting guides.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-84054951601b": {
+  "hash": "e19545978b74b10827d70be416077e6d0daa461c",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A version bump that adds PostgreSQL 18 support to elastic clusters.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-57f754c0e2cd": {
+  "hash": "76e2db6806d90bea608b75136f29d51686b93919",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of a new single-tenant Payment HSM generation that is relevant to payment-processing security designs.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-e211ef0807d5": {
+  "hash": "9abc3b6cfe9be8bdb48dc8484fbf47fc5db37dae",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A GA option to mesh up to 3,000 VNets by default changes how large estates can choose between mesh and hub-spoke topologies.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-ce82772ad840": {
+  "hash": "40bad11d9b01ea66b3df24ef3ad5de43eca0e9d7",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A firm removal date for the retired containerized SAP data connector images forces affected SAP log-ingestion setups to migrate.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-39361e18a7b7": {
+  "hash": "7021a267871f57c6063dbfaa12b6f9a76905f7c4",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Soft delete for Azure SQL logical servers is a useful preview recovery safeguard against accidental deletion, but it is incremental and not yet GA.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-4b699195163d": {
+  "hash": "c682d5defd9cb82ef5001f2f4fdad00db5807e97",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "Hosted control planes is a notable preview that changes the ARO topology by separating the managed control plane from worker nodes, but it is still in preview.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-d63b94463d79": {
+  "hash": "7167c68631c0bc1af3349bfd722ece813e82db98",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "This is a developer tooling plugin for AI coding assistants and has no design consequence for production systems.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-5686ce99866a": {
+  "hash": "2ff279c259d29f06b9d821a101c30722d0fb49dd",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "New client-side wildcard FQDNs for Windows App can break Azure Virtual Desktop connectivity from restricted client networks unless allowlists are updated.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-3a56bad00ca9": {
+  "hash": "1d18b2bb2326e84e3cc854a8a4d1b9765687d551",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "HTTP/3 over QUIC on Application Gateway is a notable preview that can improve client latency, but it is not yet GA.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-adda8ce1f4de": {
+  "hash": "8015fc5a5d756b6ed24776bb289560ef74e384e3",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "This is a dated retirement of the AKS Azure Linux with OS Guard node OS, which forces affected clusters to move to Azure Container Linux.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-74fe81c00857": {
+  "hash": "ab62481ed26c76e604b8b6cbe5495afbea21bdcc",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Agentless SMB migration to Azure Files simplifies migration planning, but it is a preview.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-08a31560248f": {
+  "hash": "011ec5d1365e5405a0240ed5f9b901c51df8bcd2",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "GA of TLS/SSL certificates and end-to-end TLS removes a security gap in Azure Functions Flex Consumption, the main serverless hosting plan.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "updates-880364eac8f5": {
+  "hash": "a2bdd03144e6a417c9d3e0b06998232ef546f67d",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "The GA Copilot troubleshooting assistant helps day-to-day operations but has little design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-1c97118c7d9c": {
+  "hash": "59337cdd4deb24f9ffe8febf8c19305884ecd352",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "This is a thought-leadership post about Microsoft's internal infrastructure operations.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-f98827a38e97": {
+  "hash": "ca3b84d4a386cb3c1ac2a2b06ee6f1833b09b67b",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "This is analyst recognition.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-a8fce03902c9": {
+  "hash": "6b9b2db0f6335d2f3fd559034797d3e5601a7932",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "This is a sustainability and datacenter hardware lifecycle story with no customer design impact.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-30aeaf4df7da": {
+  "hash": "cdf891294b89e80ede764ca8f6999eb46b816b66",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of SQL Server on Azure Local opens a supported hybrid option for running SQL where data residency and control are required.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-6cf866657b71": {
+  "hash": "2812ff4b7f4feea6030077f1050987d109d392a5",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "This is an event recap of Fabric and SQL announcements with no specific changes detailed in the item.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-631d2725f593": {
+  "hash": "df8b8c08ef24ea1c9539abd716788b5a111033ed",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An updated VM lifecycle policy matters for planning VM size retirements, but the item gives no concrete changes and needs checking at the source.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-ce7e213c0b89": {
+  "hash": "bf99f84d528e87ad69bda4efed081c451b65eadd",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "This is a promotional overview of agent platform capabilities with no concrete changes in the text.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-eff40a3b86f2": {
+  "hash": "1e159577e2ee1f1838ddbd009aba8f6bb26ecedd",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 3,
+  "reason": "This Well-Architected reliability thought piece reframes resilience as an ongoing practice, but it announces no new capability.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-35e90ddc311d": {
+  "hash": "05e23131525c81723fb43164f28850953f4a0e67",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "This is a conceptual piece on agent-first platform design.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "blog-f41137d586c7": {
+  "hash": "8d0ac946f4364df62f6f48a8156f166f9515c297",
+  "by": "claude-opus-5-5",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A new flagship model family in Microsoft Foundry affects model selection and cost tiers for AI agent workloads.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-72dff44e5ba3": {
+  "hash": "bed4ce7709f19315e3817e8394055210976a96c0",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "This substantial reference architecture for federated multitenant agent governance is design-relevant, but it relies on several preview capabilities.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-0eb95d6833a1": {
+  "hash": "455a760e7f1bff78eb5b85ea3109849e203c462e",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A community solution walkthrough for turning assembly videos into work instructions with Functions, Cosmos DB and Azure OpenAI; it uses no new platform capability and has narrow design consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-036db8adb908": {
+  "hash": "15df388ca6e8512d424bc17045e9e815124634c1",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A scenario-specific how-to that combines Foundry IQ, Fabric IQ, an ERP MCP server and SharePoint into a retail agent; it is illustrative rather than a platform change.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-960d0e6061ae": {
+  "hash": "a0045390ca5a1189f15298443df860648416b2ff",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A step-by-step blog on connecting a Copilot Studio agent to a Fabric IQ ontology (preview) over MCP, aimed at one retail scenario with limited design implications.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-a38ff63205fc": {
+  "hash": "1ea4eac8a3b399478f1ea457471c9fd14867ebf4",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 2,
+  "reason": "An individual architect's proposed recruiting-search pattern using Foundry structured outputs and Azure AI Search; it is a niche example with some general prompt and validation hygiene lessons.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-625bfcb4dbe7": {
+  "hash": "ad99ecbc47ad165a8441438f38eb567ca5f63fef",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 3,
+  "reason": "A practical guide to layered agent observability with Foundry tracing, evaluations, Application Insights and OpenTelemetry; it is useful for designing AI operations but announces no new capability.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-7e3090844518": {
+  "hash": "829dae6192b35e0ec4a7070a670c7550aa70894c",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 3,
+  "reason": "It describes the Citadel reference architecture for shared AI gateway, governance and ownership patterns on top of AI landing zones, which is relevant to enterprise AI platform design but is blog guidance rather than a platform change.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-545624a5d854": {
+  "hash": "7ccdb2430af615c92db46a19509eb30a177ca43b",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 2,
+  "reason": "A thought-leadership piece on applying OSDU and the Fabric IQ ontology to oil and gas semantic layers, mostly strategic narrative with industry-specific relevance.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ },
+ "architecture-8b3f0f396a45": {
+  "hash": "a9459d4dcfded456b21b1a53f9c4bc3ce2f5c27f",
+  "by": "claude-opus-5-5",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "A business-oriented framework for measuring the ROI of AI agents, with no Azure design or platform consequence.",
+  "assessed_at": "2026-10-10T11:21:13.201753+00:00"
+ }
+}
