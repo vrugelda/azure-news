@@ -57,6 +57,24 @@ body {
 
 .masthead { padding-top: 72px; padding-bottom: 28px; }
 
+/* Azure logo as a faint watermark behind the heading. */
+.masthead { position: relative; }
+.masthead::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 4px;
+  width: 190px;
+  height: 190px;
+  background: url("azure.svg") center / contain no-repeat;
+  opacity: 0.18;
+  pointer-events: none;
+}
+.masthead > * { position: relative; }
+@media (prefers-color-scheme: dark) {
+  .masthead::before { opacity: 0.3; }
+}
+
 h1 {
   margin: 0 0 12px;
   font-size: clamp(1.8rem, 4.5vw, 2.5rem);
@@ -312,5 +330,6 @@ footer p { margin: 0; max-width: 64ch; }
 
 @media (max-width: 540px) {
   .masthead { padding-top: 44px; }
+  .masthead::before { top: 12px; width: 150px; height: 150px; }
   .card { padding: 18px; }
 }
