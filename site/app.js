@@ -88,39 +88,53 @@ function renderCard(item) {
   const top = el("div", "card-top");
   top.append(el("span", `status status-${item.status}`, STATUS_LABELS[item.status] || item.status));
   top.append(el("span", "", formatDate(item.published, { day: "numeric", month: "short" })));
-  top.append(el("span", "", item.source_name));
   const importance = el("span", "importance");
   importance.title = `Importance ${item.importance} of 5`;
   importance.setAttribute("aria-label", importance.title);
   for (let i = 1; i <= 5; i++) importance.append(el("span", i <= item.importance ? "on" : ""));
   top.append(importance);
-  card.append(top);
 
-  const heading = el("h2");
-  if (/^https?:\/\//.test(item.link)) {
-    const link = el("a", "", item.headline);
-    link.href = item.link;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    heading.append(link);
-  } else {
-    heading.textContent = item.headline;
-  }
-  card.append(heading);
-  card.append(el("p", "", item.summary));
+  const foot = el("div", "card-foot");
+  foot.append(el("span", "tag action", ACTION_LABELS[item.recommended_action] || item.recommended_action));
+  const more = el("button", "more", "Details");
+  more.type = "button";
+  more.setAttribute("aria-expanded", "false");
+  foot.append(more);
 
+  const details = el("div", "details");
+  details.append(el("p", "", item.summary));
   if (item.architecture_impact) {
     const impact = el("p", "impact");
     impact.append(el("span", "label", "Architecture impact"), item.architecture_impact);
-    card.append(impact);
+    details.append(impact);
+  }
+  const tags = el("div", "tags");
+  for (const service of item.services) tags.append(el("span", "tag", service));
+  for (const pillar of item.pillars) tags.append(el("span", "tag", PILLAR_LABELS[pillar] || pillar));
+  if (tags.childElementCount) details.append(tags);
+  if (/^https?:\/\//.test(item.link)) {
+    const link = el("a", "source", `Read at ${item.source_name} \u2197`);
+    link.href = item.link;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    details.append(link);
   }
 
-  const bottom = el("div", "card-bottom");
-  bottom.append(el("span", "tag action", ACTION_LABELS[item.recommended_action] || item.recommended_action));
-  for (const service of item.services) bottom.append(el("span", "tag", service));
-  for (const pillar of item.pillars) bottom.append(el("span", "tag", PILLAR_LABELS[pillar] || pillar));
-  card.append(bottom);
+  card.append(top, el("h2", "", item.headline), foot, details);
+  // Hovering previews the details (CSS); clicking pins the card open at full width.
+  card.addEventListener("click", (event) => {
+    if (event.target.closest("a")) return;
+    const open = card.classList.toggle("open");
+    more.setAttribute("aria-expanded", String(open));
+    more.textContent = open ? "Close" : "Details";
+  });
   return card;
+}
+
+function renderGrid(items) {
+  const grid = el("div", "grid");
+  grid.append(...items.map(renderCard));
+  return grid;
 }
 
 function renderList() {
@@ -128,17 +142,17 @@ function renderList() {
   const guidance = visible.filter((item) => item.status === "guidance");
   const nodes = [];
   if (guidance.length) {
-    nodes.push(el("h3", "section", "Architecture guidance"), ...guidance.map(renderCard));
+    nodes.push(el("h3", "section", "Architecture guidance"), renderGrid(guidance));
   }
-  let month = "";
+  const months = new Map();
   for (const item of visible) {
     if (item.status === "guidance") continue;
-    const itemMonth = formatDate(item.published, { month: "long", year: "numeric" });
-    if (itemMonth !== month) {
-      month = itemMonth;
-      nodes.push(el("h3", "section", `Platform changes · ${month}`));
-    }
-    nodes.push(renderCard(item));
+    const month = formatDate(item.published, { month: "long", year: "numeric" });
+    if (!months.has(month)) months.set(month, []);
+    months.get(month).push(item);
+  }
+  for (const [month, items] of months) {
+    nodes.push(el("h3", "section", `Platform changes \u00b7 ${month}`), renderGrid(items));
   }
   listEl.replaceChildren(...nodes);
 
