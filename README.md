@@ -36,12 +36,14 @@ architecture impact. Don't commit the result: delete `site/data` and `state` aft
 1. **Fetch** – Azure Updates, the Azure Blog and the Azure Architecture Blog (`feeds.py`).
 2. **Assess** – items from the last 30 days that have not been assessed yet go to Claude in
    batches (`summarize.py`). Each gets an importance and an architecture-relevance score from 1 to
-   5; a brief is written only for items at or above the thresholds (default 4 and 3).
+   5; a brief is written only for items at or above the thresholds (default 4 and 3). Architecture
+   Blog posts are scored on how substantial the guidance is, and are kept for 120 days.
 3. **Store** – kept items are written to `site/data/news.json`. The verdict for every item is kept
    in `state/assessments.json`, so an item is sent to the model again only if its text changes or
    the summariser changes.
 4. **Publish** – the frontend in `site/` is plain HTML, CSS and JavaScript that loads
-   `data/news.json`.
+   `data/news.json`. Architecture guidance is listed first. Items with architecture relevance 4
+   or more are shown by default; the rest sit behind the "smaller updates" filter.
 
 | Path                     | Committed | Contents                                         |
 | ------------------------ | --------- | ------------------------------------------------ |

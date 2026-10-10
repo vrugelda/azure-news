@@ -36,6 +36,7 @@ class FeedSource:
     key: str
     name: str
     url: str
+    max_age_days: int | None = None  # overrides Settings.max_age_days
 
 
 SOURCES = [
@@ -49,6 +50,8 @@ SOURCES = [
         "architecture",
         "Azure Architecture Blog",
         "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=AzureArchitectureBlog",
+        # Guidance stays useful for longer than a product update does.
+        max_age_days=120,
     ),
 ]
 

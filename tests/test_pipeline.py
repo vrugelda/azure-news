@@ -31,6 +31,7 @@ def test_keeps_only_major_recent_items(settings):
     assert item["headline"] == "Major: zone-redundant NAT Gateway"
     assert item["architecture_impact"] == "Why it matters."
     assert item["summarised_by"] == "stub"
+    assert item["tier"] == "major"
     assert item["link"] == "https://example.test/1"
     assert "text" not in item
     assert len(read_json(settings.assessments_path)) == 2
@@ -87,7 +88,21 @@ def test_heuristic_summarizer_rules():
 def test_switching_summarizer_reassesses(settings):
     ingest(settings, StubSummarizer())
     other = StubSummarizer()
-    other.name = "other"
+    other.name = other.fingerprint = "other"
     result = ingest(settings, other, now=NOW + timedelta(hours=6))
     assert result.assessed == 2
     assert read_json(settings.news_path)["items"][0]["summarised_by"] == "other"
+
+
+def test_tier_and_per_source_age_window(settings):
+    from dataclasses import replace
+
+    class Detail(StubSummarizer):
+        def assess(self, items):
+            return [a.model_copy(update={"architecture_relevance": 3}) for a in super().assess(items)]
+
+    guidance = replace(SOURCE, max_age_days=120)
+    result = run_ingest(settings, Detail(), sources=[guidance], get=FakeHttp(FEED), now=NOW)
+    items = read_json(settings.news_path)["items"]
+    assert result.total == 2  # the August item is inside the 120-day window
+    assert {item["tier"] for item in items} == {"detail"}

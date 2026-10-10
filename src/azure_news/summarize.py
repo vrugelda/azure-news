@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import re
@@ -43,39 +44,56 @@ class BatchAssessment(BaseModel):
 
 class Summarizer(Protocol):
     name: str
+    fingerprint: str  # changes whenever earlier verdicts should be redone
 
     def assess(self, items: list[FeedItem]) -> list[Assessment]:
         """Assess items. Items missing from the result are retried on the next run."""
 
 
 SYSTEM_PROMPT = """\
-You triage Azure news for a brief read by cloud and solution architects. They design and \
-run systems on Azure and want to hear only about changes that should alter a design \
-decision, a roadmap or a migration plan. The raw feeds are mostly small product updates; \
-your job is to separate the few that matter from the rest, and to explain those few in \
+You triage Azure news for a brief read by cloud and solution architects. They care about \
+the big picture: architecture guidance first, and beyond that only the platform changes \
+large enough to alter a design decision, a roadmap or a migration plan. They do not want \
+the steady stream of small product updates, and they would rather miss a minor item than \
+wade through many. Your job is to pick out the few items that matter and explain them in \
 terms an architect can act on.
 
 You receive a JSON array of feed items. Return one assessment per item, using each item's \
-id exactly as given.
+id exactly as given. There are two kinds of item, scored on the same two 1-5 scales.
 
-Score every item on two 1-5 scales.
+Architecture guidance: articles from the Azure Architecture Blog, and any other item \
+whose substance is a reference architecture, design pattern or Well-Architected guidance. \
+These have priority.
+importance, for guidance, is how substantial and reusable it is.
+5: a reference architecture or pattern for a common enterprise scenario, with concrete \
+design decisions and trade-offs.
+4: solid design guidance for a narrower but real scenario.
+3: mostly a product walkthrough, or a single industry or customer demo with little \
+transferable design content.
+2 or 1: announcements, recaps or promotion with no design content.
 
-importance: how big a change this is for Azure customers broadly.
-5: a new service or major capability reaching general availability; a retirement or \
-breaking change that forces migration for many customers; a platform-wide change to \
-pricing, SLAs, limits, identity, networking or resilience.
-4: a significant generally available feature in a widely used service; a retirement with \
-a deadline that affects a narrower group; an important new region or sovereignty option.
-3: a notable preview, or a useful but incremental generally available feature.
+Platform changes: everything else, meaning releases, previews, retirements, pricing, \
+regions and strategy.
+importance, for platform changes, is how big the change is for Azure customers broadly. \
+Be strict; most items are 3 or below.
+5: a new service or major capability reaching general availability; the retirement of a \
+widely used service or a breaking change that forces migration for many customers; a \
+platform-wide change to pricing, SLAs, limits, identity, networking or resilience.
+4: a generally available capability in a widely used service that opens a real new \
+design option; the retirement of a whole service or a widely used capability; an \
+important new region or sovereignty option.
+3: a notable preview; an incremental generally available feature; routine lifecycle \
+retirements such as a single VM series or SKU, a runtime or language version, an \
+extension, an image or a niche offering, even when they carry a deadline.
 2: a minor feature, one service becoming available in one more region, a version bump, \
-SDK or tooling updates.
+SDK or tooling updates, new model versions in a catalogue.
 1: marketing, analyst recognition, customer stories, event recaps.
 
-architecture_relevance: how much this affects how systems are designed, meaning topology, \
-resilience, security boundaries, data architecture, networking, identity, cost model or \
-operating model.
+architecture_relevance, for both kinds, is how much the item affects how systems are \
+designed: topology, resilience, security boundaries, data architecture, networking, \
+identity, cost model or operating model.
 5: changes a recommended pattern or forces a redesign.
-4: opens or closes a meaningful design option for the affected service.
+4: opens or closes a meaningful design option, or gives guidance that shapes a design.
 3: worth knowing when designing with the affected service.
 2: an operational detail with little design consequence.
 1: no design consequence.
@@ -85,16 +103,19 @@ Write a brief only when importance >= {min_importance} and architecture_relevanc
 scores.
 
 Brief fields:
-headline: a plain statement of what changed, under 90 characters, with no status prefix \
-such as "[Launched]".
-summary: two or three sentences on what changed and for whom.
-architecture_impact: one to three sentences on the design consequence: what an architect \
-would now do differently, which trade-off moved, or what has to be migrated and by when.
-status: ga, preview, retirement, announcement (strategy, pricing, regions and similar), \
-or guidance (reference architectures, patterns, Well-Architected material).
+headline: a plain statement of what changed or what the guidance covers, under 90 \
+characters, with no status prefix such as "[Launched]".
+summary: two or three sentences. For a platform change, what changed and for whom. For \
+guidance, the scenario and the architecture it proposes.
+architecture_impact: one to three sentences. For a platform change, the design \
+consequence: what an architect would now do differently, which trade-off moved, or what \
+has to be migrated and by when. For guidance, the key design decisions and trade-offs to \
+take away.
+status: guidance for architecture guidance; otherwise ga, preview, retirement, or \
+announcement (strategy, pricing, regions and similar).
 recommended_action: adopt (ready to use in new designs), evaluate (worth a look or a \
 proof of concept), plan-migration (existing systems must change), or be-aware.
-services: the Azure services affected, by their product names, at most five.
+services: the Azure services involved, by their product names, at most five.
 pillars: the Well-Architected pillars this most affects, at most three.
 
 Work only from the item text, which may be truncated. Do not add dates, limits, prices or \
@@ -115,6 +136,8 @@ class ClaudeSummarizer:
             min_importance=settings.min_importance,
             min_relevance=settings.min_architecture_relevance,
         )
+        prompt_hash = hashlib.sha1(self._system.encode("utf-8")).hexdigest()[:10]
+        self.fingerprint = f"{settings.model}:{prompt_hash}"
 
     def assess(self, items: list[FeedItem]) -> list[Assessment]:
         anthropic = self._anthropic
@@ -192,6 +215,9 @@ class HeuristicSummarizer:
 
     def __init__(self, settings: Settings) -> None:
         self._settings = settings
+        self.fingerprint = (
+            f"heuristic:{settings.min_importance}:{settings.min_architecture_relevance}"
+        )
 
     def assess(self, items: list[FeedItem]) -> list[Assessment]:
         return [self._assess(item) for item in items]

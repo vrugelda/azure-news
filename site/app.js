@@ -21,7 +21,7 @@ const PILLAR_LABELS = {
   performance: "Performance",
 };
 
-const state = { items: [], statuses: new Set(), pillars: new Set(), query: "" };
+const state = { items: [], statuses: new Set(), pillars: new Set(), query: "", details: false };
 
 const listEl = document.getElementById("list");
 const noticeEl = document.getElementById("notice");
@@ -59,7 +59,20 @@ function renderChips(containerId, labels, selected) {
   }
 }
 
+function renderDetailsToggle() {
+  const smaller = state.items.filter((item) => item.tier === "detail").length;
+  const chip = document.getElementById("details-toggle");
+  chip.hidden = smaller === 0;
+  chip.textContent = `Include ${smaller} smaller update${smaller === 1 ? "" : "s"}`;
+  chip.addEventListener("click", () => {
+    state.details = !state.details;
+    chip.setAttribute("aria-pressed", String(state.details));
+    renderList();
+  });
+}
+
 function matches(item) {
+  if (item.tier === "detail" && !state.details) return false;
   if (state.statuses.size && !state.statuses.has(item.status)) return false;
   if (state.pillars.size && !item.pillars.some((p) => state.pillars.has(p))) return false;
   if (!state.query) return true;
@@ -112,13 +125,18 @@ function renderCard(item) {
 
 function renderList() {
   const visible = state.items.filter(matches);
+  const guidance = visible.filter((item) => item.status === "guidance");
   const nodes = [];
+  if (guidance.length) {
+    nodes.push(el("h3", "section", "Architecture guidance"), ...guidance.map(renderCard));
+  }
   let month = "";
   for (const item of visible) {
+    if (item.status === "guidance") continue;
     const itemMonth = formatDate(item.published, { month: "long", year: "numeric" });
     if (itemMonth !== month) {
       month = itemMonth;
-      nodes.push(el("h3", "month", month));
+      nodes.push(el("h3", "section", `Platform changes · ${month}`));
     }
     nodes.push(renderCard(item));
   }
@@ -138,12 +156,14 @@ async function load() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     state.items = data.items;
-    const count = `${data.items.length} update${data.items.length === 1 ? "" : "s"}`;
+    const major = data.items.filter((item) => item.tier !== "detail").length;
+    const count = `${major} major item${major === 1 ? "" : "s"}`;
     metaEl.textContent = data.updated_at
       ? `${count} · refreshed ${new Date(data.updated_at).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`
       : count;
     renderChips("status-chips", STATUS_LABELS, state.statuses);
     renderChips("pillar-chips", PILLAR_LABELS, state.pillars);
+    renderDetailsToggle();
     renderList();
   } catch (error) {
     metaEl.textContent = "";

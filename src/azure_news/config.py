@@ -22,8 +22,12 @@ class Settings:
     model: str = "claude-opus-5-5"
     refusal_fallbacks: bool = True
     batch_size: int = 20
+    # Items at or above min_importance are published. Those that also reach
+    # major_architecture_relevance are shown by default; the rest (down to
+    # min_architecture_relevance) appear only behind the "smaller updates" filter.
     min_importance: int = 4
     min_architecture_relevance: int = 3
+    major_architecture_relevance: int = 4
 
     # Ingest
     max_age_days: int = 30  # ignore feed items older than this
@@ -56,6 +60,9 @@ class Settings:
             min_importance=_int("AZURE_NEWS_MIN_IMPORTANCE", cls.min_importance),
             min_architecture_relevance=_int(
                 "AZURE_NEWS_MIN_ARCHITECTURE_RELEVANCE", cls.min_architecture_relevance
+            ),
+            major_architecture_relevance=_int(
+                "AZURE_NEWS_MAJOR_ARCHITECTURE_RELEVANCE", cls.major_architecture_relevance
             ),
             max_age_days=_int("AZURE_NEWS_MAX_AGE_DAYS", cls.max_age_days),
             retention_days=_int("AZURE_NEWS_RETENTION_DAYS", cls.retention_days),

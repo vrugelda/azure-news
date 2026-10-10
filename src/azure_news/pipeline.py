@@ -34,11 +34,15 @@ def _is_kept(assessment: Assessment, settings: Settings) -> bool:
     )
 
 
-def _news_item(item: FeedItem, assessment: Assessment, summarised_by: str) -> dict:
+def _news_item(
+    item: FeedItem, assessment: Assessment, summarised_by: str, settings: Settings
+) -> dict:
     record = asdict(item)
     del record["text"]
+    major = assessment.architecture_relevance >= settings.major_architecture_relevance
     return {
         **record,
+        "tier": "major" if major else "detail",
         "importance": _clamp(assessment.importance),
         "architecture_relevance": _clamp(assessment.architecture_relevance),
         "summarised_by": summarised_by,
@@ -55,7 +59,6 @@ def run_ingest(
     now: datetime | None = None,
 ) -> IngestResult:
     now = now or datetime.now(timezone.utc)
-    feed_cutoff = (now - timedelta(days=settings.max_age_days)).isoformat()
     retention_cutoff = (now - timedelta(days=settings.retention_days)).isoformat()
 
     recent: dict[str, FeedItem] = {}
@@ -65,15 +68,17 @@ def run_ingest(
         except Exception:
             log.exception("Skipping %s: could not fetch or parse the feed", source.name)
             continue
-        recent.update((i.id, i) for i in items if i.published >= feed_cutoff)
+        max_age_days = source.max_age_days or settings.max_age_days
+        cutoff = (now - timedelta(days=max_age_days)).isoformat()
+        recent.update((i.id, i) for i in items if i.published >= cutoff)
 
     assessments = read_json(settings.assessments_path) or {}
-    # Re-assess when the content changed or a different summariser produced the verdict.
+    # Re-assess when the content changed or the summariser (model, prompt, thresholds) did.
     pending = [
         item
         for item in recent.values()
         if (assessments.get(item.id, {}).get("hash"), assessments.get(item.id, {}).get("by"))
-        != (item.content_hash, summarizer.name)
+        != (item.content_hash, summarizer.fingerprint)
     ]
     log.info("%d recent feed items, %d to assess", len(recent), len(pending))
 
@@ -90,7 +95,7 @@ def run_ingest(
         keep = _is_kept(assessment, settings)
         assessments[item.id] = {
             "hash": item.content_hash,
-            "by": summarizer.name,
+            "by": summarizer.fingerprint,
             "kept": keep,
             "importance": assessment.importance,
             "architecture_relevance": assessment.architecture_relevance,
@@ -98,7 +103,7 @@ def run_ingest(
             "assessed_at": now.isoformat(),
         }
         if keep:
-            stored[item.id] = _news_item(item, assessment, summarizer.name)
+            stored[item.id] = _news_item(item, assessment, summarizer.name, settings)
             kept += 1
         else:
             stored.pop(item.id, None)

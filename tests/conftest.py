@@ -41,6 +41,7 @@ class StubSummarizer:
     """Keeps items whose title contains "major"."""
 
     name = "stub"
+    fingerprint = "stub"
 
     def __init__(self) -> None:
         self.seen: list[list[str]] = []

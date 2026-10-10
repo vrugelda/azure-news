@@ -97,6 +97,8 @@ h1 {
 #search::placeholder { color: var(--muted); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip[hidden] { display: none; }
+.chip.toggle { justify-self: start; border-style: dashed; }
 
 .chip {
   padding: 4px 12px;
@@ -118,7 +120,7 @@ h1 {
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.month {
+.section {
   margin: 36px 0 12px;
   color: var(--muted);
   font-size: 0.75rem;
