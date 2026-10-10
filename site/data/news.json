@@ -500,7 +500,8 @@
    "pillars": [
     "security",
     "cost"
-   ]
+   ],
+   "tier": "detail"
   },
   {
    "id": "architecture-2cceb7d82bdd",
