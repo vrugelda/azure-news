@@ -42,6 +42,16 @@ jobs:
           git diff --cached --quiet || git commit -m "Refresh Azure news"
           git push
 
+      # Browsers cache Pages files for 10 minutes; a content hash in the link makes them
+      # fetch a changed stylesheet or script as soon as the page itself is reloaded.
+      - name: Version the asset links
+        run: |
+          for asset in styles.css app.js; do
+            hash=$(sha1sum "site/$asset" | cut -c1-10)
+            sed -i "s|\"$asset\"|\"$asset?v=$hash\"|" site/index.html
+          done
+          grep -c '?v=' site/index.html
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
