@@ -93,6 +93,7 @@ h1 em {
 }
 
 .lede { margin: 0; max-width: 56ch; color: var(--muted); }
+.hint { margin: 10px 0 0; color: var(--accent); font-size: 0.9rem; font-weight: 600; }
 .meta { margin: 20px 0 0; color: var(--muted); font-size: 0.82rem; }
 
 .controls {
