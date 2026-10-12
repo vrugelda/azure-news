@@ -1069,5 +1069,14 @@
   "architecture_relevance": 1,
   "reason": "A webinar promotion with no design content.",
   "assessed_at": "2026-10-10T20:53:41.620391+00:00"
+ },
+ "blog-396802b1e8b9": {
+  "hash": "05e23131525c81723fb43164f28850953f4a0e67",
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "The truncated text is a thought-leadership teaser on agent-first platforms, with no concrete reference architecture, design decisions or platform change visible to assess.",
+  "assessed_at": "2026-10-12T06:19:47.722755+00:00"
  }
 }
