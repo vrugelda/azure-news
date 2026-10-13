@@ -1078,5 +1078,23 @@
   "architecture_relevance": 2,
   "reason": "The truncated text is a thought-leadership teaser on agent-first platforms, with no concrete reference architecture, design decisions or platform change visible to assess.",
   "assessed_at": "2026-10-12T06:19:47.722755+00:00"
+ },
+ "blog-76c3c9923aa5": {
+  "hash": "fc074c0b2937025f139f7a0ef80ad5689acb7b6c",
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A hardware deep dive into Microsoft's Maia 300 inference accelerator; the text gives no customer-facing availability, SKU or design change, so it has little bearing on solution design.",
+  "assessed_at": "2026-10-13T14:12:25.578897+00:00"
+ },
+ "blog-8d03f19e4442": {
+  "hash": "ca3b84d4a386cb3c1ac2a2b06ee6f1833b09b67b",
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "Analyst recognition with no product, guidance or design content.",
+  "assessed_at": "2026-10-13T14:12:25.578897+00:00"
  }
 }
