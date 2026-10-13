@@ -21,6 +21,8 @@ def main() -> None:
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    # The Azure SDK logs the headers of every request and response at INFO.
+    logging.getLogger("azure").setLevel(logging.WARNING)
     settings = Settings.from_env()
     if args.command == "notify":
         print(f"{run_notify(settings)} items emailed")
