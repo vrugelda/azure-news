@@ -17,6 +17,35 @@ data to the repository, and deploys the `site/` folder.
 To change any setting from `.env.example` in the workflow, add it under `env:` in the
 *Fetch and summarise* step of `.github/workflows/publish.yml`.
 
+## Email notification
+
+Optional. After each ingest, `azure-news notify` sends one email with the items that were
+published for the first time, through [Azure Communication Services Email][acs]. Nothing is sent
+when there is nothing new.
+
+1. In Azure, create an *Email Communication Service* with a domain (the Azure-managed
+   `azurecomm.net` domain is enough to start), create a *Communication Service*, and connect
+   the domain to it under **Email → Domains**.
+2. In the repository, under **Settings → Secrets and variables → Actions**, add:
+
+   | Kind     | Name                               | Value                                               |
+   | -------- | ---------------------------------- | --------------------------------------------------- |
+   | Secret   | `AZURE_NEWS_ACS_CONNECTION_STRING` | Communication Service → **Keys** → connection string |
+   | Secret   | `AZURE_NEWS_NOTIFY_TO`             | Recipients, comma-separated                         |
+   | Variable | `AZURE_NEWS_NOTIFY_FROM`           | Sender, e.g. `DoNotReply@<guid>.azurecomm.net`      |
+   | Variable | `AZURE_NEWS_NOTIFY_TIER`           | Optional: `all` to include the smaller updates      |
+   | Variable | `AZURE_NEWS_SITE_URL`              | Optional: the Pages URL, linked from the email      |
+
+All recipients are on the `To` line of the same message and can see each other's addresses.
+
+Items waiting to be emailed are listed in `state/notifications.json`. If sending fails, the site
+is still published, the workflow run is marked failed, and the items go out with the next run.
+While notification is not configured the queue is emptied on every run, so turning it on later
+does not send a backlog. Items that are only re-assessed (after a model or prompt change) are
+not emailed again.
+
+[acs]: https://learn.microsoft.com/azure/communication-services/concepts/email/email-overview
+
 ## Run it locally
 
 Requires [uv](https://docs.astral.sh/uv/) (it fetches Python itself).
@@ -41,7 +70,8 @@ architecture impact. Don't commit the result: delete `site/data` and `state` aft
 3. **Store** – kept items are written to `site/data/news.json`. The verdict for every item is kept
    in `state/assessments.json`, so an item is sent to the model again only if its text changes or
    the summariser changes.
-4. **Publish** – the frontend in `site/` is plain HTML, CSS and JavaScript that loads
+4. **Notify** – items published for the first time are emailed (`notify.py`), if configured.
+5. **Publish** – the frontend in `site/` is plain HTML, CSS and JavaScript that loads
    `data/news.json`. Architecture guidance is listed first. Items with architecture relevance 4
    or more are shown by default; the rest sit behind the "smaller updates" filter.
 
@@ -49,6 +79,7 @@ architecture impact. Don't commit the result: delete `site/data` and `state` aft
 | ------------------------ | --------- | ------------------------------------------------ |
 | `site/data/news.json`    | yes       | Published items, newest first                    |
 | `state/assessments.json` | yes       | Score and verdict per feed item already assessed |
+| `state/notifications.json` | yes     | Ids of published items not emailed yet           |
 | `state/feeds/*.json`     | no        | Local cache of feed bodies, to avoid refetching  |
 
 ## Notes

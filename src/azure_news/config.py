@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 
@@ -34,6 +34,14 @@ class Settings:
     retention_days: int = 180  # drop published items older than this
     feed_ttl_minutes: int = 30  # reuse a cached feed body within this window
 
+    # Email notification through Azure Communication Services. Off unless all three of
+    # the connection string, sender and recipients are set.
+    acs_connection_string: str = field(default="", repr=False)
+    notify_from: str = ""  # a sender address on a domain linked to the ACS resource
+    notify_to: tuple[str, ...] = ()
+    notify_tier: str = "major"  # "major", or "all" to include the smaller updates
+    site_url: str = ""  # linked from the email when set
+
     @property
     def news_path(self) -> Path:
         """The published items, read by the frontend."""
@@ -43,6 +51,11 @@ class Settings:
     def assessments_path(self) -> Path:
         """Verdict per feed item already assessed, so nothing is sent to the model twice."""
         return Path(self.state_dir) / "assessments.json"
+
+    @property
+    def notifications_path(self) -> Path:
+        """Ids of published items that have not been emailed yet."""
+        return Path(self.state_dir) / "notifications.json"
 
     def feed_cache_path(self, key: str) -> Path:
         return Path(self.state_dir) / "feeds" / f"{key}.json"
@@ -67,4 +80,13 @@ class Settings:
             max_age_days=_int("AZURE_NEWS_MAX_AGE_DAYS", cls.max_age_days),
             retention_days=_int("AZURE_NEWS_RETENTION_DAYS", cls.retention_days),
             feed_ttl_minutes=_int("AZURE_NEWS_FEED_TTL_MINUTES", cls.feed_ttl_minutes),
+            acs_connection_string=env("AZURE_NEWS_ACS_CONNECTION_STRING") or "",
+            notify_from=(env("AZURE_NEWS_NOTIFY_FROM") or "").strip(),
+            notify_to=tuple(
+                address.strip()
+                for address in (env("AZURE_NEWS_NOTIFY_TO") or "").split(",")
+                if address.strip()
+            ),
+            notify_tier=(env("AZURE_NEWS_NOTIFY_TIER") or cls.notify_tier).lower(),
+            site_url=(env("AZURE_NEWS_SITE_URL") or "").strip(),
         )

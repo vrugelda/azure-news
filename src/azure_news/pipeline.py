@@ -20,6 +20,7 @@ class IngestResult:
     assessed: int
     kept: int
     total: int
+    pending: int  # published items not emailed yet
 
 
 def _clamp(score: int) -> int:
@@ -84,6 +85,8 @@ def run_ingest(
 
     document = read_json(settings.news_path) or {}
     stored = {item["id"]: item for item in document.get("items", [])}
+    # Items published for the first time wait here until `azure-news notify` emails them.
+    unsent = list((read_json(settings.notifications_path) or {}).get("pending", []))
 
     kept = 0
     results = summarizer.assess(pending) if pending else []
@@ -103,6 +106,9 @@ def run_ingest(
             "assessed_at": now.isoformat(),
         }
         if keep:
+            # A re-assessment of an item that is already published is not news.
+            if item.id not in stored and item.id not in unsent:
+                unsent.append(item.id)
             stored[item.id] = _news_item(item, assessment, summarizer.name, settings)
             kept += 1
         else:
@@ -117,8 +123,14 @@ def run_ingest(
         id_: entry for id_, entry in assessments.items() if entry["assessed_at"] >= retention_cutoff
     }
 
+    published = {item["id"] for item in items}
+    unsent = [id_ for id_ in unsent if id_ in published]
+
     write_json(settings.assessments_path, assessments)
+    write_json(settings.notifications_path, {"pending": unsent})
     write_json(settings.news_path, {"updated_at": now.isoformat(), "items": items})
-    result = IngestResult(fetched=len(recent), assessed=len(results), kept=kept, total=len(items))
+    result = IngestResult(
+        fetched=len(recent), assessed=len(results), kept=kept, total=len(items), pending=len(unsent)
+    )
     log.info("Ingest finished: %s", result)
     return result

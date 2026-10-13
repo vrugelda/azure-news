@@ -33,12 +33,27 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run --no-dev azure-news ingest
 
+      # Runs before the commit so that the emptied queue is committed with the data. A failed
+      # send leaves the queue in place for the next run and must not stop the publish, so
+      # the failure is reported by the last step instead.
+      - name: Email new items
+        id: notify
+        continue-on-error: true
+        timeout-minutes: 5
+        env:
+          AZURE_NEWS_ACS_CONNECTION_STRING: ${{ secrets.AZURE_NEWS_ACS_CONNECTION_STRING }}
+          AZURE_NEWS_NOTIFY_TO: ${{ secrets.AZURE_NEWS_NOTIFY_TO }}
+          AZURE_NEWS_NOTIFY_FROM: ${{ vars.AZURE_NEWS_NOTIFY_FROM }}
+          AZURE_NEWS_NOTIFY_TIER: ${{ vars.AZURE_NEWS_NOTIFY_TIER }}
+          AZURE_NEWS_SITE_URL: ${{ vars.AZURE_NEWS_SITE_URL }}
+        run: uv run --no-dev azure-news notify
+
       # Pushes made with GITHUB_TOKEN do not start another workflow run.
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/news.json state/assessments.json
+          git add site/data/news.json state/assessments.json state/notifications.json
           git diff --cached --quiet || git commit -m "Refresh Azure news"
           git push
 
@@ -60,3 +75,7 @@ jobs:
 
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Fail the run if the email was not sent
+        if: steps.notify.outcome == 'failure'
+        run: exit 1
