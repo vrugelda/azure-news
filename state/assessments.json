@@ -1114,5 +1114,23 @@
   "architecture_relevance": 1,
   "reason": "This is a strategy and marketing piece on AI infrastructure and industry collaboration with no concrete platform change or design content.",
   "assessed_at": "2026-10-14T17:11:12.071845+00:00"
+ },
+ "updates-8ae6d9446f68": {
+  "hash": "e619688772cf42c1f311ecbf9dbebf52e611c3cc",
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Hardware audit logging for Cloud HSM is a minor compliance and monitoring feature in a niche service with little design consequence.",
+  "assessed_at": "2026-10-14T21:41:52.140617+00:00"
+ },
+ "updates-cb99c07c7e62": {
+  "hash": "85e9375f079cceffba5446c2015b3b72fe9c48c0",
+  "by": "claude-opus-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "This is an incremental GA that lets Arc-managed VMware and physical Windows servers be protected by Azure Site Recovery, which is useful for hybrid DR designs but not a new design option at platform scale.",
+  "assessed_at": "2026-10-14T21:41:52.140617+00:00"
  }
 }
