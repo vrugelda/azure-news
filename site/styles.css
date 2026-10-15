@@ -351,8 +351,8 @@ footer p { margin: 0; max-width: 64ch; }
 }
 
 @media (max-width: 540px) {
-  .masthead { padding-top: 44px; }
-  /* Small enough to sit in the padding above the heading (8 + 28 < 44). */
-  .masthead::before { top: 8px; width: 28px; height: 28px; }
+  .masthead { padding-top: 100px; }
+  /* Sits in the padding above the heading (8 + 84 < 100). */
+  .masthead::before { top: 8px; width: 84px; height: 84px; }
   .card { padding: 18px; }
 }
