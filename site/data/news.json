@@ -1,6 +1,39 @@
 {
- "updated_at": "2026-10-15T12:31:43.098528+00:00",
+ "updated_at": "2026-10-15T14:16:02.879753+00:00",
  "items": [
+  {
+   "id": "updates-cb99c07c7e62",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Site Recovery Support for Azure ARC-enabled Windows VMWare/Physical servers",
+   "link": "https://azure.microsoft.com/updates?id=576214",
+   "published": "2026-10-14T19:13:31+00:00",
+   "categories": [
+    "Launched",
+    "Management and governance",
+    "Migration",
+    "Azure Site Recovery",
+    "Management",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Site Recovery now protects Arc-enabled Windows VMware VMs and physical servers",
+   "summary": "Azure Site Recovery now supports disaster recovery for Azure Arc-enabled Windows VMware virtual machines and on-premises physical servers. Customers can keep using Azure Arc for governance and inventory while protecting these machines with ASR.",
+   "architecture_impact": "Hybrid designs can use one DR service for Arc-managed Windows VMs and physical servers instead of a separate tool, which changes the DR topology for those workloads. Check the source for supported OS versions, replication targets and any limits, which the item text does not state.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Site Recovery",
+    "Azure Arc"
+   ],
+   "pillars": [
+    "reliability",
+    "operations"
+   ]
+  },
   {
    "id": "updates-10b7a22d550b",
    "source": "updates",
@@ -20,20 +53,19 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "AKS-managed StandardV2 NAT Gateway is now GA and the default for managed NAT egress",
-   "summary": "AKS can now provision and manage a StandardV2 NAT Gateway for clusters that use an AKS-managed virtual network. StandardV2 becomes the default managed NAT Gateway SKU for new clusters in supported regions when the managedNATGateway outbound type is used.",
-   "architecture_impact": "New AKS clusters that use managed NAT egress get the StandardV2 SKU by default, so revisit egress topology and resilience assumptions against the current managed NAT pattern. The differences from Standard NAT Gateway, such as zone behaviour, throughput and pricing, and the list of supported regions are not in the item and need checking at the source.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "AKS provisions StandardV2 NAT Gateway by default for managed outbound",
+   "summary": "AKS now provisions and manages a StandardV2 NAT Gateway for clusters using an AKS-managed virtual network with the managedNATGateway outbound type. StandardV2 is the default managed NAT Gateway SKU for new clusters in supported regions.",
+   "architecture_impact": "New AKS clusters get StandardV2 NAT Gateway for outbound connectivity by default, so egress design, IP planning and SNAT assumptions should be revisited for new deployments. Existing clusters and the regions supported are not detailed in the text and need checking at the source.",
    "status": "ga",
-   "recommended_action": "evaluate",
+   "recommended_action": "adopt",
    "services": [
     "Azure Kubernetes Service (AKS)",
     "Azure NAT Gateway"
    ],
    "pillars": [
     "reliability",
-    "performance",
-    "cost"
+    "performance"
    ]
   },
   {
@@ -53,18 +85,17 @@
    "tier": "detail",
    "importance": 4,
    "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Microsoft Dev Box will be retired on September 18, 2028",
-   "summary": "Microsoft Dev Box will retire on September 18, 2028 and is currently in maintenance mode. The closing-down process begins September 14, 2026, and after retirement the service will no longer be available.",
-   "architecture_impact": "Organisations using Dev Box for managed developer workstations need to choose an alternative platform and plan the migration well before the retirement date. Stop designing new solutions on Dev Box. The recommended alternative is not in the item and needs checking at the source.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Microsoft Dev Box retires September 18, 2028; closing down starts September 2026",
+   "summary": "Microsoft Dev Box will retire on September 18, 2028, and the closing-down process begins September 14, 2026. After retirement the service will no longer be available, and it is currently in maintenance mode.",
+   "architecture_impact": "Teams relying on Dev Box for developer workstations need to plan a replacement well before the retirement date. The replacement option is not named in the item text, so check the source for the recommended alternative and migration guidance.",
    "status": "retirement",
    "recommended_action": "plan-migration",
    "services": [
     "Microsoft Dev Box"
    ],
    "pillars": [
-    "operations",
-    "security"
+    "operations"
    ]
   },
   {
@@ -83,51 +114,48 @@
    "tier": "detail",
    "importance": 4,
    "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Azure Deployment Environments will be retired on February 22, 2027",
-   "summary": "Azure Deployment Environments will retire on February 22, 2027, with the closing-down process starting September 14, 2026. After retirement the service will no longer be available.",
-   "architecture_impact": "Platform engineering designs that rely on Deployment Environments for self-service, template-based environment provisioning must move to another mechanism, such as pipeline-driven IaC, within a short window. The recommended migration path is not in the item and needs checking at the source.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Deployment Environments retires February 22, 2027; closing down started",
+   "summary": "Azure Deployment Environments will retire on February 22, 2027, and its closing-down process begins September 14, 2026. After retirement the service will no longer be available.",
+   "architecture_impact": "Self-service environment provisioning pipelines built on Azure Deployment Environments will need an alternative provisioning approach before February 2027. The replacement is not named in the item text, so check the source for migration guidance.",
    "status": "retirement",
    "recommended_action": "plan-migration",
    "services": [
     "Azure Deployment Environments"
    ],
    "pillars": [
-    "operations",
-    "cost"
+    "operations"
    ]
   },
   {
-   "id": "updates-ee11084be3e7",
+   "id": "updates-84ca93281282",
    "source": "updates",
    "source_name": "Azure Updates",
-   "title": "Retirement: Azure App Service on Azure Stack Hub",
-   "link": "https://azure.microsoft.com/updates?id=568178",
-   "published": "2026-10-06T18:24:43+00:00",
+   "title": "[Launched] Generally Available: SQL Server on Azure Virtual Machines in Azure Bleu",
+   "link": "https://azure.microsoft.com/updates?id=571499",
+   "published": "2026-10-05T18:12:09+00:00",
    "categories": [
+    "Launched",
     "Compute",
-    "Mobile",
-    "Web",
-    "Hybrid + multicloud",
-    "App Service",
-    "Azure Stack Hub",
-    "Retirements"
+    "Databases",
+    "SQL Server on Azure Virtual Machines",
+    "Feature"
    ],
    "tier": "detail",
    "importance": 4,
    "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Azure App Service on Azure Stack Hub will be retired on September 30, 2029",
-   "summary": "Azure App Service on Azure Stack Hub retires on September 30, 2029. From September 30, 2026, new installations are no longer supported and no new releases, features or enhancements will ship.",
-   "architecture_impact": "Hybrid and edge designs that host web apps on Stack Hub App Service need a replacement hosting model, such as containers on Kubernetes, and should not be extended. The supported migration targets are not in the item and need checking at the source.",
-   "status": "retirement",
-   "recommended_action": "plan-migration",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "SQL Server on Azure Virtual Machines now available in Azure Bleu (France)",
+   "summary": "SQL Server on Azure Virtual Machines is now generally available in Azure Bleu, France's sovereign cloud environment. It lets customers deploy and manage SQL Server workloads while meeting data residency and sovereignty requirements.",
+   "architecture_impact": "Workloads with French sovereignty or residency requirements gain a SQL Server IaaS option within Azure Bleu rather than a public region. Confirm which other services are available in Azure Bleu and any operational constraints, since the item text does not state them.",
+   "status": "ga",
+   "recommended_action": "evaluate",
    "services": [
-    "App Service",
-    "Azure Stack Hub"
+    "SQL Server on Azure Virtual Machines",
+    "Azure Bleu"
    ],
    "pillars": [
-    "operations",
+    "security",
     "reliability"
    ]
   },
@@ -142,23 +170,21 @@
    "tier": "major",
    "importance": 5,
    "architecture_relevance": 5,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Federated agent factory for building and governing AI agents across tenants",
-   "summary": "The guidance addresses enterprises operating hundreds of AI agents across subsidiaries with separate Microsoft Entra tenants, data and regulatory obligations. It proposes a federated model: Agent 365 provides central inventory and governance, while agent identities, data, detailed telemetry and runtime enforcement stay local to each tenant. It relies partly on preview capabilities, including Entra Tenant Governance, multitenant agent management and the API Management AI Gateway tier.",
-   "architecture_impact": "Centralize standards and oversight, not tenant data, so a central failure cannot become a cross-subsidiary leak. Give every agent its own Entra Agent ID, published from multitenant blueprints as tenant-local identities. Expose narrow, versioned tools through governed APIs or MCP servers, and enforce policy at runtime with evaluation and observability treated as core operations; the reliance on preview components and their regional availability needs checking.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Governing AI agents across a multitenant organization with a federated agent factory",
+   "summary": "This reference architecture centralizes agent governance standards and oversight while keeping agent identities, business data and runtime enforcement in each owning tenant. It targets enterprises with subsidiaries that need common controls without merging tenant boundaries.",
+   "architecture_impact": "Use one multitenant identity blueprint that creates tenant-local agent identities, expose narrow governed tools rather than broad credentials, and enforce policy at runtime rather than only at design review. Some capabilities are in preview, so confirm their terms and regional availability before depending on them.",
    "status": "guidance",
    "recommended_action": "evaluate",
    "services": [
     "Microsoft Agent 365",
-    "Microsoft Entra Agent ID",
+    "Microsoft Entra",
     "Azure API Management",
-    "Microsoft Purview",
-    "Microsoft Foundry"
+    "Microsoft Purview"
    ],
    "pillars": [
     "security",
-    "operations",
-    "reliability"
+    "operations"
    ]
   },
   {
@@ -176,19 +202,51 @@
    "tier": "detail",
    "importance": 4,
    "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Dv3, Dsv3, Ev3 and Esv3 VM series to retire on November 15, 2029",
-   "summary": "Under the Azure VM lifecycle policy, Microsoft is retiring the Dv3, Dsv3, Ev3 and Esv3 VM series in public cloud regions, and they now enter the End-of-Life stage. Retirement is scheduled for November 15, 2029, and affects any workload still running on these widely used sizes.",
-   "architecture_impact": "Inventory your Dv3/Ev3-family VMs, scale sets and IaC templates, and plan to move them to newer series before November 15, 2029; recommended target series and any purchase restrictions need checking at the source. New designs and reservation renewals should avoid these sizes.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Dv3, Dsv3, Ev3 and Esv3 VM series retire on November 15, 2029",
+   "summary": "Microsoft is retiring the Dv3, Dsv3, Ev3 and Esv3 Azure VM series in public cloud regions, which then enter End-of-Life. Workloads on these general-purpose and memory-optimized series need to move to supported successors before the date.",
+   "architecture_impact": "Include these series in migration plans and choose successor sizes in new designs rather than these series. Check the source for the recommended replacement series and any transition guidance, as the text does not name them.",
    "status": "retirement",
    "recommended_action": "plan-migration",
    "services": [
-    "Azure Virtual Machines",
-    "Virtual Machine Scale Sets"
+    "Azure Virtual Machines"
    ],
    "pillars": [
-    "reliability",
-    "cost",
+    "operations",
+    "cost"
+   ]
+  },
+  {
+   "id": "updates-9bc24a63e457",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Database for PostgreSQL Flexible Server supports cross-tenant customer-managed keys (CMK)",
+   "link": "https://azure.microsoft.com/updates?id=571783",
+   "published": "2026-09-29T17:57:36+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Hybrid + multicloud",
+    "Azure Database for PostgreSQL",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "PostgreSQL Flexible Server supports cross-tenant customer-managed keys",
+   "summary": "Azure Database for PostgreSQL Flexible Server can now encrypt data with keys held in Azure Key Vault or Azure Managed HSM in a different Microsoft Entra tenant. This lets key custody sit with a separate tenant or organization from the database.",
+   "architecture_impact": "Key ownership can be separated from the database tenant, which helps with split-custody and regulatory designs but adds cross-tenant trust and key-access dependencies to plan. Check the source for supported regions, configuration steps and any limitations, as they are not stated in the text.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Database for PostgreSQL",
+    "Azure Key Vault",
+    "Azure Managed HSM",
+    "Microsoft Entra ID"
+   ],
+   "pillars": [
+    "security",
     "operations"
    ]
   },
@@ -206,21 +264,49 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "SQL Server on Azure Local Disconnected Operations (ALDO) is generally available",
-   "summary": "SQL Server support now extends to Azure Local running in disconnected operations (ALDO). This targets highly regulated, secure, remote or air-gapped environments where continuous connectivity to Azure is not possible.",
-   "architecture_impact": "Sovereign, defence and edge designs can now standardize on Azure Local with SQL Server without depending on a connection to Azure. Feature parity, licensing and management differences from connected deployments need checking at the source.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "SQL Server on Azure Local disconnected (ALDO) reaches general availability",
+   "summary": "ALDO extends SQL Server support to environments that cannot maintain continuous connectivity to Azure. It targets highly regulated, secure, remote or air-gapped sites where internet access is restricted.",
+   "architecture_impact": "Disconnected sites can now run supported SQL Server without a constant Azure link, which changes management, licensing and patching assumptions for those sites. Check the source for the operational limits and licensing terms that apply offline.",
    "status": "ga",
    "recommended_action": "evaluate",
    "services": [
-    "Azure Local",
     "SQL Server",
-    "Azure Arc"
+    "Azure Local"
    ],
    "pillars": [
     "security",
-    "reliability",
     "operations"
+   ]
+  },
+  {
+   "id": "updates-94e172b226d4",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: SQL Server support on Azure Local connected mode",
+   "link": "https://azure.microsoft.com/updates?id=571841",
+   "published": "2026-09-29T17:50:20+00:00",
+   "categories": [
+    "Launched",
+    "Feature"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "SQL Server on Azure Local connected mode reaches general availability",
+   "summary": "SQL Server workloads can run on Azure Local while using Azure services for management, governance, monitoring, security and licensing. Connectivity to Azure is established through Azure Arc.",
+   "architecture_impact": "Hybrid SQL estates on Azure Local can be governed centrally through Azure Arc, which affects operating model and licensing decisions for on-premises SQL. Confirm the connectivity requirements and supported configurations at the source.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "SQL Server",
+    "Azure Local",
+    "Azure Arc"
+   ],
+   "pillars": [
+    "operations",
+    "security"
    ]
   },
   {
@@ -233,13 +319,13 @@
    "categories": [
     "Retirements"
    ],
-   "tier": "detail",
+   "tier": "major",
    "importance": 4,
-   "architecture_relevance": 3,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Azure Arc-enabled SCVMM to be retired on September 30, 2029",
-   "summary": "Microsoft is retiring Azure Arc-enabled System Center Virtual Machine Manager on September 30, 2029. Customers using it to project and manage SCVMM-hosted VMs through Azure must transition to alternative solutions.",
-   "architecture_impact": "Hybrid management designs that rely on Arc-enabled SCVMM for Azure-based governance and self-service of on-premises VMs need a replacement path before 2029. Check the source for Microsoft's recommended alternatives, such as per-machine Arc onboarding or Azure Local.",
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Arc-enabled SCVMM retires on September 30, 2029",
+   "summary": "Microsoft is retiring Azure Arc-enabled System Center Virtual Machine Manager in September 2029. Customers using it for Azure services and management must transition to alternative solutions.",
+   "architecture_impact": "Hybrid designs that rely on Arc-enabled SCVMM for management need a replacement plan well before 2029. The item text is truncated, so the recommended alternatives and migration path need checking at the source.",
    "status": "retirement",
    "recommended_action": "plan-migration",
    "services": [
@@ -247,8 +333,7 @@
     "System Center Virtual Machine Manager"
    ],
    "pillars": [
-    "operations",
-    "reliability"
+    "operations"
    ]
   },
   {
@@ -266,19 +351,48 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Azure IoT Central will be retired on September 20, 2029",
-   "summary": "Azure IoT Central, the managed IoT application platform, will be retired on September 20, 2029. Customers can keep using it until then but are advised to start transition planning early, as Microsoft refocuses its future IoT investment.",
-   "architecture_impact": "Solutions built on IoT Central will need to move to a composed architecture, for example one built on IoT Hub with separate data and visualisation services, which brings more design and operations responsibility. Avoid IoT Central for new designs, and check the source for the recommended migration path.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure IoT Central retires on September 20, 2029",
+   "summary": "Azure IoT Central will be retired on September 20, 2029, and can be used until that date. Microsoft is shifting future investment toward other Azure IoT offerings.",
+   "architecture_impact": "Solutions built on IoT Central need a transition plan for device onboarding, device management and data flows before the retirement date. The replacement services are not named in the truncated text, so confirm the migration path at the source.",
    "status": "retirement",
    "recommended_action": "plan-migration",
    "services": [
-    "Azure IoT Central",
-    "Azure IoT Hub"
+    "Azure IoT Central"
    ],
    "pillars": [
     "operations",
     "reliability"
+   ]
+  },
+  {
+   "id": "updates-9a1273b54207",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Support for large volume breakthrough mode",
+   "link": "https://azure.microsoft.com/updates?id=573027",
+   "published": "2026-09-29T17:12:40+00:00",
+   "categories": [
+    "Launched",
+    "Storage",
+    "Azure NetApp Files",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Large volume breakthrough mode reaches general availability in Azure NetApp Files",
+   "summary": "Breakthrough mode supports Azure NetApp Files large volumes up to 2 PiB with throughput up to 80 GiBps, depending on workload characteristics. It is aimed at demanding HPC and EDA workloads.",
+   "architecture_impact": "Architects can consider consolidating very large datasets onto single volumes instead of sharding across many, provided the workload fits the throughput profile. Validate the achievable performance against the actual workload, as the figures depend on workload characteristics.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure NetApp Files"
+   ],
+   "pillars": [
+    "performance",
+    "cost"
    ]
   },
   {
@@ -296,21 +410,19 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "SQL Server on Azure Local reaches general availability",
-   "summary": "SQL Server can now run on Azure Local as a generally available offering. It targets customers who want to modernize while keeping control over infrastructure, connectivity and data placement. The item text is brief, so supported features, licensing and management integration need checking at the source.",
-   "architecture_impact": "It adds a supported option for hosting relational data on-premises or at the edge under Azure management, relevant where residency, latency or disconnected-operation requirements rule out Azure SQL. Architects should compare HA, backup and management capabilities against Azure SQL Managed Instance and Azure Arc-enabled SQL Server before choosing a hybrid data platform.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "SQL Server on Azure Local is generally available",
+   "summary": "SQL Server on Azure Local is now generally available. It lets customers modernize data workloads while keeping control of infrastructure, connectivity and where data is placed.",
+   "architecture_impact": "Data-residency or latency-constrained workloads can stay on-premises under Azure management, which changes the hybrid placement decision for SQL estates. Check supported configurations, licensing and connectivity requirements at the source before committing a design.",
    "status": "ga",
    "recommended_action": "evaluate",
    "services": [
     "SQL Server",
-    "Azure Local",
-    "Azure Arc"
+    "Azure Local"
    ],
    "pillars": [
-    "reliability",
-    "security",
-    "operations"
+    "operations",
+    "reliability"
    ]
   },
   {
@@ -330,19 +442,75 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Vector search and vector indexes are generally available in Azure SQL Database",
-   "summary": "Azure SQL Database now offers GA approximate nearest neighbor vector search through CREATE VECTOR INDEX and VECTOR_SEARCH in T-SQL. It targets AI scenarios such as semantic search and RAG over data already held in Azure SQL.",
-   "architecture_impact": "Architects can design RAG and semantic search directly on Azure SQL instead of syncing data to a separate vector store, which reduces data movement and keeps one security boundary. Weigh this against dedicated search services for scale and features, and check the source for index limits and performance characteristics.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Vector search and vector indexes generally available in Azure SQL Database",
+   "summary": "Azure SQL Database now offers generally available vector indexes and approximate nearest neighbour search using T-SQL. This supports AI scenarios such as semantic search directly in the database.",
+   "architecture_impact": "Teams can keep embedding search in the operational database rather than adding a separate vector store, which simplifies data architecture and reduces data movement. Check the source for index limits and performance characteristics before committing.",
    "status": "ga",
-   "recommended_action": "adopt",
+   "recommended_action": "evaluate",
    "services": [
     "Azure SQL Database"
    ],
    "pillars": [
     "performance",
-    "cost",
-    "security"
+    "operations"
+   ]
+  },
+  {
+   "id": "updates-4fb5733d701d",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Luxembourg - Azure Extended Zones",
+   "link": "https://azure.microsoft.com/updates?id=572968",
+   "published": "2026-09-28T17:08:48+00:00",
+   "categories": [
+    "Launched",
+    "Regions & Datacenters"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Luxembourg Azure Extended Zone is now generally available",
+   "summary": "The Luxembourg Azure Extended Zone has reached general availability. Extended Zones are small-footprint extensions of Azure placed in metro areas, industry centers or specific jurisdictions for low-latency and data-residency workloads.",
+   "architecture_impact": "Architects with Luxembourg residency or low-latency needs can now consider placing workloads in an Extended Zone rather than a full region. Check at the source which services are available there and what the capacity and resilience limits are before committing.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Extended Zones"
+   ],
+   "pillars": [
+    "security",
+    "performance"
+   ]
+  },
+  {
+   "id": "architecture-0eb95d6833a1",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "From Camera to Canvas: How Multimodal GenAI Automates Shop Floor Instructions",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/from-camera-to-canvas-how-multimodal-genai-automates-shop-floor/ba-p/4557740",
+   "published": "2026-09-28T16:41:45+00:00",
+   "categories": [],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Multimodal GenAI pipeline that turns assembly videos into illustrated work instructions",
+   "summary": "This architecture converts shop-floor assembly videos into timestamped transcripts, structured procedures and illustrated Word and PDF documents. Human approval gates at transcript and procedure stages control quality before documents are produced.",
+   "architecture_impact": "The design uses queue-driven asynchronous processing with retries and human approval as a hard gate, and it recommends automated evaluations for groundedness and safety coverage. Trade-offs include model cost and review effort, and the pattern is reusable for other video-to-document workflows.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Functions",
+    "Azure OpenAI",
+    "Azure Cosmos DB",
+    "Azure Blob Storage",
+    "Azure Queue Storage"
+   ],
+   "pillars": [
+    "reliability",
+    "operations"
    ]
   },
   {
@@ -361,18 +529,82 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Several standalone Azure Communication Services offerings retire on 30 September 2028",
-   "summary": "Microsoft will retire several standalone Azure Communication Services offerings on 30 September 2028, after which they will no longer be available. The feed text is truncated, so the exact list of affected services must be checked at the source.",
-   "architecture_impact": "Identify any workloads built on the affected ACS offerings and choose a replacement path well before the 2028 deadline. Confirm at the source which services are affected and what Microsoft recommends instead.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Standalone Azure Communication Services offerings retire September 30, 2028",
+   "summary": "Microsoft will retire several standalone Azure Communication Services offerings on September 30, 2028, after which they will no longer be available. The item text is truncated, so the full list of affected services needs checking at the source.",
+   "architecture_impact": "Any design that depends on the affected standalone ACS services will need to move to a successor offering before the retirement date. Confirm the replacement path and plan the migration against the 2028 deadline.",
    "status": "retirement",
    "recommended_action": "plan-migration",
    "services": [
     "Azure Communication Services"
    ],
    "pillars": [
+    "operations",
+    "reliability"
+   ]
+  },
+  {
+   "id": "blog-eff40a3b86f2",
+   "source": "blog",
+   "source_name": "Azure Blog",
+   "title": "Your architecture diagram is not your resilience",
+   "link": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
+   "published": "2026-09-23T16:00:00+00:00",
+   "categories": [
+    "Analytics",
+    "DevOps",
+    "Management and governance",
+    "Advancing reliability",
+    "Azure Essentials",
+    "Azure Well-Architected Framework"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Resilience must be maintained over time, not set up once",
+   "summary": "This Azure Well-Architected guidance argues that resilience is a continuously maintained property rather than a one-time setup project. It frames the architecture diagram as only a starting point for reliability.",
+   "architecture_impact": "Teams should plan for ongoing resilience validation, such as reviewing failure modes as systems change, rather than treating the original design as sufficient. The excerpt is truncated, so the specific practices should be checked at the source.",
+   "status": "guidance",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Well-Architected Framework"
+   ],
+   "pillars": [
     "reliability",
     "operations"
+   ]
+  },
+  {
+   "id": "updates-6d0e8e2e1a86",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Publishing Microsoft Foundry agents to Microsoft 365 Copilot and Teams",
+   "link": "https://azure.microsoft.com/updates?id=571816",
+   "published": "2026-09-18T17:21:06+00:00",
+   "categories": [
+    "Launched",
+    "AI + machine learning",
+    "Microsoft Foundry",
+    "Feature"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Foundry agents can now be published to Microsoft 365 Copilot and Teams",
+   "summary": "Publishing Microsoft Foundry agents to Microsoft 365 Copilot and Teams is now generally available. Developers can make agents available to end users in these channels without a custom integration path.",
+   "architecture_impact": "Agent solutions can now be delivered directly into Microsoft 365 surfaces, which affects channel and identity design for those agents. Check at the source how access control and governance apply to published agents before standardising on this route.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Microsoft Foundry",
+    "Microsoft 365 Copilot",
+    "Microsoft Teams"
+   ],
+   "pillars": [
+    "operations",
+    "security"
    ]
   },
   {
@@ -393,19 +625,17 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Azure Virtual Network Manager mesh now connects up to 3,000 VNets by default",
-   "summary": "High-scale mesh using connected groups in Azure Virtual Network Manager is generally available in available regions. Customers can connect up to 3,000 virtual networks in a single mesh connectivity configuration by default, with higher scale possible. The full details are truncated and need checking at the source.",
-   "architecture_impact": "Large estates can use direct VNet-to-VNet mesh at scale instead of relying only on hub-and-spoke transit, which reduces hub hops and dependence on the hub. Weigh this against centralized inspection and egress requirements, and check regional availability and the IP limits at the source.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "High-scale mesh connectivity in Azure Virtual Network Manager is generally available",
+   "summary": "High-scale mesh using connected groups is now generally available in Azure Virtual Network Manager. In available regions, customers can connect up to 3,000 virtual networks in a single mesh connectivity configuration by default, with higher-scale IP connectivity also mentioned.",
+   "architecture_impact": "Large multi-network estates can use one mesh configuration instead of many hub-and-spoke or peering layers, which changes the trade-off between topology simplicity and routing control. Confirm regional availability and the exact higher-scale limits at the source before relying on them.",
    "status": "ga",
    "recommended_action": "evaluate",
    "services": [
-    "Azure Virtual Network Manager",
-    "Azure Virtual Network"
+    "Azure Virtual Network Manager"
    ],
    "pillars": [
     "performance",
-    "reliability",
     "operations"
    ]
   },
@@ -420,17 +650,17 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Observability for Foundry agents: tracing, evaluation, monitoring and alerting",
-   "summary": "Using a refund agent that returns HTTP 200 while passing the wrong amount to a tool, the article argues that agent observability must cover five layers: technical, agent execution, safety/policy, quality and business outcome. It proposes Foundry Traces, Evaluation and Monitor for development and quality, Application Insights as the telemetry store, Log Analytics for KQL investigation and Azure Monitor alerts for response, all joined by OpenTelemetry.",
-   "architecture_impact": "Traditional APM covers only the technical layer, so agent designs need tool-call arguments, policy checks and evaluation results captured as first-class telemetry. Standardising on OpenTelemetry spans for agent, model and tool calls keeps observability independent of any one agent framework, and Application Insights becomes the shared investigation surface.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Five-layer observability model for tracing, evaluating and monitoring AI agents in Foundry",
+   "summary": "The article argues that agents can be technically healthy yet semantically wrong, so observability must cover agent execution, safety, quality and business outcome as well as availability. It pairs Microsoft Foundry traces and evaluations with Application Insights, Log Analytics and Azure Monitor alerts, using OpenTelemetry as the common trace model.",
+   "architecture_impact": "Architects should add agent-level tracing of tool calls and arguments, policy checks and evaluation signals alongside APM, rather than relying on HTTP status and latency. Exact limits, pricing and feature availability are not stated in the text and need checking at the source.",
    "status": "guidance",
-   "recommended_action": "adopt",
+   "recommended_action": "evaluate",
    "services": [
     "Microsoft Foundry",
-    "Azure Monitor",
-    "Application Insights",
-    "Log Analytics"
+    "Azure Monitor Application Insights",
+    "Log Analytics",
+    "Azure Monitor"
    ],
    "pillars": [
     "operations",
@@ -447,24 +677,24 @@
    "published": "2026-09-11T12:14:40+00:00",
    "categories": [],
    "tier": "major",
-   "importance": 5,
-   "architecture_relevance": 5,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Citadel reference architecture for operating enterprise AI on landing zones and Foundry",
-   "summary": "Citadel is an opinionated reference architecture for composing Microsoft Foundry and complementary Azure services into an enterprise AI operating model on top of AI landing zones. It separates shared governance (gateway-mediated model access, consumption attribution, cross-team observability, agent identity and ownership) from application-team workload environments, and recommends adopting it incrementally, one workload and one operational gap at a time.",
-   "architecture_impact": "The key decisions are which resources are shared or isolated, where access policy is enforced (typically an API Management AI gateway), how usage is attributed per workload, and who owns onboarding, monitoring and incident response. Citadel complements existing landing-zone and Foundry investments rather than replacing them; preview status, feature availability and costs need checking per service.",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Citadel reference architecture for a shared enterprise AI operating model on Azure",
+   "summary": "Citadel is an opinionated reference architecture that composes Microsoft Foundry and complementary Azure services with AI landing zones into a shared enterprise AI operating model. It addresses where shared access controls sit, how usage is attributed, who owns agent identity, and how platform owners and application teams divide responsibilities.",
+   "architecture_impact": "Architects can adopt selected Citadel patterns, such as a shared AI gateway and cross-team observability, on top of an existing landing zone without replacing it. The key decision is which additional patterns the operating model needs, and confirming which requests actually pass through the gateway.",
    "status": "guidance",
    "recommended_action": "evaluate",
    "services": [
     "Microsoft Foundry",
     "Azure API Management",
-    "Microsoft Entra ID",
     "Azure Monitor",
-    "Microsoft Purview"
+    "Application Insights",
+    "Microsoft Entra ID"
    ],
    "pillars": [
-    "security",
     "operations",
+    "security",
     "cost"
    ]
   },
@@ -513,23 +743,24 @@
    "categories": [],
    "tier": "major",
    "importance": 4,
-   "architecture_relevance": 5,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Locking down Azure AI Foundry both ways: private endpoint inbound, network injection out",
-   "summary": "The article shows that a private endpoint with public access disabled secures only client-to-Foundry traffic, while agent calls out to tools such as an MCP server can still leave from Microsoft-owned public IPs. It walks through the inbound setup, which needs a custom domain and three private DNS zones linked through a zone group. Outbound traffic uses Standard Setup with bring-your-own VNet network injection on a subnet delegated to Microsoft.App/environments.",
-   "architecture_impact": "Treat inbound and outbound isolation as separate design decisions, and prove both by testing for a 200 from inside the VNet and a 403 from outside. Network injection cannot be added to an existing Foundry account, so decide on private egress before deployment or plan a rebuild. Private networking forces Standard Setup with your own storage and other dependent resources.",
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Securing Foundry agent egress with network injection, beyond private endpoints",
+   "summary": "A private endpoint on a Foundry resource secures only inbound client traffic, while agent outbound calls need network injection into a delegated subnet. The article walks through private DNS for the inbound path and a bring-your-own-VNet setup so agents can call an MCP server in another VNet from private addresses.",
+   "architecture_impact": "Architects must decide network injection at creation time, because it cannot be added to an existing Foundry account, and private networking forces the standard setup with bring-your-own dependent resources. Inbound and outbound paths need separate validation, including DNS zones for all Foundry endpoint names.",
    "status": "guidance",
-   "recommended_action": "adopt",
+   "recommended_action": "evaluate",
    "services": [
     "Microsoft Foundry",
     "Azure Private Link",
-    "Azure Private DNS",
     "Azure Virtual Network",
-    "Azure Container Apps"
+    "Azure Container Apps",
+    "Azure Private DNS"
    ],
    "pillars": [
     "security",
-    "reliability"
+    "reliability",
+    "operations"
    ]
   },
   {
@@ -542,21 +773,20 @@
    "categories": [],
    "tier": "major",
    "importance": 4,
-   "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Choosing prompt agents or hosted agents in Microsoft Foundry Agent Service",
-   "summary": "The article frames the choice as where orchestration logic lives. Prompt agents are declarative (model, instructions, tools) on a managed runtime and suit knowledge, review and self-service scenarios. Hosted agents run your own code in any framework, with Foundry managing the endpoint, identity, scaling and sessions, and suit branching, stateful, multi-agent or real-time workflows.",
-   "architecture_impact": "Start with prompt agents for speed and governability. Move to hosted agents when instructions begin to look like application code, for example retries, state machines, custom payloads or deterministic business rules. The trade-off is more control in exchange for owning security patching, testing and runtime operations.",
+   "architecture_relevance": 5,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Choosing between Prompt Agents and Hosted Agents in Microsoft Foundry Agent Service",
+   "summary": "The article frames the choice between declarative Prompt Agents with a managed runtime and code-based Hosted Agents that Foundry runs as an endpoint. It recommends deciding based on where orchestration logic, state and operations ownership should sit, with examples of when each fits.",
+   "architecture_impact": "Use Prompt Agents when behaviour can be expressed through instructions and supported tools, and move to Hosted Agents when branching, deterministic state machines, custom middleware or custom payloads appear. Hosted Agents shift patching, testing and dependency ownership to the engineering team.",
    "status": "guidance",
    "recommended_action": "adopt",
    "services": [
-    "Microsoft Foundry",
-    "Foundry Agent Service"
+    "Microsoft Foundry Agent Service"
    ],
    "pillars": [
     "operations",
-    "security",
-    "reliability"
+    "reliability",
+    "security"
    ]
   },
   {
@@ -570,18 +800,18 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Agent token economics: managing cost per accepted task with an Azure control loop",
-   "summary": "Because agent runs are stochastic, the article argues for measuring cost per accepted task rather than token price, and for optimising expected cost under per-segment quality floors and a budget-breach probability. It pairs a pre-execution forecaster that produces P50/P95 planning estimates with a runtime governor. Policy is held in App Configuration and enforced through an API Management GenAI gateway; Foundry evaluations measure quality, and an Azure Monitor-triggered Function reverts unsafe cost policies.",
-   "architecture_impact": "Cost controls such as routing, context trimming, caching and token limits should sit in a gateway with externalised policy, and should be tied to evaluation results so that savings which hurt quality are rolled back automatically. Treat forecast percentiles as planning estimates until they are calibrated against real traces.",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Token economics for agents: controlling cost per accepted task on Azure",
+   "summary": "The article argues that cost per accepted task, not cost per token, is the right unit for agent economics, and proposes a controller that forecasts cost distributions and enforces routing, caching and budget policies against quality floors. It maps the controller to Azure components including API Management, App Configuration, Foundry evaluations and Azure Monitor.",
+   "architecture_impact": "Architects should route agent traffic through a gateway that enforces externalized cost policies and feeds telemetry into evaluation, so savings are reverted when quality drops. The modelled percentile budgets are planning estimates and need calibrating against real traces before being treated as guarantees.",
    "status": "guidance",
    "recommended_action": "evaluate",
    "services": [
     "Azure API Management",
     "Azure App Configuration",
     "Microsoft Foundry",
-    "Azure Monitor",
-    "Azure Functions"
+    "Application Insights",
+    "Azure Monitor"
    ],
    "pillars": [
     "cost",
@@ -600,17 +830,17 @@
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
-   "summarised_by": "claude-opus-5-5",
-   "headline": "Keeping legacy dependency IPs during migration with Private Link Service Direct Connect",
-   "summary": "For phased migrations where web and application tiers move to Azure but a database stays on premises behind a hard-coded private IP, the pattern places a Private Endpoint in the migrated VNet. That endpoint maps to a Private Link Service Direct Connect resource in a hub, which routes over site-to-site VPN to the on-premises address. The application keeps using the same address without code changes, even where address spaces overlap.",
-   "architecture_impact": "This removes re-addressing from the critical path of the first migration wave and avoids VNet peering conflicts caused by overlapping address space. It is a bridge, not an end state. Direct Connect is in public preview in selected regions, so check requirements, limitations and regional availability before any production use.",
-   "status": "guidance",
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Keeping a legacy private IP during migration with Private Link Service Direct Connect",
+   "summary": "The article demonstrates using Private Link Service Direct Connect with a Private Endpoint so migrated web and application tiers keep reaching an on-premises database on its original private address. Traffic reaches the on-premises resource over a site-to-site VPN from a hub VNet, which also handles overlapping address space without peering.",
+   "architecture_impact": "This is a bridge pattern: it allows the application tier to move before its backend, but it adds a hub routing dependency and should be retired once the dependency is modernised. The capability is in public preview with limited regions, so regional availability and requirements need checking at the source before production use.",
+   "status": "preview",
    "recommended_action": "evaluate",
    "services": [
     "Azure Private Link",
-    "Azure Private Endpoint",
+    "Azure Virtual Network",
     "Azure VPN Gateway",
-    "Azure Virtual Network"
+    "Azure Private Endpoint"
    ],
    "pillars": [
     "reliability",
