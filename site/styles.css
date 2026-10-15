@@ -351,8 +351,9 @@ footer p { margin: 0; max-width: 64ch; }
 }
 
 @media (max-width: 540px) {
-  .masthead { padding-top: 100px; }
-  /* Sits in the padding above the heading (8 + 84 < 100). */
-  .masthead::before { top: 8px; width: 84px; height: 84px; }
+  .masthead { padding-top: 44px; }
+  /* Logo beside the heading, top-aligned with it; the heading wraps short of it. */
+  .masthead::before { top: 44px; width: 120px; height: 120px; }
+  h1 { padding-right: 136px; }
   .card { padding: 18px; }
 }
