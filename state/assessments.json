@@ -1072,12 +1072,12 @@
  },
  "blog-396802b1e8b9": {
   "hash": "05e23131525c81723fb43164f28850953f4a0e67",
-  "by": "claude-opus-5-5:d3fe2398a7",
+  "by": "claude-haiku-5-5:d3fe2398a7",
   "kept": false,
   "importance": 2,
-  "architecture_relevance": 2,
-  "reason": "The truncated text is a thought-leadership teaser on agent-first platforms, with no concrete reference architecture, design decisions or platform change visible to assess.",
-  "assessed_at": "2026-10-12T06:19:47.722755+00:00"
+  "architecture_relevance": 1,
+  "reason": "The visible text is a general opinion piece about agent-first platforms with no concrete reference architecture, pattern or design decisions, so it has little reusable design content.",
+  "assessed_at": "2026-10-15T21:23:41.441250+00:00"
  },
  "blog-76c3c9923aa5": {
   "hash": "fc074c0b2937025f139f7a0ef80ad5689acb7b6c",
@@ -1159,5 +1159,14 @@
   "architecture_relevance": 3,
   "reason": "An incremental generally available feature for zone balancing in a widely used service, worth knowing for zonal resilience but not a major platform change.",
   "assessed_at": "2026-10-15T18:32:58.499596+00:00"
+ },
+ "updates-e65d4c834a24": {
+  "hash": "196b8504b228a7ca8476c9108c6b97de251e2f7f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that lets teams copy and synchronize Azure Files data across regions and subscriptions, which is worth knowing for secondary-copy designs but is not yet generally available and is not a broad platform change.",
+  "assessed_at": "2026-10-15T21:23:41.441250+00:00"
  }
 }
