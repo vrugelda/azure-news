@@ -80,7 +80,7 @@ body {
 .masthead::before {
   content: "";
   position: absolute;
-  top: 26px;
+  top: 72px; /* = .masthead padding-top, so the logo's top lines up with the heading */
   right: 20px;
   width: 190px;
   height: 190px;
@@ -348,6 +348,11 @@ footer p { margin: 0; max-width: 64ch; }
 
 @media (max-width: 640px) {
   .grid { grid-template-columns: 1fr; }
+}
+
+/* Narrow screens: keep the heading clear of the logo (190 + 10 gap). */
+@media (max-width: 900px) {
+  h1 { padding-right: 200px; }
 }
 
 @media (max-width: 540px) {
