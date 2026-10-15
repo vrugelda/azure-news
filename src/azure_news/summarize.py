@@ -182,7 +182,8 @@ class ClaudeSummarizer:
         response = self._client.beta.messages.parse(
             model=self._settings.model,
             max_tokens=16000,
-            system=self._system,
+            # Cached so the later batches of a run (and retries) pay a tenth for the prompt.
+            system=[{"type": "text", "text": self._system, "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
             output_format=BatchAssessment,
             output_config={"effort": "medium"},
