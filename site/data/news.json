@@ -1,6 +1,39 @@
 {
- "updated_at": "2026-10-15T17:01:42.560917+00:00",
+ "updated_at": "2026-10-15T18:32:58.499596+00:00",
  "items": [
+  {
+   "id": "updates-99400893bfe8",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Standard service endpoint",
+   "link": "https://azure.microsoft.com/updates?id=571025",
+   "published": "2026-10-15T17:39:51+00:00",
+   "categories": [
+    "Launched",
+    "Networking",
+    "Azure Private Link",
+    "Features",
+    "Pricing & Offerings",
+    "SDK and Tools"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Standard service endpoint is generally available for private IaaS-to-PaaS connectivity",
+   "summary": "Standard service endpoint, part of the Azure Private Link family, is now generally available. It is positioned as a scalable and secure way to connect Azure IaaS workloads to Azure PaaS services, addressing manageability and scale limitations.",
+   "architecture_impact": "Architects can now consider this option when designing private connectivity from IaaS workloads to PaaS services, weighing it against existing Private Link and service endpoint choices. Scale limits, pricing and regional availability are not stated in the item and need checking at the source before committing a design.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Private Link",
+    "Azure Virtual Machines"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
   {
    "id": "updates-cb99c07c7e62",
    "source": "updates",
