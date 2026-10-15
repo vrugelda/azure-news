@@ -19,7 +19,7 @@ class Settings:
 
     # Summarisation
     summarizer: str = "claude"  # "claude" or "heuristic" (no LLM, for local trials)
-    model: str = "claude-opus-5-5"
+    model: str = "claude-haiku-5-5"
     refusal_fallbacks: bool = True
     batch_size: int = 20
     # Items at or above min_importance are published. Those that also reach
