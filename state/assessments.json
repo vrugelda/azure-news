@@ -1132,5 +1132,14 @@
   "architecture_relevance": 4,
   "reason": "GA disaster recovery for Arc-managed Windows VMware VMs and physical servers opens a real new DR option for hybrid estates.",
   "assessed_at": "2026-10-15T14:16:02.879753+00:00"
+ },
+ "blog-9cf392e309df": {
+  "hash": "d9b1eacdd1728fd3da72a9161246f4e235136fab",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "This is an analyst recognition announcement with no design content, only a brief mention of Azure Arc and Hyper-V consistency.",
+  "assessed_at": "2026-10-15T15:34:45.841055+00:00"
  }
 }
