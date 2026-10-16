@@ -1,6 +1,35 @@
 {
- "updated_at": "2026-10-16T16:40:14.800394+00:00",
+ "updated_at": "2026-10-16T21:09:02.507719+00:00",
  "items": [
+  {
+   "id": "updates-f24fa3e6c564",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: External key management for Azure Key Vault Managed HSM",
+   "link": "https://azure.microsoft.com/updates?id=574296",
+   "published": "2026-10-16T16:50:27+00:00",
+   "categories": [
+    "Launched",
+    "Security",
+    "Key Vault",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "External key management for Key Vault Managed HSM is generally available",
+   "summary": "External key management for Azure Key Vault Managed HSM is now generally available in all Azure public regions. It targets organizations with regulatory or sovereignty requirements to keep physical control of their key-encryption keys. The item text is truncated, so the list of supported Azure services and any operational limits need checking at the source.",
+   "architecture_impact": "Where key custody must stay with the organization, key-encryption keys can remain outside Azure rather than inside the HSM, which changes the key trust boundary and the operating model for key lifecycle. Architects should confirm which services support it and the availability and latency implications before committing to it.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Key Vault Managed HSM"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
   {
    "id": "updates-99400893bfe8",
    "source": "updates",
