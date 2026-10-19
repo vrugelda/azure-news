@@ -1195,5 +1195,23 @@
   "architecture_relevance": 1,
   "reason": "The item is a teaser with no substantive design content, only a promotional headline about Azure's cloud-native direction for AI.",
   "assessed_at": "2026-10-16T21:09:02.507719+00:00"
+ },
+ "updates-e9952202bdd8": {
+  "hash": "ccc8b17cc48e4b58eabe6b619f2e381c2cee56b1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "An incremental generally available monitoring feature for usage visibility in one service, with little effect on how systems are designed.",
+  "assessed_at": "2026-10-19T22:21:36.386690+00:00"
+ },
+ "updates-08bd23609511": {
+  "hash": "aeacd47deb8b202a4f17d0464e3a9b369f1f03d1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental generally available integration that removes the need for CNAME records when using Traffic Manager with Azure DNS, which is worth knowing but is not a broad new design option.",
+  "assessed_at": "2026-10-19T22:21:36.386690+00:00"
  }
 }
