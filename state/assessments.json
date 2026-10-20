@@ -1222,5 +1222,14 @@
   "architecture_relevance": 2,
   "reason": "The text is a generic one-sentence introduction with no concrete guidance, so it has no design content in the excerpt and would need checking at the source to assess.",
   "assessed_at": "2026-10-20T11:37:24.474646+00:00"
+ },
+ "blog-c2fcaa6a4126": {
+  "hash": "96e8924d8bfd1339bc95d4dee61c010c753f2a3e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 3,
+  "reason": "The teaser is generic promotion for a sovereign AI foundation, with no concrete reference architecture, decisions or trade-offs in the text, so it stays below the brief threshold.",
+  "assessed_at": "2026-10-20T17:07:22.867534+00:00"
  }
 }
