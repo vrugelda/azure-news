@@ -1,6 +1,37 @@
 {
- "updated_at": "2026-10-20T17:07:22.867534+00:00",
+ "updated_at": "2026-10-20T21:37:48.059967+00:00",
  "items": [
+  {
+   "id": "updates-a83080b8a65c",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Keyless TLS on Application Gateway with Azure Key Vault Managed HSM",
+   "link": "https://azure.microsoft.com/updates?id=577130",
+   "published": "2026-10-20T16:55:59+00:00",
+   "categories": [
+    "Launched",
+    "Networking",
+    "Security",
+    "Application Gateway",
+    "Features"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Application Gateway supports keyless TLS with keys held in Managed HSM",
+   "summary": "Application Gateway can now terminate TLS using certificates whose private keys remain in Azure Key Vault Managed HSM. Each handshake signature is computed inside the HSM, so the gateway never holds exported key material.",
+   "architecture_impact": "Architects can keep TLS private keys out of the gateway tier for internet-facing workloads, which narrows the key-exposure boundary and may simplify compliance reviews. Check the source for supported SKUs, regional availability and any performance or cost implications, as these are not in the item text.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Application Gateway",
+    "Azure Key Vault Managed HSM"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
   {
    "id": "updates-f24fa3e6c564",
    "source": "updates",

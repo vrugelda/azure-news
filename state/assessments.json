@@ -1231,5 +1231,41 @@
   "architecture_relevance": 3,
   "reason": "The teaser is generic promotion for a sovereign AI foundation, with no concrete reference architecture, decisions or trade-offs in the text, so it stays below the brief threshold.",
   "assessed_at": "2026-10-20T17:07:22.867534+00:00"
+ },
+ "updates-6ccc271880fe": {
+  "hash": "2399724e714ba3e5e1e6fd3ea9f90d1f6e293d54",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable public preview that changes how system-generated peering routes apply to subnets, but the text is truncated and the behaviour needs checking at the source.",
+  "assessed_at": "2026-10-20T21:37:48.059967+00:00"
+ },
+ "updates-120eb057efdc": {
+  "hash": "f8678879ad82b35af327946f07e0b7c0b68c9875",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental general availability addition to WAF custom rules on Front Door Premium that adds a service tag match option.",
+  "assessed_at": "2026-10-20T21:37:48.059967+00:00"
+ },
+ "updates-a83080b8a65c": {
+  "hash": "b87dfea98e6ecd581c6d1e665835860d85f75f82",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available capability in Application Gateway that keeps TLS private keys inside Managed HSM, opening a meaningful security design option.",
+  "assessed_at": "2026-10-20T21:37:48.059967+00:00"
+ },
+ "updates-805ef091d667": {
+  "hash": "479a842271c64f061cd43f29f66bc1d2bce5eba8",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "An incremental general availability of finer-grained Azure Monitor platform metrics that mainly affects observability tuning rather than system design.",
+  "assessed_at": "2026-10-20T21:37:48.059967+00:00"
  }
 }
