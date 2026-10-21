@@ -1267,5 +1267,23 @@
   "architecture_relevance": 2,
   "reason": "An incremental general availability of finer-grained Azure Monitor platform metrics that mainly affects observability tuning rather than system design.",
   "assessed_at": "2026-10-20T21:37:48.059967+00:00"
+ },
+ "blog-25a24adbe2fa": {
+  "hash": "c4f64739e0ee312fb578951a3460471d28dfb1bd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "The text is a generic sovereignty positioning statement with no concrete service, capability or design change, so it is largely promotional.",
+  "assessed_at": "2026-10-21T11:49:41.435413+00:00"
+ },
+ "blog-a1beca24bb9b": {
+  "hash": "fc074c0b2937025f139f7a0ef80ad5689acb7b6c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "It is a hardware architecture deep dive on Maia 300 for AI inference, which is worth knowing for AI designs, but the truncated text gives no availability status or concrete specifications, which need checking at the source.",
+  "assessed_at": "2026-10-21T11:49:41.435413+00:00"
  }
 }
