@@ -1285,5 +1285,23 @@
   "architecture_relevance": 3,
   "reason": "It is a hardware architecture deep dive on Maia 300 for AI inference, which is worth knowing for AI designs, but the truncated text gives no availability status or concrete specifications, which need checking at the source.",
   "assessed_at": "2026-10-21T11:49:41.435413+00:00"
+ },
+ "updates-511c621dd1bc": {
+  "hash": "ae90e0d8a57f0bf398af3bf857f61461c3abb58e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable identity change that adds a third-party telephony option for SMS and voice MFA, but it is a single authentication-method option rather than a platform-wide shift, and the text is truncated.",
+  "assessed_at": "2026-10-21T21:43:28.760926+00:00"
+ },
+ "updates-f12fcb0668b6": {
+  "hash": "f3e663969f4f7d32a0bb731555498b55dd5338f1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental generally available feature that adds key last-used timestamps to help teams retire stale credentials, which is worth knowing for security and key rotation practice but does not change how Cosmos DB systems are designed.",
+  "assessed_at": "2026-10-21T21:43:28.760926+00:00"
  }
 }
