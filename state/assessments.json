@@ -1312,5 +1312,14 @@
   "architecture_relevance": 1,
   "reason": "The text is a generic promotional summary of an Azure Blog post with no concrete platform change, design guidance or detail to act on.",
   "assessed_at": "2026-10-22T11:53:26.244276+00:00"
+ },
+ "updates-d6a4263d840c": {
+  "hash": "53d0c90afb6d1a59c7cc89e0ca33d44ed06b473d",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "This is an incremental generally available read optimisation in Azure Data Lake Storage for compatible analytics engines, with little change to how systems are designed.",
+  "assessed_at": "2026-10-22T21:36:13.678771+00:00"
  }
 }
