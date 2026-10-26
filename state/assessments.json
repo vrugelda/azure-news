@@ -1330,5 +1330,14 @@
   "architecture_relevance": 2,
   "reason": "This is an incremental GA feature that extends file-level restore to VMs on Premium SSD v2 and Ultra disks, an operational recovery detail with little effect on system design.",
   "assessed_at": "2026-10-23T21:24:46.615608+00:00"
+ },
+ "updates-fa3b4a225503": {
+  "hash": "069c51c4e4ab66e76b05dd96e194c3025137898c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "An incremental generally available feature in Network Watcher that filters which VNet flow logs are captured, mainly an operational and cost-control detail with little effect on system design.",
+  "assessed_at": "2026-10-26T22:40:44.706261+00:00"
  }
 }
