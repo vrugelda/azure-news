@@ -1339,5 +1339,14 @@
   "architecture_relevance": 2,
   "reason": "An incremental generally available feature in Network Watcher that filters which VNet flow logs are captured, mainly an operational and cost-control detail with little effect on system design.",
   "assessed_at": "2026-10-26T22:40:44.706261+00:00"
+ },
+ "blog-2ea8b603b510": {
+  "hash": "c72a0343f95eb0212065a5cc5535a142bbba15a2",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "This is a promotional Azure Blog post for reservoir modeling with no concrete platform change or design content in the text.",
+  "assessed_at": "2026-10-27T12:11:56.247308+00:00"
  }
 }
