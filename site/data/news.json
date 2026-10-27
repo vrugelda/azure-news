@@ -1,6 +1,39 @@
 {
- "updated_at": "2026-10-27T12:11:56.247308+00:00",
+ "updated_at": "2026-10-27T18:00:34.181403+00:00",
  "items": [
+  {
+   "id": "updates-a79600ecdfed",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Front Door profile and route level WAF policies",
+   "link": "https://azure.microsoft.com/updates?id=578153",
+   "published": "2026-10-27T16:58:04+00:00",
+   "categories": [
+    "Launched",
+    "Networking",
+    "Security",
+    "Azure Front Door",
+    "Web Application Firewall",
+    "Features"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Front Door WAF policies can now be applied at profile and route level",
+   "summary": "Azure Web Application Firewall policies on Azure Front Door Premium are no longer limited to individual domains and can now be applied at profile and route level. This lets teams apply a broad baseline of protection across an endpoint and then add more specific rules where needed. The text is truncated, so exact scoping rules and precedence should be checked at the source.",
+   "architecture_impact": "Architects can define a shared baseline WAF policy at the profile level and layer route-specific policies on top, rather than duplicating policies per domain. Validate how route and profile policies interact, including rule precedence and any limits, before standardising the design.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Front Door",
+    "Azure Web Application Firewall"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
   {
    "id": "updates-a83080b8a65c",
    "source": "updates",
