@@ -1366,5 +1366,14 @@
   "architecture_relevance": 4,
   "reason": "GA of profile- and route-level WAF policies on Front Door Premium opens a meaningful new option for scoping security controls, which affects how protection boundaries are designed.",
   "assessed_at": "2026-10-27T18:00:34.181403+00:00"
+ },
+ "updates-9fe585748d76": {
+  "hash": "ce83444d75e744ec6f0421209c5904a28d07cdb6",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available quota increase in Azure Storage that lifts the per-region, per-subscription account default from 250 to 1,000 opens a real design option for a widely used service, though the text is truncated and the change is limited to one service's quota.",
+  "assessed_at": "2026-10-27T22:14:30.516316+00:00"
  }
 }
