@@ -1375,5 +1375,32 @@
   "architecture_relevance": 4,
   "reason": "A generally available quota increase in Azure Storage that lifts the per-region, per-subscription account default from 250 to 1,000 opens a real design option for a widely used service, though the text is truncated and the change is limited to one service's quota.",
   "assessed_at": "2026-10-27T22:14:30.516316+00:00"
+ },
+ "updates-dc03db931b61": {
+  "hash": "e63df7413dc2e968bf70994f4bb14ee0b3f078bf",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "Existing Log Analytics logging destinations keep working and the text gives no removal date, so this is a recommended migration of a logging option rather than a forced change.",
+  "assessed_at": "2026-10-28T22:35:37.390123+00:00"
+ },
+ "updates-55a0bbbbe7c2": {
+  "hash": "1992a5d2dc3918b59e26016b70fe38b18c7353bd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview that adds a cross-tenant recovery path for Azure VM backups, which affects resilience and security boundaries but is still in preview.",
+  "assessed_at": "2026-10-28T22:35:37.390123+00:00"
+ },
+ "updates-b96b86c76826": {
+  "hash": "59fb601aafdcf5553c0ba803a31b2549bf4a7ad7",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "An incremental general availability change to Marketplace private offer billing and contract terms with no design consequence.",
+  "assessed_at": "2026-10-28T22:35:37.390123+00:00"
  }
 }
