@@ -1402,5 +1402,32 @@
   "architecture_relevance": 1,
   "reason": "An incremental general availability change to Marketplace private offer billing and contract terms with no design consequence.",
   "assessed_at": "2026-10-28T22:35:37.390123+00:00"
+ },
+ "updates-0febaebc1363": {
+  "hash": "96d06d6093017b6086aea5dfd7a1046cd48dd30a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Generally available support for large OS disk encryption opens a real design option for moving production-scale workloads into confidential computing, though the text is truncated and details need checking at the source.",
+  "assessed_at": "2026-10-29T22:45:47.903364+00:00"
+ },
+ "updates-e603db00467d": {
+  "hash": "da90850f70005a2e2e13c470d3cec650e2766c57",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available HTTP DDoS ruleset in Front Door Premium WAF adds a managed layer-7 control that shapes edge security design, though its rule details are not in the text.",
+  "assessed_at": "2026-10-29T22:45:47.903364+00:00"
+ },
+ "updates-a138b5af0401": {
+  "hash": "24c3adacad06b434b209d18ba0a35c5c0b347280",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A major version of a developer tooling server reaching general availability is an SDK and tooling update with little direct effect on system design.",
+  "assessed_at": "2026-10-29T22:45:47.903364+00:00"
  }
 }

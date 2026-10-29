@@ -1,6 +1,67 @@
 {
- "updated_at": "2026-10-29T13:01:41.300858+00:00",
+ "updated_at": "2026-10-29T22:45:47.903364+00:00",
  "items": [
+  {
+   "id": "updates-0febaebc1363",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Large OS Disk Encryption for Azure Confidential VM migrations",
+   "link": "https://azure.microsoft.com/updates?id=578850",
+   "published": "2026-10-29T21:19:52+00:00",
+   "categories": [
+    "Launched",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Large OS disk encryption now GA for Confidential VM migrations",
+   "summary": "Large OS Disk Encryption is now generally available for Azure Confidential VM migration scenarios. It lets organizations move larger, production-scale workloads into confidential computing with the OS disk fully protected.",
+   "architecture_impact": "Architects can now include large OS disks in confidential VM migration plans instead of treating them as a blocker, which affects the security boundary for those workloads. Confirm supported disk sizes, regions and any migration prerequisites at the source, as the item text is truncated.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Confidential VMs",
+    "Azure Disk Encryption"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
+  {
+   "id": "updates-e603db00467d",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: HTTP DDoS ruleset for Azure Front Door Premium WAF",
+   "link": "https://azure.microsoft.com/updates?id=578681",
+   "published": "2026-10-29T17:09:49+00:00",
+   "categories": [
+    "Launched",
+    "Networking",
+    "Security",
+    "Azure Front Door",
+    "Web Application Firewall",
+    "Features"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "HTTP DDoS ruleset for Front Door Premium WAF now generally available",
+   "summary": "The HTTP DDoS ruleset for Azure Web Application Firewall on Azure Front Door Premium is now generally available. It targets HTTP-layer DDoS attacks, which the announcement describes as a leading cause of application downtime, beyond what static IP filters and fixed rate limits provide.",
+   "architecture_impact": "Edge protection for internet-facing applications can rely on a managed HTTP DDoS ruleset rather than only static IP filtering and fixed rate limits, which changes the security and resilience layering at the front door. Check the rule behaviour, tuning needs and any Premium SKU requirement at the source.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Front Door",
+    "Azure Web Application Firewall"
+   ],
+   "pillars": [
+    "security",
+    "reliability"
+   ]
+  },
   {
    "id": "updates-9fe585748d76",
    "source": "updates",
