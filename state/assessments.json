@@ -1438,5 +1438,23 @@
   "architecture_relevance": 3,
   "reason": "This is a notable preview of a new agent harness in Foundry Agent Service, but the item text gives no detail on capabilities, so its design impact is unclear and it falls below the brief threshold.",
   "assessed_at": "2026-10-30T05:49:54.550020+00:00"
+ },
+ "updates-f2e3fdc56da0": {
+  "hash": "704471a87329b35d9ee2e89f45a00a977b1b11e3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable public preview that lets each Azure SQL database use its own managed identity for external storage access, which is worth knowing for data access design but is not yet a broad platform change.",
+  "assessed_at": "2026-10-30T22:20:46.179238+00:00"
+ },
+ "blog-6ae87f3f395e": {
+  "hash": "df2792bab54ed094e5a9a78bd12e0bb13ef1d485",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental security feature adding hardware-originated audit logs for Cloud HSM, relevant to compliance and monitoring design, though the text does not state availability status and it is not architecture guidance.",
+  "assessed_at": "2026-10-30T22:20:46.179238+00:00"
  }
 }
