@@ -1537,5 +1537,59 @@
   "architecture_relevance": 1,
   "reason": "A promotional blog post about AI platform direction with no concrete design content.",
   "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-a9410f825f05": {
+  "hash": "6f8ee6e5f13d52cd92d611afbbac497a440bbb30",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview that adds centralized JWT validation at the gateway, which shapes where token checks live, but it is not yet generally available.",
+  "assessed_at": "2026-11-03T23:23:49.370439+00:00"
+ },
+ "updates-d273c3647631": {
+  "hash": "7ee5a34914accc88f096f8a0a3a65d212ee7c8e2",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview adding MCP routing with TLS and JWT centralization at the gateway, which affects how MCP servers are exposed, but it is still in preview.",
+  "assessed_at": "2026-11-03T23:23:49.370439+00:00"
+ },
+ "updates-8fc020c23b91": {
+  "hash": "8014013bd1049feb52019d649e484a19c8c19704",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview giving private-endpoint-only frontends for Application Gateway for Containers, which opens a network isolation option, but it is still in preview.",
+  "assessed_at": "2026-11-03T23:23:49.370439+00:00"
+ },
+ "updates-7879764348c4": {
+  "hash": "0f8b07b6414677d1c0f5ba644925eb5e46cfc43f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "An analytics and visibility enhancement in preview for storage usage with little effect on how systems are designed.",
+  "assessed_at": "2026-11-03T23:23:49.370439+00:00"
+ },
+ "updates-1ba84d0f5daf": {
+  "hash": "d43f4b6d6b46f577fc35883bdf386079844ed901",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview extending immutable PITR backup retention for Azure SQL, which is worth knowing for backup and compliance design but is limited in scope.",
+  "assessed_at": "2026-11-03T23:23:49.370439+00:00"
+ },
+ "updates-ad96564f6a08": {
+  "hash": "6483b76d7538845834c2671f326295dcb99300f8",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental generally available improvement to disaster recovery for VMSS Flex, worth knowing when designing recovery for scale sets.",
+  "assessed_at": "2026-11-03T23:23:49.370439+00:00"
  }
 }
