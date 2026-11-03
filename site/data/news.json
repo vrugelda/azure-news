@@ -1,6 +1,158 @@
 {
- "updated_at": "2026-11-02T15:54:02.900285+00:00",
+ "updated_at": "2026-11-03T00:58:15.285685+00:00",
  "items": [
+  {
+   "id": "updates-328afb878392",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "Retirement: OT security in Microsoft Defender for IoT",
+   "link": "https://azure.microsoft.com/updates?id=576255",
+   "published": "2026-11-02T19:22:28+00:00",
+   "categories": [
+    "Retirements"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "OT security in Microsoft Defender for IoT deprecated, fully retired October 2029",
+   "summary": "Microsoft plans to deprecate the operational technology security component of Microsoft Defender for IoT after a three-year transition period. The service is fully deprecated in October 2029.",
+   "architecture_impact": "OT security designs that rely on this component need a replacement or migration path before October 2029. The replacement guidance and transition details should be checked at the source, as the text is truncated.",
+   "status": "retirement",
+   "recommended_action": "plan-migration",
+   "services": [
+    "Microsoft Defender for IoT"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
+  {
+   "id": "updates-c4d1cd0d02a7",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Change from virtual network integration to a private endpoint capable network configuration in Azure Database for PostgreSQL flexible server",
+   "link": "https://azure.microsoft.com/updates?id=574541",
+   "published": "2026-11-02T19:20:33+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Hybrid + multicloud",
+    "Azure Database for PostgreSQL",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "PostgreSQL flexible server can switch from VNet integration to private endpoints",
+   "summary": "Azure Database for PostgreSQL flexible server now lets existing VNet-integrated servers change from delegated-subnet networking to a private endpoint capable configuration. This gives more flexibility in network design for these workloads.",
+   "architecture_impact": "Network designs for existing servers are no longer locked to delegated-subnet networking, so private endpoint connectivity can be adopted without redeploying the database. Migration steps, downtime and any limits should be checked at the source.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Database for PostgreSQL"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
+  {
+   "id": "updates-7d8b7525ba7b",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "Retirement: Azure Fluid Relay",
+   "link": "https://azure.microsoft.com/updates?id=570498",
+   "published": "2026-11-02T19:01:41+00:00",
+   "categories": [
+    "Web",
+    "Azure Fluid Relay",
+    "Retirements"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Fluid Relay retires February 2, 2027",
+   "summary": "Azure Fluid Relay will be retired on February 2, 2027 and will reach end of availability after that date. Workloads that still depend on the service may be disrupted, while the open-source Fluid Framework remains available according to the text.",
+   "architecture_impact": "Real-time collaboration applications that call the managed service need an alternative backend before February 2027. The source should be checked for the supported replacement path and for any migration guidance.",
+   "status": "retirement",
+   "recommended_action": "plan-migration",
+   "services": [
+    "Azure Fluid Relay"
+   ],
+   "pillars": [
+    "operations",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-485d13a47665",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Geo-Replication on partitioned namespaces for Azure Service Bus Premium",
+   "link": "https://azure.microsoft.com/updates?id=579021",
+   "published": "2026-11-02T18:00:51+00:00",
+   "categories": [
+    "Launched",
+    "Integration",
+    "Service Bus",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Geo-replication now GA for partitioned Service Bus Premium namespaces",
+   "summary": "Geo-replication on partitioned namespaces for Azure Service Bus Premium is generally available. It lets teams combine partitioning throughput with replication of messages and metadata to a secondary region.",
+   "architecture_impact": "Messaging designs that needed partitioning for throughput can now also add cross-region replication for resilience. Failover behaviour and any additional cost should be checked at the source before adopting it.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Service Bus"
+   ],
+   "pillars": [
+    "reliability",
+    "performance"
+   ]
+  },
+  {
+   "id": "updates-a9052b05b800",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Site Recovery for Azure Local",
+   "link": "https://azure.microsoft.com/updates?id=579111",
+   "published": "2026-11-02T17:49:48+00:00",
+   "categories": [
+    "Launched",
+    "Hybrid + multicloud",
+    "Management and governance",
+    "Migration",
+    "Azure Arc",
+    "Azure Site Recovery",
+    "Management",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Site Recovery now generally available for Azure Local",
+   "summary": "Azure Site Recovery support for Azure Local is generally available. Customers can protect supported Windows and Linux virtual machines by replicating them for disaster recovery.",
+   "architecture_impact": "Disaster recovery for Azure Local virtual machines can now be designed around managed replication instead of custom approaches. Target locations, failover steps and any limits should be checked at the source.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Site Recovery",
+    "Azure Local"
+   ],
+   "pillars": [
+    "reliability",
+    "operations"
+   ]
+  },
   {
    "id": "updates-0febaebc1363",
    "source": "updates",

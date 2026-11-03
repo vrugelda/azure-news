@@ -1456,5 +1456,86 @@
   "architecture_relevance": 3,
   "reason": "An incremental security feature adding hardware-originated audit logs for Cloud HSM, relevant to compliance and monitoring design, though the text does not state availability status and it is not architecture guidance.",
   "assessed_at": "2026-10-30T22:20:46.179238+00:00"
+ },
+ "updates-e8a1e051a6f7": {
+  "hash": "7c57434c6cfcee6529121b0cbb00cf00e7e698b2",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that adds NAS discovery and assessment to Azure Migrate for migration planning, but it is not yet generally available and does not change how systems are designed.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-328afb878392": {
+  "hash": "bb74905ee2b7fe26bd9c8e99386597c2d50bb762",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Retiring the OT security component of Defender for IoT forces operational technology environments that depend on it to plan a replacement before the October 2029 end date.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-c4d1cd0d02a7": {
+  "hash": "226de060405624128f9518614cd3ae574d558422",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Existing VNet-integrated PostgreSQL flexible servers can now move to private endpoint networking, which opens a real new network design option for a widely used database service.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-7d8b7525ba7b": {
+  "hash": "cc840c445695da913f9c5c80ffa382409b5f233c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Retirement of the whole Azure Fluid Relay service on a fixed date forces any dependent real-time collaboration workload to change its backend.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-78163fa02943": {
+  "hash": "3977db5da9231b096bd8d29c842494d3253fb1a0",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "Incremental GA enhancements to task management in Azure Storage Actions that improve operations but do not change design decisions.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-7a2c1f6e35f6": {
+  "hash": "561825f4ea92cfad991ca7d03bd9846203c69440",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A minor operational convenience for restarting or failing over Azure SQL databases from the portal, with no design consequence.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-485d13a47665": {
+  "hash": "b96b0099149994e502cc39cd3fbf75e9138709d5",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Geo-replication is now generally available for partitioned Service Bus Premium namespaces, which removes a trade-off between throughput and regional resilience in messaging designs.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "updates-a9052b05b800": {
+  "hash": "9e706c88dcb9f8e5554fafc4ed52175b1657adb3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Azure Site Recovery is now generally available for Azure Local, which opens a managed disaster recovery option for on-premises hybrid workloads.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
+ },
+ "blog-9b88b64f1b2d": {
+  "hash": "3862b44cbe5020b535868046e9e32e99cecc1c4a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "A promotional blog post about AI platform direction with no concrete design content.",
+  "assessed_at": "2026-11-03T00:58:15.285685+00:00"
  }
 }
