@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T06:46:33.439129+00:00",
+ "updated_at": "2026-11-05T19:57:13.649855+00:00",
  "items": [
   {
    "id": "updates-328afb878392",
@@ -57,35 +57,6 @@
    "pillars": [
     "security",
     "operations"
-   ]
-  },
-  {
-   "id": "updates-7d8b7525ba7b",
-   "source": "updates",
-   "source_name": "Azure Updates",
-   "title": "Retirement: Azure Fluid Relay",
-   "link": "https://azure.microsoft.com/updates?id=570498",
-   "published": "2026-11-02T19:01:41+00:00",
-   "categories": [
-    "Web",
-    "Azure Fluid Relay",
-    "Retirements"
-   ],
-   "tier": "major",
-   "importance": 4,
-   "architecture_relevance": 4,
-   "summarised_by": "claude-haiku-5-5",
-   "headline": "Azure Fluid Relay retires February 2, 2027",
-   "summary": "Azure Fluid Relay will be retired on February 2, 2027 and will reach end of availability after that date. Workloads that still depend on the service may be disrupted, while the open-source Fluid Framework remains available according to the text.",
-   "architecture_impact": "Real-time collaboration applications that call the managed service need an alternative backend before February 2027. The source should be checked for the supported replacement path and for any migration guidance.",
-   "status": "retirement",
-   "recommended_action": "plan-migration",
-   "services": [
-    "Azure Fluid Relay"
-   ],
-   "pillars": [
-    "operations",
-    "reliability"
    ]
   },
   {
