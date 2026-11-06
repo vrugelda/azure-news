@@ -1,6 +1,36 @@
 {
- "updated_at": "2026-11-05T19:57:13.649855+00:00",
+ "updated_at": "2026-11-06T06:46:23.592139+00:00",
  "items": [
+  {
+   "id": "updates-73da89b6fea0",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Front Door TLS key exchange policy with post-quantum support",
+   "link": "https://azure.microsoft.com/updates?id=577668",
+   "published": "2026-11-05T23:19:48+00:00",
+   "categories": [
+    "Launched",
+    "Networking",
+    "Security",
+    "Azure Front Door",
+    "Features"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Front Door adds configurable TLS key exchange policies with post-quantum support",
+   "summary": "Azure Front Door now lets you choose TLS key exchange policies, including hybrid post-quantum key exchange, that are now generally available. The change lets teams prepare for post-quantum threats while balancing security requirements against client compatibility.",
+   "architecture_impact": "Architects can select a key exchange policy at the edge rather than accepting a fixed default, trading stronger future-proofing against the risk of excluding older clients. Check the predefined policy options and their client support at the source before standardising on one.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Front Door"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
   {
    "id": "updates-328afb878392",
    "source": "updates",
