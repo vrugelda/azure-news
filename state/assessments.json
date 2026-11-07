@@ -1672,5 +1672,14 @@
   "architecture_relevance": 2,
   "reason": "This is a single-industry workload showcase of early performance results for Cobalt 200 VMs, with little transferable design content and no stated GA or migration consequence.",
   "assessed_at": "2026-11-07T05:58:44.838625+00:00"
+ },
+ "blog-e8a7da356ec7": {
+  "hash": "3ec5e4728c9e3210bc2b9422963e96771aaff3f0",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "The item is a partnership announcement adding video generation models to Microsoft Foundry, with no stated availability status, design guidance or architectural detail.",
+  "assessed_at": "2026-11-07T21:51:34.809728+00:00"
  }
 }
