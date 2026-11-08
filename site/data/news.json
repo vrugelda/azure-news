@@ -1,6 +1,32 @@
 {
- "updated_at": "2026-11-08T13:24:49.486266+00:00",
+ "updated_at": "2026-11-08T22:05:44.758893+00:00",
  "items": [
+  {
+   "id": "architecture-165bc3ea6171",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "The Model Isn’t the Boss: An Azure Architecture for Accountable AI Agents",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/the-model-isn-t-the-boss-an-azure-architecture-for-accountable/ba-p/4571335",
+   "published": "2026-11-07T20:50:12+00:00",
+   "categories": [],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 5,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Keep AI reasoning separate from authorized, durable action in agent architectures",
+   "summary": "The article uses an illustrative housing-repair journey to show how an AI agent can triage reports, recommend diagnoses and coordinate bookings. It proposes three planes (experience and reasoning, trusted action, operational intelligence) with a per-request supervisor that owns a durable work-item record.",
+   "architecture_impact": "Models should propose but not change records or trigger payments; deterministic policy checks, explicit authorization and durable commands should do that. Authorized actions can still time out or fail silently, so partner outcomes need reconciliation, and telemetry should link to work-item references and correlation IDs rather than copying prompts, photos or personal narratives.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Monitor"
+   ],
+   "pillars": [
+    "security",
+    "reliability",
+    "operations"
+   ]
+  },
   {
    "id": "updates-73da89b6fea0",
    "source": "updates",

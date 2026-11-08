@@ -1681,5 +1681,32 @@
   "architecture_relevance": 2,
   "reason": "The item is a partnership announcement adding video generation models to Microsoft Foundry, with no stated availability status, design guidance or architectural detail.",
   "assessed_at": "2026-11-07T21:51:34.809728+00:00"
+ },
+ "architecture-165bc3ea6171": {
+  "hash": "a938dcaec8d66b422dea3c7bf56cb638c6fee5c1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 5,
+  "reason": "A reusable three-plane pattern that separates model reasoning from authorized, durable action and evidence, though illustrated through one housing-maintenance scenario and not a verified production reference.",
+  "assessed_at": "2026-11-08T22:05:44.758893+00:00"
+ },
+ "architecture-b3fe7800f0f5": {
+  "hash": "a5f2974437626621157e0d5abcded75d21ec3f57",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Useful decision method for coordinating repairs with renovation, but it is a Dutch housing-sector operating model with little Azure-specific design content.",
+  "assessed_at": "2026-11-08T22:05:44.758893+00:00"
+ },
+ "architecture-d83b8963e716": {
+  "hash": "1218733c7b04453f6f24658406e28e82c6e0b503",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Mostly regulatory and sector context for Dutch housing associations, with only a generic five-step planning chain and no concrete architecture guidance.",
+  "assessed_at": "2026-11-08T22:05:44.758893+00:00"
  }
 }
