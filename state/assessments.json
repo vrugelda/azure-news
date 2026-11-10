@@ -1708,5 +1708,23 @@
   "architecture_relevance": 2,
   "reason": "Mostly regulatory and sector context for Dutch housing associations, with only a generic five-step planning chain and no concrete architecture guidance.",
   "assessed_at": "2026-11-08T22:05:44.758893+00:00"
+ },
+ "updates-2010d7dff8d7": {
+  "hash": "5fb87b505dbf8764d6c1d57ff46b78ad29d8e89d",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A runtime version retirement for managed Functions APIs in Static Web Apps, with a deadline but a routine lifecycle change with limited design consequence.",
+  "assessed_at": "2026-11-10T12:38:34.111674+00:00"
+ },
+ "updates-aaca695e817d": {
+  "hash": "a1bba31e33f6671a27bbf32b4e3246963aa8a8a3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of a guided portal experience for Azure File Sync on Arc-enabled Windows Servers, relevant to hybrid file data migration but not a broad platform change.",
+  "assessed_at": "2026-11-10T12:38:34.111674+00:00"
  }
 }
