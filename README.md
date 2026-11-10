@@ -19,7 +19,8 @@ To change any setting from `.env.example` in the workflow, add it under `env:` i
 
 ## Email notification
 
-Optional. After each ingest, `azure-news notify` sends one email with the items that were
+Optional, and not run by `.github/workflows/publish.yml`; add an `azure-news notify` step
+after *Fetch and summarise* to turn it on. After each ingest, `azure-news notify` sends one email with the items that were
 published for the first time, through [Azure Communication Services Email][acs]. Nothing is sent
 when there is nothing new.
 
@@ -70,7 +71,8 @@ architecture impact. Don't commit the result: delete `site/data` and `state` aft
 3. **Store** – kept items are written to `site/data/news.json`. The verdict for every item is kept
    in `state/assessments.json`, so an item is sent to the model again only if its text changes or
    the summariser changes.
-4. **Notify** – items published for the first time are emailed (`notify.py`), if configured.
+4. **Notify** – items published for the first time are emailed (`notify.py`), if configured
+   and run; the published workflow leaves this step out.
 5. **Publish** – the frontend in `site/` is plain HTML, CSS and JavaScript that loads
    `data/news.json`. Architecture guidance is listed first. Items with architecture relevance 4
    or more are shown by default; the rest sit behind the "smaller updates" filter.
