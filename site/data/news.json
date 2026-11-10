@@ -1,6 +1,38 @@
 {
- "updated_at": "2026-11-10T13:25:17.901815+00:00",
+ "updated_at": "2026-11-10T19:43:55.837050+00:00",
  "items": [
+  {
+   "id": "updates-9823995822aa",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Front Door edge actions",
+   "link": "https://azure.microsoft.com/updates?id=579310",
+   "published": "2026-11-10T18:55:09+00:00",
+   "categories": [
+    "Launched",
+    "Networking",
+    "Security",
+    "Azure Front Door",
+    "Features",
+    "Services"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Front Door edge actions reach general availability",
+   "summary": "Azure Front Door edge actions are now generally available as serverless compute at the edge. Customers can run lightweight JavaScript functions during client request and response processing to make real-time decisions.",
+   "architecture_impact": "Request-handling logic such as header changes or routing decisions can move from origin code to the edge, which can cut origin round-trips and shift some logic into the edge tier. Limits, pricing and supported tiers are not stated in the text and need checking at the source before design work relies on them.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Front Door"
+   ],
+   "pillars": [
+    "performance",
+    "security"
+   ]
+  },
   {
    "id": "architecture-165bc3ea6171",
    "source": "architecture",
