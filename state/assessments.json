@@ -1753,5 +1753,23 @@
   "architecture_relevance": 3,
   "reason": "A notable preview that adds dual-stack IPv4/IPv6 route exchange in Route Server, worth knowing for hybrid network design but still in preview with limited scope.",
   "assessed_at": "2026-11-10T19:43:55.837050+00:00"
+ },
+ "updates-16ffab19fe46": {
+  "hash": "42b3a7032ee203277fefe8a4b5832db7bcc9f114",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of a distributed NVMe-backed read-through cache inside AKS that could matter for AI data access design, but it is preview-only and the text is truncated.",
+  "assessed_at": "2026-11-11T06:21:10.565576+00:00"
+ },
+ "updates-04b01462cae2": {
+  "hash": "d6820ee62807243994e649be682fc77a7e561920",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "General availability of a .NET runtime version for Azure Functions is a routine language-version change with little effect on system design.",
+  "assessed_at": "2026-11-11T06:21:10.565576+00:00"
  }
 }
