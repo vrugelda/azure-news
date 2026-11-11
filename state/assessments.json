@@ -1771,5 +1771,14 @@
   "architecture_relevance": 2,
   "reason": "General availability of a .NET runtime version for Azure Functions is a routine language-version change with little effect on system design.",
   "assessed_at": "2026-11-11T06:21:10.565576+00:00"
+ },
+ "updates-9a468a0cc191": {
+  "hash": "67945126e46a563dd8c6e032c88b75d4e5b97892",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "This is a notable public preview of a WAF rate-limiting capability on Front Door Premium, so it is worth knowing for security design but not a broad platform change, and the text is truncated.",
+  "assessed_at": "2026-11-11T19:35:55.909955+00:00"
  }
 }
