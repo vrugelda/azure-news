@@ -1,6 +1,36 @@
 {
- "updated_at": "2026-11-12T19:54:19.446530+00:00",
+ "updated_at": "2026-11-13T06:46:22.395122+00:00",
  "items": [
+  {
+   "id": "updates-2b734777c4ea",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Front Door mutual TLS authentication",
+   "link": "https://azure.microsoft.com/updates?id=577678",
+   "published": "2026-11-12T22:27:35+00:00",
+   "categories": [
+    "Launched",
+    "Networking",
+    "Security",
+    "Azure Front Door",
+    "Features"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Front Door Premium mTLS client certificate authentication is generally available",
+   "summary": "Azure Front Door Premium now supports mutual TLS, where clients present X.509 client certificates to prove their identity. The announcement cites business-to-business, Internet of Things and financial scenarios for protecting sensitive applications and APIs.",
+   "architecture_impact": "Client identity can be verified at the edge rather than only in application code, so architects can consider certificate-based access for B2B and IoT ingress. Check the source for supported certificate trust and validation options before committing a design.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Front Door"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
   {
    "id": "updates-9823995822aa",
    "source": "updates",

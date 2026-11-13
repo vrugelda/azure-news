@@ -1798,5 +1798,23 @@
   "architecture_relevance": 2,
   "reason": "A notable public preview of Microsoft-managed performance monitoring for Azure SQL Managed Instance, which mainly changes operations tooling rather than system design.",
   "assessed_at": "2026-11-12T19:54:19.446530+00:00"
+ },
+ "updates-258cb863dd05": {
+  "hash": "63505d49b9f75dd34e2766be8d0365f62cda986c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A public preview of edge JWT validation on Front Door Premium is a notable preview, and it moves token validation to the security boundary, but it is not yet a generally available platform change.",
+  "assessed_at": "2026-11-13T06:46:22.395122+00:00"
+ },
+ "updates-2b734777c4ea": {
+  "hash": "c814d22743dd4a62881c9a195bec72da8625054a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Generally available mutual TLS on Azure Front Door Premium is a GA capability in a widely used edge service that opens a real client-authentication design option at the perimeter.",
+  "assessed_at": "2026-11-13T06:46:22.395122+00:00"
  }
 }
