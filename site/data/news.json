@@ -1,6 +1,37 @@
 {
- "updated_at": "2026-11-13T19:42:09.347843+00:00",
+ "updated_at": "2026-11-14T06:23:39.231721+00:00",
  "items": [
+  {
+   "id": "updates-4c1d812fd575",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "Retirement: Azure Data Share will be retired on November 12, 2029",
+   "link": "https://azure.microsoft.com/updates?id=578818",
+   "published": "2026-11-13T19:54:45+00:00",
+   "categories": [
+    "Analytics",
+    "Storage",
+    "Azure Data Share",
+    "Retirements"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Data Share retires November 12, 2029; move data sharing to Microsoft Fabric",
+   "summary": "Azure Data Share will be retired on November 12, 2029. The item directs teams to move data sharing workloads to Microsoft Fabric, which it lists with External data sharing and Cross tenant delegated shortcuts, plus a data-source-specific sharing option; the text is truncated, so the full list of alternatives needs checking at the source.",
+   "architecture_impact": "Any design that uses Azure Data Share for cross-organisation or cross-tenant data sharing will need a replacement sharing pattern before the retirement date, which changes the data-sharing boundary and its governance model. Plan the migration and validate that the Fabric options cover each sharing scenario in use.",
+   "status": "retirement",
+   "recommended_action": "plan-migration",
+   "services": [
+    "Azure Data Share",
+    "Microsoft Fabric"
+   ],
+   "pillars": [
+    "operations",
+    "reliability"
+   ]
+  },
   {
    "id": "updates-2b734777c4ea",
    "source": "updates",
