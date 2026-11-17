@@ -1,6 +1,640 @@
 {
- "updated_at": "2026-11-17T07:55:22.384644+00:00",
+ "updated_at": "2026-11-17T20:55:32.074785+00:00",
  "items": [
+  {
+   "id": "updates-38de8f8a830c",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Infrastructure Resiliency Manager",
+   "link": "https://azure.microsoft.com/updates?id=580748",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Microsoft Ignite"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Infrastructure Resiliency Manager is now generally available",
+   "summary": "Azure Infrastructure Resiliency Manager reached general availability as a goal-driven way to improve application resiliency across Azure. It offers zonally resilient deployment templates and application assessment for teams building or reviewing workloads.",
+   "architecture_impact": "Architects can start new workloads from zonally resilient templates and use assessments to review existing applications against resiliency goals. Confirm the supported services, assessment scope and any costs at the source, as the text is truncated.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Infrastructure Resiliency Manager"
+   ],
+   "pillars": [
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-5e5a83e8ba61",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Monitor Health Models",
+   "link": "https://azure.microsoft.com/updates?id=580261",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "DevOps",
+    "Management and governance",
+    "Azure Monitor",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Monitor Health Models is now generally available",
+   "summary": "Azure Monitor Health Models reached general availability, letting teams define a workload health model. It aggregates signals from metrics, logs and dependencies into a single health view.",
+   "architecture_impact": "Architects can model workload health as a first-class construct rather than assembling it from separate alerts, which shapes monitoring and operating design. Confirm dependency support and pricing at the source, as the text is truncated.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Monitor"
+   ],
+   "pillars": [
+    "operations",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-7e1cfee762bd",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Red Hat OpenShift with hosted control planes",
+   "link": "https://azure.microsoft.com/updates?id=580136",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Containers",
+    "Azure Red Hat OpenShift",
+    "Microsoft Ignite",
+    "Open Source",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Red Hat OpenShift with hosted control planes is now generally available",
+   "summary": "Azure Red Hat OpenShift added a generally available deployment option that separates the OpenShift control plane from worker nodes. The control plane is hosted apart from the applications' worker nodes.",
+   "architecture_impact": "Architects can consider a cluster layout where the control plane is separate from the worker nodes, which changes how operations and capacity are planned. Check the supported regions, networking and cost model at the source before adopting it.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Red Hat OpenShift"
+   ],
+   "pillars": [
+    "operations",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-f78d1dc7a827",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure AI Gateway",
+   "link": "https://azure.microsoft.com/updates?id=580080",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Integration",
+    "Internet of Things",
+    "Mobile",
+    "Web",
+    "API Management",
+    "Microsoft Ignite"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure AI Gateway is now generally available as a managed service",
+   "summary": "Azure AI Gateway, previously the AI Gateway tier of API Management, is now a fully managed service. It connects users, applications and agents to AI models and MCP tools across providers, letting platform teams centralise access.",
+   "architecture_impact": "Platform teams can place a central gateway in front of AI models and MCP tools, which moves governance and access control out of individual applications. Confirm the supported providers, tool types and pricing at the source, as the text is truncated.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure AI Gateway",
+    "Azure API Management"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
+  {
+   "id": "updates-a2e964419657",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Microsoft Agent 365 integration with Azure API Management and Azure AI Gateway",
+   "link": "https://azure.microsoft.com/updates?id=580055",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Integration",
+    "Internet of Things",
+    "Mobile",
+    "Web",
+    "API Management",
+    "Microsoft Ignite"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Agent 365 integration with API Management and AI Gateway is generally available",
+   "summary": "Organizations can centrally govern AI agents and MCP tools and enforce security and access policies at runtime through API Management and Azure AI Gateway. It is aimed at teams running agents across their estate.",
+   "architecture_impact": "Agent and tool traffic can be routed through a governed gateway, placing a policy enforcement point between agents and MCP tools. Design it in alongside existing API governance rather than per-agent controls, and check supported configurations at the source.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure API Management",
+    "Microsoft Agent 365",
+    "Azure AI Gateway"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
+  {
+   "id": "updates-36d1e6afb470",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure API Management Premium v2",
+   "link": "https://azure.microsoft.com/updates?id=580046",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Integration",
+    "Internet of Things",
+    "Mobile",
+    "Web",
+    "API Management",
+    "Microsoft Ignite"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "API Management Premium v2 is generally available in 35 regions",
+   "summary": "Premium v2 of API Management is now available in 35 Azure regions, letting organizations deploy and scale enterprise API workloads in more locations. It is relevant to teams choosing where to host their API gateways.",
+   "architecture_impact": "Gateway placement can now follow data residency and latency needs across more geographies. Feature differences from the earlier Premium tier and any migration path are not stated in the text and need checking at the source.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure API Management"
+   ],
+   "pillars": [
+    "performance",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-35ff30e55acf",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Connector Namespace",
+   "link": "https://azure.microsoft.com/updates?id=580041",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Integration",
+    "Internet of Things",
+    "Logic Apps",
+    "Microsoft Ignite"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Connector Namespace is generally available as a managed integration service",
+   "summary": "Azure Connector Namespace is a fully managed integration service that connects applications and AI agents to hundreds of Microsoft, SaaS and enterprise systems through prebuilt, reusable connectors. It targets teams that currently build custom integration code.",
+   "architecture_impact": "Prebuilt connectors can replace custom point-to-point integration code, shifting the integration layer toward managed connectors that agents can also consume. Check connector limits and networking options at the source before committing.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Connector Namespace",
+    "Azure Logic Apps"
+   ],
+   "pillars": [
+    "operations",
+    "security"
+   ]
+  },
+  {
+   "id": "updates-7d6dec94315f",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Unified Model API in Azure API Management",
+   "link": "https://azure.microsoft.com/updates?id=580036",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Integration",
+    "Internet of Things",
+    "Mobile",
+    "Web",
+    "API Management",
+    "Microsoft Ignite"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Unified Model API in API Management is generally available",
+   "summary": "API Management now offers a standardized interface for calling AI models from multiple providers without handling each provider's API. It targets applications that combine models from several providers.",
+   "architecture_impact": "A single model endpoint in the gateway lets you switch or route between providers without changing client code, moving provider abstraction into the gateway. Provider coverage and routing behavior need checking at the source.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure API Management"
+   ],
+   "pillars": [
+    "operations",
+    "cost"
+   ]
+  },
+  {
+   "id": "updates-a0d25e4fa095",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Multicloud Interconnect new cloud service provider support",
+   "link": "https://azure.microsoft.com/updates?id=579766",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Microsoft Ignite",
+    "Services",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Multicloud Interconnect is generally available, with Google Cloud in preview",
+   "summary": "Azure Multicloud Interconnect provides managed private connectivity between Azure and supported cloud providers. Google Cloud Platform is in public preview, and the AWS status is truncated in the text and needs checking at the source.",
+   "architecture_impact": "Private cross-cloud connectivity becomes a managed service rather than a custom build, so multicloud network designs can rely on it for Azure-to-GCP paths. Confirm AWS status and regional coverage at the source before designing around it.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Multicloud Interconnect",
+    "Google Cloud Platform",
+    "Amazon Web Services"
+   ],
+   "pillars": [
+    "security",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-5be5b708f36b",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Managed Connectors in Azure Functions",
+   "link": "https://azure.microsoft.com/updates?id=579440",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Integration",
+    "Internet of Things",
+    "Logic Apps",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Managed connectors in Azure Functions are now generally available",
+   "summary": "Azure Functions managed connectors are generally available, so developers can build event-driven applications that react to events and act across Microsoft 365, SaaS and business systems. The text is truncated, so pricing, limits and supported connectors need checking at the source.",
+   "architecture_impact": "Integration logic can sit in Functions with managed connectors instead of custom client code for each SaaS system, which simplifies credential handling and connector maintenance. Check connector coverage and any limits at the source before committing to it.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Functions"
+   ],
+   "pillars": [
+    "operations",
+    "security"
+   ]
+  },
+  {
+   "id": "updates-94fa5fa76666",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure HorizonDB",
+   "link": "https://azure.microsoft.com/updates?id=579388",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Azure HorizonDB",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 5,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure HorizonDB, a managed cloud-native PostgreSQL service, is generally available",
+   "summary": "Azure HorizonDB is now generally available as a fully managed, cloud-native PostgreSQL service aimed at high-performance, AI-driven and large-scale workloads needing low latency and high scale. The text is truncated, so SLAs, regions and feature parity with Azure Database for PostgreSQL need checking at the source.",
+   "architecture_impact": "Architects now have a PostgreSQL option tuned for low-latency, high-scale workloads, which should be compared with Azure Database for PostgreSQL before choosing a data tier for new designs. Existing PostgreSQL estates do not need to move unless a specific requirement drives it.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure HorizonDB",
+    "Azure Database for PostgreSQL"
+   ],
+   "pillars": [
+    "performance",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-cd09fb99b04a",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Symmetric keys on Azure Key Vault Premium",
+   "link": "https://azure.microsoft.com/updates?id=579374",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Security",
+    "Key Vault",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Symmetric AES keys in Azure Key Vault Premium are now generally available",
+   "summary": "Key Vault Premium now supports symmetric encryption with the oct-HSM key type and AES, generally available after the July 2026 preview. This lets customers and partners perform symmetric encryption inside Key Vault. Details such as supported operations and limits need checking at the source.",
+   "architecture_impact": "Applications that need HSM-backed symmetric encryption can keep key material in Key Vault Premium rather than managing it elsewhere. Review key rotation and access policy design for the new key type before adopting it.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Key Vault"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
+  {
+   "id": "updates-7048291289ae",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Backup for Azure Cosmos DB",
+   "link": "https://azure.microsoft.com/updates?id=579147",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Management and governance",
+    "Storage",
+    "Databases",
+    "Internet of Things",
+    "Azure Backup",
+    "Azure Cosmos DB",
+    "Microsoft Ignite"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure Backup for Cosmos DB with vaulted, air-gapped backups is generally available",
+   "summary": "Azure Backup for Cosmos DB is generally available, providing vaulted backups that are immutable, long-term and stored in a logically air-gapped vault isolated from production. It complements existing Cosmos DB continuous backup options. Retention, pricing and restore details need checking at the source.",
+   "architecture_impact": "Teams can add an isolated, immutable backup copy for ransomware and accidental-deletion recovery without relying only on in-account backups. Confirm how it fits with the existing continuous backup mode and what restore time to expect.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Backup",
+    "Azure Cosmos DB"
+   ],
+   "pillars": [
+    "reliability",
+    "security"
+   ]
+  },
+  {
+   "id": "updates-1d4bf80073f0",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Durable Task extension for Microsoft Agent Framework",
+   "link": "https://azure.microsoft.com/updates?id=578829",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Compute",
+    "Containers",
+    "Internet of Things",
+    "Azure Functions",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Durable Task extension for Microsoft Agent Framework is generally available",
+   "summary": "The Durable Task extension for Microsoft Agent Framework is now GA for C# and Python. It lets agents, multi-agent orchestrations and Agent Framework workflows run reliably over minutes, days or weeks, with state persisted by the durable runtime.",
+   "architecture_impact": "Long-running agent workflows can rely on durable orchestration state rather than custom persistence and retry code. Check the source for the persistence model and the scheduler and hosting options before committing to it.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Functions",
+    "Durable Task Scheduler",
+    "Microsoft Agent Framework"
+   ],
+   "pillars": [
+    "reliability",
+    "operations"
+   ]
+  },
+  {
+   "id": "updates-dc3336fde93d",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Backup for Azure Cosmos DB",
+   "link": "https://azure.microsoft.com/updates?id=578044",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Internet of Things",
+    "Azure Cosmos DB",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Vaulted backups for Azure Cosmos DB now generally available",
+   "summary": "Azure Cosmos DB backups can now be stored as immutable copies in an Azure Backup vault, isolated from the source account and managed through Azure Backup. This gives workloads an independent protection layer that helps meet regulatory requirements for immutable backup.",
+   "architecture_impact": "Architects can separate backup recovery from the source account's failure domain, which adds a recovery option beyond in-account backups. Retention, cost and restore behaviour are not stated in the text and need checking at the source before committing to a design.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure Cosmos DB",
+    "Azure Backup"
+   ],
+   "pillars": [
+    "reliability",
+    "security"
+   ]
+  },
+  {
+   "id": "updates-acbd8e457af2",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Zone-redundant Next-gen GP tier in Azure SQL Managed Instance",
+   "link": "https://azure.microsoft.com/updates?id=578033",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Azure SQL Managed Instance",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Zone redundancy now generally available for Next-gen General Purpose SQL Managed Instance",
+   "summary": "The Next-gen General Purpose tier of Azure SQL Managed Instance can now be zone-redundant, distributing critical service components across availability zones. This lets workloads be protected against zonal failure without building their own cross-zone database topology.",
+   "architecture_impact": "Architects can now design zone-level resilience into the SQL Managed Instance tier rather than relying on failover to another region. Regional availability, SLA and cost impact are not stated in the text and need checking at the source.",
+   "status": "ga",
+   "recommended_action": "adopt",
+   "services": [
+    "Azure SQL Managed Instance"
+   ],
+   "pillars": [
+    "reliability",
+    "cost"
+   ]
+  },
+  {
+   "id": "updates-bd6a7bf9f94d",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Cache for Redis to Azure Managed Redis migration tooling",
+   "link": "https://azure.microsoft.com/updates?id=577579",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Azure Managed Redis",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Migration tooling from Azure Cache for Redis to Azure Managed Redis is generally available",
+   "summary": "Built-in DNS migration tooling is now generally available for moving Azure Cache for Redis Basic, Standard and Premium caches to Azure Managed Redis. It lets you redirect the existing cache hostname to an Azure Managed Redis instance.",
+   "architecture_impact": "Existing caches need a planned endpoint cutover to Azure Managed Redis, and the hostname redirect lets applications keep their connection strings. Check the source for the retirement timeline and any supported-tier limits, which the feed text does not state.",
+   "status": "ga",
+   "recommended_action": "plan-migration",
+   "services": [
+    "Azure Cache for Redis",
+    "Azure Managed Redis"
+   ],
+   "pillars": [
+    "operations",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-2b7f5c0da692",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Managed Redis database integration guidance",
+   "link": "https://azure.microsoft.com/updates?id=577553",
+   "published": "2026-11-17T20:00:32+00:00",
+   "categories": [
+    "Launched",
+    "Azure Managed Redis",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Guidance for adding Azure Managed Redis caching to PostgreSQL, Cosmos DB and SQL apps",
+   "summary": "The guidance covers adding caching with Azure Managed Redis to applications built on Azure Database for PostgreSQL flexible server, Azure Cosmos DB and Azure SQL. It includes practical steps and reference architectures.",
+   "architecture_impact": "Use it to decide where the cache sits relative to each database and how cache-aside patterns are applied. The feed text does not give the specific patterns, so review the reference architectures at the source before adopting them.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Managed Redis",
+    "Azure Database for PostgreSQL flexible server",
+    "Azure Cosmos DB",
+    "Azure SQL Database"
+   ],
+   "pillars": [
+    "performance",
+    "reliability"
+   ]
+  },
+  {
+   "id": "architecture-fdfb87fddc56",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "Using AI to help forestry planners prioritise fuel-reduction work",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/using-ai-to-help-forestry-planners-prioritise-fuel-reduction/ba-p/4573152",
+   "published": "2026-11-16T20:54:26+00:00",
+   "categories": [],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Separating evidence, scoring, AI advice and human approval in an agent-based planner",
+   "summary": "The article describes an AI-assisted forestry planning system that calculates risk scores in deterministic code and stores data in Microsoft Fabric. Foundry agents explain results, but a named planner must approve each job before it reaches the crew list.",
+   "architecture_impact": "Keep scores out of the model: agents may read but never change a score, and a verifier blocks mismatches. Evidence must be labelled measured or estimated and dated, with missing or stale inputs blocking progress. The trade-off is extra control components and logging in exchange for auditability.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [
+    "Microsoft Foundry",
+    "Microsoft Fabric"
+   ],
+   "pillars": [
+    "security",
+    "operations",
+    "reliability"
+   ]
+  },
+  {
+   "id": "architecture-d51fa65c9eb6",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "Lantern: agentic AI for records and provenance on Azure",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/lantern-agentic-ai-for-records-and-provenance-on-azure/ba-p/4572947",
+   "published": "2026-11-16T20:53:39+00:00",
+   "categories": [],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Pattern for AI-assisted records and provenance with human sign-off on Azure",
+   "summary": "The white paper describes Lantern, a design for drafting descriptions and provenance with AI assistants, each claim cited to a source. A named person signs before anything is published, and a separate guide serves the public.",
+   "architecture_impact": "Separate the staff and public entry points, keep a tamper-evident record of every decision, and make the AI only propose. The trade-off is slower publication in exchange for zero unsourced facts and a clear audit trail. The feed text does not name the services used, so check the full paper at the source.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
   {
    "id": "updates-4c1d812fd575",
    "source": "updates",

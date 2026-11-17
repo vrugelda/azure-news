@@ -1825,5 +1825,1184 @@
   "architecture_relevance": 4,
   "reason": "Retirement of a whole data-sharing service with a fixed date, which forces migration of data sharing designs, though the deadline is years away and the item text is truncated.",
   "assessed_at": "2026-11-14T06:23:39.231721+00:00"
+ },
+ "updates-da4afce4aacf": {
+  "hash": "e533bfad9013ed6f9ae76c167ad1b110b9df3b97",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "GA integration with a niche HPC scheduler that opens an elastic capacity option, but it is a partner tooling feature for a specialised workload.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-4c45e29b0541": {
+  "hash": "83d65fd96d9f4484b4eabb92c571f4eef8714ca3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview for image publishers and platform teams, with limited effect on solution architecture.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-da4cbf5ec4ca": {
+  "hash": "8928eabac13be6206cca0ce2b5ca6c1bdf39120b",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that changes how VM deployments handle capacity constraints, which is worth knowing when designing scale-out and deployment flows.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-c5ed985543a1": {
+  "hash": "28cd627b2096cec9e8325b9b5935c2f98de916bf",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "The title says GA but the text describes a Public Preview of a portal entry point for an oversight feature, so it is a minor item that needs checking at the source.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-f3689d2d0363": {
+  "hash": "3511d9223cd4ebf1dcd651fdf6b28c65d8d0ff89",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "An announcement of an assessment report with no new platform capability for architects to design around.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-39a032ad1da5": {
+  "hash": "8718260a532b0fa0586ea9a0f66e5b400a43978e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of a portal for sovereignty posture monitoring, relevant to governance design but not a platform-wide change.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a7b83ab0ee82": {
+  "hash": "7e556e9ded94dc10d2eb709d24427ee7dde3e4f7",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A new confidential VM series in private preview that is worth tracking for data-in-use protection, though access is restricted and it is not yet broadly available.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-9481633db723": {
+  "hash": "e51368b9150c63f84b352dd9be28910cdf7f2368",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A research-stage private preview exploring zero-knowledge verification with no concrete design option yet.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-f6d268b47e8b": {
+  "hash": "3fd014e3f450d58f22e1e9530a26fbc0bb2375a3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A governance policy addition for one database service that is a minor feature, and the text is inconsistent about GA versus preview, so it needs checking at the source.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-850415214635": {
+  "hash": "6a1043caa9501ef6b99ff977afef3f3768a75b95",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview giving visibility of DDoS traffic outside active mitigation, which is useful when designing monitoring for public endpoints.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-3ea9ba68747b": {
+  "hash": "14742159535fb3bcd1edfe63fdc604f54fe226fc",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "An operational convenience for one database service's planned maintenance with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-380b6c1ec9cc": {
+  "hash": "9ef9402e82e703c72c5a2bf46364a3531765ffc6",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A new GA Linux distribution for VMs, which is a notable image and lifecycle change but has limited effect on design patterns.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-dd98d04dd005": {
+  "hash": "e472aeaec5a61970c4b482625498bc1a33635c7a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A GA VM series for I/O-intensive database workloads, an incremental SKU addition rather than a design shift.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-ccd9337c4313": {
+  "hash": "a3faa894193e7a14bf62b8b00980f651ddcd442c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of a Spot tier with better runtime consistency, which affects cost and resilience choices for interruption-tolerant workloads.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-06b351d33217": {
+  "hash": "cc5a471543d092a3ade398c9146827c88fb5ccbd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A minor management feature for renaming a database server that avoids recreation but changes little in design.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-c57831a569f0": {
+  "hash": "329667be3110ecd01b5f79804576a62403ee72c9",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of the next Windows Server LTSC release, which matters for lifecycle planning but has no immediate design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-f8c43e693e5d": {
+  "hash": "23fed26a2bf0a60eec1ba81f28339187ea578fdd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview adding multicloud connectors to an operations agent, relevant mainly to operating model choices.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-692b23e3575b": {
+  "hash": "f2e46b50ef3e23991ba1cb8490d558c8bf876256",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable AKS preview that preserves in-memory state for sandboxed workloads, which affects how restart and warm-up behaviour is designed.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-0e93488663c9": {
+  "hash": "79b59991a4a81b2b3700806f58d61122ddf50328",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview extending DDoS network protection to NAT Gateway StandardV2 public IPs, which affects outbound security design.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-88c0eb61f760": {
+  "hash": "b41e0f90f17f4c2c415398b57687797bacdea04a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A GA DDoS custom policy that lets latency-sensitive workloads tune detection thresholds, an incremental but design-relevant security control.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-d873d4bb55d2": {
+  "hash": "ac00db4b937c8032e617633ed71544a9b43e6f27",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A private preview chat integration for SRE Agent is a minor channel feature with little effect on system design.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-16c6cf48d12c": {
+  "hash": "89d22fb94491934d907fe5ece1344b41aa47d2f5",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A public preview adding agent identity and governance for SRE Agent is notable for security teams but limited to one service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-e513b1fb8b12": {
+  "hash": "c0ae2aa38cc1af4fc62852e6c31bc16f493d06cd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A public preview of A2A protocol support in one agent service is notable but not broadly platform-changing.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-f1d0b1aea0f1": {
+  "hash": "1b104a29db523259409fb1a3ff88531dc0e0549e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A Teams chat integration preview for SRE Agent is a minor collaboration feature.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-38de8f8a830c": {
+  "hash": "35666cf365e7a88dafb8067b5175b40eea432b26",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available resiliency service that offers zonal deployment templates and application assessment opens a real design option for reliability.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-10de404845ad": {
+  "hash": "a67eccae4502b56ae24b74702960049d7cad6840",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview for defining and versioning VM configurations is an incremental operational convenience with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-15d5c0515498": {
+  "hash": "e7773313a6405f423f30b290d79cdac460d8df5f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview bundle of Logic Apps integration and hybrid features is a set of incremental enhancements in one service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-8687bfce46ab": {
+  "hash": "5f01608b028b559a3c9607e20e29daa94525aef1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "Developer experience improvements such as a refreshed designer and templates are minor tooling changes.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-b166d269e573": {
+  "hash": "f42abf445cbd503bf19b529c08de8cc24db52c4c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of managed AI models inside Logic Apps Automation is notable for AI workflows but confined to one service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-6607b882fd88": {
+  "hash": "c1a368ea1593ac6cf69e69b6488ef58ec3cd46dd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "VNet integration for Logic Apps Automation in preview affects networking design, but it is a notable preview in one service rather than a major platform change.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-0e1be8f5a10d": {
+  "hash": "6b31688dc303c55eb73c5c86f611679882ffe3de",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "New built-in connectors for GitHub, Azure DevOps and management services are incremental integration additions.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-4abf9423f667": {
+  "hash": "4902c582afdc41a7ae61f94c2e7fa18f0b84dcbe",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Decision actions in a preview workflow service are a minor feature addition with limited design impact.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a4934f611555": {
+  "hash": "c8c4e6d7eec86935f38de259f4efa86466ac4dad",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of a new elastic architecture for Application Gateway v2 is a notable performance change but an incremental one for a single service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-e71d8d540c14": {
+  "hash": "2e4ab7925a8b00cc8010daa4599d76fc30e747d8",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Advanced server-level load balancing in Application Gateway preview is a notable but incremental traffic-routing feature.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-36f454370b3d": {
+  "hash": "89cfe42b8496a9682968f3f53d57ba0e0881779b",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "Centralized user authentication at the gateway in preview could shift security boundaries, but it is a preview in one service rather than a platform-wide change.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-fe271e1f864f": {
+  "hash": "8533e4819e3ef9bdedf273c9b087b8ad732d9c83",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Session-based authentication for Blob and Data Lake Storage in preview is a notable performance and identity change for agent workloads, limited to one service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-5e5a83e8ba61": {
+  "hash": "2545167983f49f27944ea4cc713808c70edfb571",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A generally available health modelling construct in Azure Monitor opens a new way to define workload health in a widely used service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7c8ab3a1f672": {
+  "hash": "a49ca9ec44dcce6b12172278963c16afab5eebf5",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of trace analytics in Application Insights is a notable diagnostics improvement with little effect on architecture.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7e1cfee762bd": {
+  "hash": "fd0ea271fe6c4ad0cd519a6b6bae2172975e171e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available hosted control plane option for Azure Red Hat OpenShift opens a new deployment design for a managed container platform.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-f78d1dc7a827": {
+  "hash": "1a95c942ad55ee13a727349914b306644a663be6",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available managed AI gateway for connecting applications and agents to models and MCP tools opens a central design option for AI platforms.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a2e964419657": {
+  "hash": "1fac6a7d541c550f0b9099924435c5fdb69d9ff1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available governance integration in API Management opens a real design option for controlling AI agents and MCP tools at runtime.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-36d1e6afb470": {
+  "hash": "44cb1d4a845dcbfc2f0df2f758d31143a9b608ba",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A new API Management tier becoming generally available in 35 regions is a broad platform change that affects where gateways can be placed.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-35ff30e55acf": {
+  "hash": "24ea7ffed66b9a455dde578a1b527dab23d63339",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A new managed integration service reaching general availability changes how connectors and agent integrations are built.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7d6dec94315f": {
+  "hash": "aefe2a43b565ca42beae027a716533d90e80539d",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available gateway capability that abstracts multiple AI model providers opens a new design option for multi-model applications.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-88a8957c3e9a": {
+  "hash": "44279db7c88b41dde8b5964874d52caea9a76d0a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "An Advisor integration adds recommendations for a database service, which is a minor operational feature.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-d3c79f953f2f": {
+  "hash": "3e151d0e56f20789e29cba8395ee567e0ed6fbad",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Azure Monitor alert support for a database is a minor operational feature with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7ee8b2a62b07": {
+  "hash": "114afc34efe6133e12b689002b283b293c6e6d16",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Database auditing with pgAudit is an incremental generally available feature that matters when designing for compliance logging.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a0d25e4fa095": {
+  "hash": "8c0d00167777a6f4f1402da16b1b15b5bc4076c1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A managed private connectivity service for cross-cloud networking reaching general availability is a meaningful new network design option.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-ce6863905bbc": {
+  "hash": "2ae06b3ba9fe679eff097397e43ef206730ce8a3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Business application support in Foundry is an incremental generally available feature for agent developers.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-63f4d168f2ab": {
+  "hash": "083dfd4aa2e076be7fc5b298ccce5d55d5a5ec00",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A developer tooling preview for provisioning a dev database has little effect on production architecture.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-2eef3da921e5": {
+  "hash": "42dcc05362170dcb6a3555c17990207230b81e95",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A performance improvement to graph queries is a minor operational update without design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7ccbbdae8af4": {
+  "hash": "1f4acfa325968b34352f6ec552bd8bbb215cf7ff",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A confidential compute option for Application Gateway is a notable preview that touches the security boundary but is not yet generally available.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-4edad7dc48ab": {
+  "hash": "46b1da029af01c7005dbb2e6edacdd120125ee89",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A migration path in preview to HorizonDB is relevant to PostgreSQL estates but is not yet generally available.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-67ea36c6ba14": {
+  "hash": "32157008867bb637cbf332e77264b881e266d36c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An offline Oracle to PostgreSQL migration preview is a notable but niche migration option.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-89fa57fc81ea": {
+  "hash": "2ae7be4405f90329adea2ab4eeeb6cd81aed490f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A knowledge graph capability in preview is worth knowing when designing with HorizonDB but is not yet generally available.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-2253ffe425bc": {
+  "hash": "e07bca825a00aa9e61232c0022490aa2a45670f7",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Diagnostic settings integration for logs is an operational detail with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-af17f4c5d48b": {
+  "hash": "d97c0ef6c1bb30bcd8a0abd000c1e0d26b72c142",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A migration service preview for HorizonDB is a notable but not yet generally available option for PostgreSQL estates.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-60ea824a5643": {
+  "hash": "1ec96b9412c5634f7bee416808aabded43b5afdc",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "Customer-managed keys for a database in preview touch key ownership but are not yet generally available.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-203c03ec6bf6": {
+  "hash": "3af931b3b26dc87f8439b6eebbabb73a5a063c5d",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An AES key option for TDE is an incremental generally available security feature with limited design impact.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-683353223d5a": {
+  "hash": "7675942de50c94fe899b3567a5e80b604ca96ea4",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A local developer container preview is tooling for dev and CI with little production design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-5be5b708f36b": {
+  "hash": "1f29d32ac57d09d1559d8d5db65345c7eb4a0aba",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "A generally available managed connector capability in Azure Functions opens a real event-driven integration option across Microsoft 365 and SaaS systems.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-1a11782c8dbb": {
+  "hash": "a5f49c0f926c1d36cb35fef6bf5f5754225e8e63",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of hosted MCP tooling for AI agents, with limited design consequence until it reaches general availability.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-94fa5fa76666": {
+  "hash": "44ecbacdb07bc6faac9bad753b9f5636c4f17ffa",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 5,
+  "architecture_relevance": 4,
+  "reason": "A new fully managed cloud-native PostgreSQL service reaching general availability is a major platform addition that opens a new data architecture option.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-cd09fb99b04a": {
+  "hash": "6020331975dfd6e92661785244557e9eaa896956",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 3,
+  "reason": "Generally available symmetric AES keys in Key Vault Premium open a real new option for key management in a widely used security service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-1db574c7da18": {
+  "hash": "7476a186ad5110e24ba61a1284c15c76d4da932f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview adding a lower-cost NFS tier for Azure Files, relevant when choosing storage for shared Linux workloads.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-15c943c6e2d4": {
+  "hash": "832e0b7763593c41ec3bbe4d735dcd3c58d0b25c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A monthly roundup of minor Azure SQL and SSMS updates with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-cea02e8f393f": {
+  "hash": "7f925fef16f950a13f422be9c0c8c0e7f2d101cb",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental generally available improvement to query routing in DocumentDB clusters, worth knowing when designing sharded deployments.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-6370f25a9315": {
+  "hash": "a22fb8ce3d67b7e58cf0b3deec5b1f6ad43d9562",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview of condition-based routing in Application Gateway, which affects edge routing design but is still in preview.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7bb72be646fe": {
+  "hash": "59ce836a493544ed5f2d32ff26c6acd4086be4a7",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A developer tooling plugin for application code migration with no architectural change.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a757d7217e83": {
+  "hash": "e88f01f99674edc1e533b94e93a5215777ccc77a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview migration path from Oracle to HorizonDB through Database Migration Service, useful for planning migrations but still in preview.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-6b617b3af02b": {
+  "hash": "dbb3d92572b80e87650f3b45b34d5eaa68209a84",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A generally available management and monitoring experience across database offerings, with little effect on system design.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7048291289ae": {
+  "hash": "b5390b2afddb979bfee2a70ba6de92927312efa2",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Generally available immutable, logically air-gapped backup for Cosmos DB is a meaningful resilience and security design option for a widely used database.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-9bb46d2dd640": {
+  "hash": "46e413c08de1d1f4979938ccbf85120000711393",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Extending an existing GA tiering feature to sovereign clouds is useful to those customers but is an incremental regional expansion.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-4761c6ad10d7": {
+  "hash": "2adf679bc01675b2ed2a21468a9c2ae2c3d5963e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of an SSD-backed Blob tier for performance-sensitive AI and analytics data, worth tracking but still in preview.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-b5201165ca36": {
+  "hash": "00f74f260176e8c992140178e3c87b498de960dd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A developer tooling wizard in the VS Code extension with little architectural consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-8861eea96f18": {
+  "hash": "9d5ef379a8f35e5162f5a90644809b120763e5a3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A local developer tooling feature for running a SQL container in VS Code with no design impact.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-f5e9cc42e630": {
+  "hash": "30dbd17f41d9c12b47915e4999789a3a07a980b9",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A VS Code query-tuning dashboard that is a minor tooling update.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-d923e04755e3": {
+  "hash": "ed4eaa9589921e816e31d4936084a7b606a3e906",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A minor SQL feature for fuzzy string matching with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-64c28d4a4411": {
+  "hash": "82ea5e190a2c4f4eec294276985b5051917e8c5f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview of named queues for durable task scheduling that affects how shared task hubs are designed, but it is still in preview.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-d34e2aa5fa06": {
+  "hash": "f597d039e6f662818b548b3ce380faf9e17f6a45",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A diagnostics tool preview for Function App dependencies with operational value but little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-1f256c2a6ef1": {
+  "hash": "430e95f4bf4b5a2850f3efb03a7d31e509d6e7dc",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that lets Flex Consumption apps carry native dependencies via containers, which changes how such apps can be built but is not yet GA.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-6547adda96cb": {
+  "hash": "77719a65031bda88e10a456c6f6c3926428ed4d3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that reduces agent setup code in Functions, useful when designing agent-based apps but still preview.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-cb1edafb338a": {
+  "hash": "e0e4a26cc520dd1aa29663c4576c1587b85e4e93",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview of cross-region resilience for App Service that opens a design option, but it is preview and the text is truncated, so it stays below the brief threshold.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-1d4bf80073f0": {
+  "hash": "3ba99fc1c0afb3d40e27c35e5298061759ccab56",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A GA extension for durable, long-running multi-agent workflows in C# and Python, opening a real design option for reliable agent orchestration.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-902cf00f6ef8": {
+  "hash": "b1d49182a4ffc0248c60ffdabf5798de7e89e56f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "An incremental GA networking control for the durable task scheduler that matters for private connectivity design but is a single-service feature.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-0c6e3d4fbfeb": {
+  "hash": "b66b8556b9b900d03a1743f3a650bafb7d3ea994",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview developer tool for building and deploying apps with little architectural consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-9aaca7b25567": {
+  "hash": "823888ad25a8e090baaa7874373df62f79599efd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A GA language worker for Functions Flex Consumption that adds a language option but little design consequence on its own.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-8a416a8c5ccb": {
+  "hash": "4c41923215b8d443fad25a425869a07bd6060c4e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A preview runtime version bump with no design consequence beyond routine upgrade planning.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7ce54f9423a1": {
+  "hash": "56e662e271b965fb8a7416cce1158daf5d4ffa8f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A preview runtime version bump with no design consequence beyond routine upgrade planning.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-1264aa2928c7": {
+  "hash": "682c621d5f23a03b1b65fa83a514681f4510ff75",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview network security recommendation feature with a minor operational role.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-acf63dd406c1": {
+  "hash": "d4a9608952f44791648690cdc8bf2609761d8d85",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview diagnostics enrichment for flow logs with limited design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-3ab059d0d1d1": {
+  "hash": "057a5b10fbf0f9bada50a9bbe9af7dddda26b259",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview logging field addition that is an operational detail.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-40b89c007ad8": {
+  "hash": "8865edd6afcdb0e4ecc9db996e2d75c315c7d63b",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "An incremental GA security option (customer-managed keys) for the durable task scheduler Dedicated SKU, relevant to data protection design but a single-service feature.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-5a96e64cf755": {
+  "hash": "fe39d53ffb72397ace76dadba993f0cb2ac961dd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview of native disaster recovery for durable workflows that affects resilience design, but it is preview and limited to the Dedicated SKU in supported regions.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-e6af97d7770b": {
+  "hash": "4bdc13a9b62f3cdd1c207b72664192b2fbf26690",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview SDK that adds a language option with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-e7a4580e1f7a": {
+  "hash": "65f7be759a19b219f68caedf024ac783b19bf58e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview troubleshooting view that is an operational detail.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-06c7c7ac026c": {
+  "hash": "d2fa609012c981cd00f3f9a9ff2ad3591f5ee3ba",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview troubleshooting tool for ExpressRoute packet loss, useful operationally but with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-1fea23a3beea": {
+  "hash": "ca489a70fe67de011d52812b54864d07bc6e1627",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview monitoring setup convenience with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-9871f9064bb2": {
+  "hash": "2bb77910d360271d10ccb5ac04c4cd2d4feff811",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A preview AI summary feature for troubleshooting output with no design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-96af697dc28f": {
+  "hash": "030bff5c8519c2d3751ab52bd9c46db9794deee4",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A preview platform support addition for SQL Server on a new OS version, a routine lifecycle item.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-be5fd8e026eb": {
+  "hash": "726a6978370c97c945a7753533968beec3ed7574",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A roundup of minor mid-November Azure SQL updates, with the text truncated and no single change large enough to alter a design.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-ccaf2f192b8b": {
+  "hash": "b4e5093fca904b71f0980680ae15467efbce6a29",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "Mostly an incremental GA performance uplift (higher log rates) for Next-gen General Purpose, which is useful but does not change the design pattern.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-6d5d6ef9aadc": {
+  "hash": "4e6ad8b626cadd70ff8e10180504fa6e764588b1",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview of a developer tooling feature in a VS Code extension with limited architectural consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-714ed623fa8f": {
+  "hash": "e40a0a4fc6cfe8c252444fe60ae9ad0fee25262b",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A command-line tool reaching GA, with no design consequence for architects.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a75bcb37737b": {
+  "hash": "dd3d63b1d3bc1a2088a4abd80b183a21b0fbd7b6",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of a managed MCP endpoint for agent access, which touches data access boundaries but is not yet a settled pattern.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7ba4a022f7ae": {
+  "hash": "d71452f0e78d8dc4d3b8aa0b3f65c61ca83c54fe",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Regional expansion of one service, which mainly affects where workloads can be placed.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-c59e44618343": {
+  "hash": "9ed309fba43001296c906ff34fa362655b07e078",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview of database- and collection-level RBAC that narrows data access scope and shapes security boundaries, but it is still in preview.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-26297b2d3f98": {
+  "hash": "f35e02ec97f1995cdfb328007ad56132de7ab4a9",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview that opens a new on-premises deployment option for DocumentDB, affecting topology and data location, but it is not yet GA.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-9829fd08a091": {
+  "hash": "992a3880455a78be0b87d4fbe03201440426c39a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview that extends DocumentDB to Arc-enabled Kubernetes across on-premises, edge and multicloud, which is a notable but preview-stage option.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-3936a5b51ffd": {
+  "hash": "0db51b6c4d610cc660f1a22aea5a592c4d588337",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A free developer extension reaching GA, with no design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-dc106d5cab36": {
+  "hash": "4986f6771a3de3aff03ff95072158aa5b1847b42",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview adding full-text search with BM25 ranking to DocumentDB, which is worth knowing when choosing where search lives but is still in preview.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-b19f5ee65ffe": {
+  "hash": "cd9f0fd46543ffe15ec307ee52074f4c5bb7bc68",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A diagnostic tooling feature in Network Watcher with little design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a7e74cffc61c": {
+  "hash": "950215275e30dfe59e605f1e793322d6178b84e7",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "An SDK reaching GA for one language, with no design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-ab699bd14482": {
+  "hash": "20d0b80897a08637eb3eb24820d40a089930dafa",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview of built-in embedding generation in Cosmos DB, which may simplify semantic search designs but is not yet GA.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-dc3336fde93d": {
+  "hash": "a547c340c3141349fb108aa348e544c511a39211",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of immutable vaulted backups isolated from the source account is a reusable resilience and security option for Cosmos DB workloads.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-acbd8e457af2": {
+  "hash": "dcab62ad63afc8592f3206307876a7cfb5233078",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of zone redundancy for Next-gen General Purpose SQL Managed Instance opens a meaningful resiliency option for a widely used database service.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a294a1958cd6": {
+  "hash": "b71b60f2269bbbdf6193eeecbfb0b3e9111674fe",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental GA feature that lets one managed instance link extend a SQL Server availability group with multiple databases, which matters mainly for migration paths.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-c9868e3beaf6": {
+  "hash": "a882121f67fdd314f7bad64a6a9d831cc40177cd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Shard-level metrics in preview give operational visibility without changing the design.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-39d66611a12f": {
+  "hash": "b790dfe0249fc6e2185adabf9ebbbf2aa2a1700c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview of a new major Redis version, which is a version bump with limited design impact at this stage.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-c56988bf5d53": {
+  "hash": "d53af2f6bddb5343e914714588755923dc12c2c2",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview adding IP firewall rules to Managed Redis, which strengthens the network boundary but is not yet GA.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-bd6a7bf9f94d": {
+  "hash": "85105e41c20d9a921370484b602b7e5b3fa88943",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Generally available migration tooling for a widely used cache service opens a concrete migration path and forces endpoint changes for existing Azure Cache for Redis users.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-cf7b1a8c4d99": {
+  "hash": "c2d42d26f3924ea23a6ea4e9c364a3aec597ab1e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A developer tooling preview that provides guidance inside AI-assisted workflows, with little effect on system design.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-88499bf2a353": {
+  "hash": "4383d501716ec46dcfaee05b5a3d73a456d01132",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Keyspace notifications becoming generally available is an incremental feature that adds a pub/sub event option when worth knowing for event-driven designs.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-2b7f5c0da692": {
+  "hash": "d8a4ac8a927cc7a175bc6e44a17a4af4d6c45d67",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Reference architectures and guidance for adding caching to common database-backed applications give reusable design direction for a real scenario.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-a7b2b5120d05": {
+  "hash": "83b33531f0a317c2e55889be04f8a98a41c461c2",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Exposing a BM25 relevance score in search results is a minor feature with limited design consequence.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-6dce5ec22876": {
+  "hash": "063da270cf37cd3429d8606ac87003c82b78d66e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that offers Premium SSD v2 storage for MySQL, relevant when sizing storage and cost, but not a broad platform change.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-e5ce7c301f3d": {
+  "hash": "921d9e526246e5da585a3901dd6cc126264c1646",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "Entra authentication becoming generally available for one database service is an incremental identity option that shapes how access is designed.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-7b88d0a715ec": {
+  "hash": "bb5504ea68d4c8ee0679d8f001e94f9de09d4fbc",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "User-assigned managed identity support for one database service is an incremental feature worth knowing when designing its access model.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-cbf93e9222b3": {
+  "hash": "a8c86f1e309f27eee600c272b2fc7bc3086db939",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview bringing Trusted Launch to Windows node pools in AKS is notable for security-sensitive designs but limited to a preview scope.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "architecture-fdfb87fddc56": {
+  "hash": "ddd37e0473668a8b441e5c111eab415df7bfefdd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "The guidance sets out a reusable three-plane pattern that separates evidence, deterministic scoring, advice and human approval for AI-driven decisions, though the example is forestry-specific.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "architecture-d51fa65c9eb6": {
+  "hash": "1554e32fb46d407941e66f4a76a47572d4e54cdf",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "The white paper offers a reusable pattern for records-and-provenance AI with separate staff and public access and an unalterable decision record, although the museum scenario is specific.",
+  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
  }
 }
