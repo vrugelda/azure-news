@@ -2052,13 +2052,13 @@
   "assessed_at": "2026-11-17T20:55:32.074785+00:00"
  },
  "updates-10de404845ad": {
-  "hash": "a67eccae4502b56ae24b74702960049d7cad6840",
+  "hash": "c191e0c1f84cdb6b66c3982dc5d5160c787f8d31",
   "by": "claude-haiku-5-5:d3fe2398a7",
   "kept": false,
-  "importance": 3,
+  "importance": 2,
   "architecture_relevance": 2,
-  "reason": "A preview for defining and versioning VM configurations is an incremental operational convenience with little design consequence.",
-  "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+  "reason": "A limited preview of VM configuration templates, a minor management convenience with little design consequence.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
  },
  "updates-15d5c0515498": {
   "hash": "e7773313a6405f423f30b290d79cdac460d8df5f",
@@ -3004,5 +3004,293 @@
   "architecture_relevance": 4,
   "reason": "The white paper offers a reusable pattern for records-and-provenance AI with separate staff and public access and an unalterable decision record, although the museum scenario is specific.",
   "assessed_at": "2026-11-17T20:55:32.074785+00:00"
+ },
+ "updates-e2182b90672d": {
+  "hash": "ce73ccd92631b11c967b09536b48bf4900a091df",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview adding short-term immutable snapshots to Disk Storage, which affects backup design but is still in preview.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-608150ad8a84": {
+  "hash": "a549c7b379986e1704328e8a488b11ef3d12400c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "An open-source diagnostic CLI for NVMe disk metrics with little effect on system design.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-24b926495393": {
+  "hash": "9bbecab4430bbcd19534901d60d1f7e27a842fa5",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "GA of several Cobalt 200 Arm VM series is an incremental compute option that is worth knowing when sizing workloads.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-616003db39cb": {
+  "hash": "61b5fb59259a0e4eb1234ec1628c6f102448a722",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "GA of v6 compute tiers with local temp disk for PostgreSQL is an incremental compute-tier change rather than a platform-wide shift.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-d3c7f21032b5": {
+  "hash": "b8dbf06337283ab4319a64e658bc828b6a622963",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A diskless v5 compute tier for PostgreSQL is a minor SKU option with limited design consequence.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-5a18bd413d9b": {
+  "hash": "e48ca37b2ba78a84e09b8d5e65e68a3b2df50dcd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "Cobalt 200 Arm compute for PostgreSQL is an incremental SKU addition with little design consequence.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-32be4e215585": {
+  "hash": "d4b06e04234f46cdf08d302a0a8e8969ca4f7bf8",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of geo-redundant backup and cross-region restore for HorizonDB opens a meaningful disaster recovery design option.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-7542bc702688": {
+  "hash": "982b4028f440f4ec541b134bdd2c314249a31a10",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Configurable backup retention from 1 to 35 days is an operational detail, and the item's status is unclear between preview and GA.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-0ffab7277ac6": {
+  "hash": "87a08fbe92cdfefd06c13dfb3e929d715716481c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "GA of throughput buckets gives a new way to isolate workloads sharing one container, which shapes multi-tenant and cost design.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-1f02d36a1b17": {
+  "hash": "04f85f89259e9649f6c921e4f48e454bf3a8045a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "GA of Semantic Reranker is a notable AI search feature, but it is an incremental capability for search relevance.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-73cb80cbc888": {
+  "hash": "a3613c20f5461be44474d25a3508759f8b35525f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview runtime class for pod sandboxing addresses the security and cold-start trade-off in AKS, but it is still in preview.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-145a1fafa99e": {
+  "hash": "4ce7e661cfc061c77999207a4966a1a97b9ca982",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A next-generation Elastic SAN in preview could change block storage topology, but it is still preview.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-decaeecdbfaf": {
+  "hash": "17af02eb5b1c1201c8b2e41e4058d8e1cbfb162a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A limited preview of an SAP operations experience with little design consequence yet.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-c89985d5511e": {
+  "hash": "cfd00b4fcc833f853c852670f1badb320a33564b",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A limited preview of an Oracle operations experience with little design consequence yet.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-ae50eb16c746": {
+  "hash": "d7f11589668b1125e9b25ba96bf42da959c4b468",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview of AI-generated recommendations in a database management agent, which is operational tooling with little design consequence.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-9889f64601b2": {
+  "hash": "77af9b185daf06aefe41111fd4061782895f010a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "Real-time performance dashboards in Database Hub are an operational monitoring feature with little design consequence.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-8ea8d521d51d": {
+  "hash": "ee4d0154089ee26305a44e95340cedb1e4fc0c41",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A private preview of new AMD VM series has limited access and little design consequence yet.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-f36a1c7a47d5": {
+  "hash": "dd13bd316dd39bee838640ccae7ea0129834cd27",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview of native cross-database queries in Hyperscale affects data architecture, but it is still preview and notable rather than major.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-14f956d8d0c9": {
+  "hash": "6171ef208d6bb03fb04675dfb30c5e34184a1248",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "Faster provisioning for higher DocumentDB tiers is an operational convenience with no real design consequence.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-7d6a6f2dc359": {
+  "hash": "fe087c31953ebcf5a1b445abe3ce1ddbd07a9d8f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A limited preview of managed AI models for embeddings, ranking and generation inside Azure HorizonDB is a notable preview, but the text is truncated and it is not yet broadly available.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-ee459f350680": {
+  "hash": "83c8ec2cd16deb266c52f4583430ab6226dd9007",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available capability in AKS that adds Intel TDX as a hardware confidentiality option for confidential node pools, opening a real new design choice for security-sensitive workloads.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-71de095b8ec2": {
+  "hash": "8a39015f100a2d104123cfb53ee3539fb3455fbd",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview that closes a data-at-rest gap for confidential AKS node pools, but it is preview-stage and the text is truncated.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-dc7b67f1e86b": {
+  "hash": "e744dd232e06f094e27b531ecf624516bd886df8",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A generally available private connectivity option for a database service, which is useful when designing network isolation but is an incremental feature for a single service.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-221db84d6606": {
+  "hash": "0054c86c7fcb28f904981bd5ef301c7e1341bc0a",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview enhancement to network security perimeter rules for third-party customers, relevant only to teams already using that perimeter model.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-5d1b92a5d57a": {
+  "hash": "d2c10dca6e4cd75fec825aed7686155d5dbd101f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview that lets resources in different network security perimeters connect, which affects perimeter-based segmentation design but is still in preview.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-a7d5e65b9f1a": {
+  "hash": "60a852b7b3538b0ec4ea7f3b7bc4d02af481843c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of identity-based zero trust networking for AI agent communications, of interest for agent designs but early and with limited detail in the text.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-3017c87d8240": {
+  "hash": "54c6736a0984ca411592070657e37aba1b40ef68",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview security service for virtual patching of Linux workloads, with limited design consequence beyond operational risk reduction.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-4b1cdbdb056a": {
+  "hash": "ae73e051d78350b1b2f5c69d66433b96463807d6",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview add-on to Azure Firewall Premium for AI application protection, worth knowing for AI network designs but still in preview.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-3ceded58b10d": {
+  "hash": "190aaeb1a3fc900cbee9bf9e5b96e0c44c5ebd69",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview operational feature for reviewing recorded Bastion sessions with little effect on system design.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-3a8032c484e4": {
+  "hash": "3a537fb2a6f1fe6cf559aa20e59b5a928745a76c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview feature in API Management for organising APIs by consuming application, a useful but incremental addition.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-9a845a8c69ca": {
+  "hash": "b373848285a42bfa1a3568a2aed5d600495182de",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of link groups for ExpressRoute Direct that aggregates connections for high-throughput scale, notable for hybrid networking but still in preview.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-cdcae9d403cd": {
+  "hash": "bc0b3b547da4f4551e5f198e8522a84ac69a311f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview AKS extension providing isolated sandboxes for running untrusted AI-generated code, relevant to agent platform designs but early-stage.",
+  "assessed_at": "2026-11-18T07:28:57.393370+00:00"
  }
 }

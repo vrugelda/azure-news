@@ -1,6 +1,101 @@
 {
- "updated_at": "2026-11-17T20:55:32.074785+00:00",
+ "updated_at": "2026-11-18T07:28:57.393370+00:00",
  "items": [
+  {
+   "id": "updates-32be4e215585",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Geo-redundant backup and restore for Azure HorizonDB",
+   "link": "https://azure.microsoft.com/updates?id=574168",
+   "published": "2026-11-17T23:47:55+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Azure HorizonDB",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Geo-redundant backup and cross-region restore now generally available for Azure HorizonDB",
+   "summary": "Azure HorizonDB now supports geo-redundant backups that can restore a deployment in another Azure region. This gives teams a cross-region recovery path for their database tier without building their own backup pipeline.",
+   "architecture_impact": "Architects can now design cross-region recovery for HorizonDB into the DR plan, weighing recovery time and cost against replicating the database itself. The text does not give recovery objectives or pricing, so confirm these at the source before committing to a design.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure HorizonDB"
+   ],
+   "pillars": [
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-0ffab7277ac6",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Throughput buckets in Azure Cosmos DB",
+   "link": "https://azure.microsoft.com/updates?id=571488",
+   "published": "2026-11-17T23:44:26+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Internet of Things",
+    "Azure Cosmos DB",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Throughput buckets now generally available in Azure Cosmos DB",
+   "summary": "Throughput buckets let several workloads share one Cosmos DB container while each is capped at a maximum throughput. This suits teams that consolidate workloads and need to stop one from starving the others.",
+   "architecture_impact": "Architects can consolidate workloads into a shared container and enforce per-workload throughput ceilings instead of provisioning separate containers. The trade-off is isolation versus consolidation, and the text does not give limits or billing details, so check these at the source.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Cosmos DB"
+   ],
+   "pillars": [
+    "performance",
+    "cost",
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-ee459f350680",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Confidential VMs with Intel TDX support on AKS",
+   "link": "https://azure.microsoft.com/updates?id=581130",
+   "published": "2026-11-17T21:00:05+00:00",
+   "categories": [
+    "Launched",
+    "Compute",
+    "Containers",
+    "Azure Kubernetes Service (AKS)",
+    "Microsoft Ignite",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "AKS Confidential VM node pools now support Intel TDX alongside AMD SEV-SNP",
+   "summary": "Workloads standardized on Intel Trust Domain Extensions for attestation and hardware confidentiality could not run on AKS Confidential VM node pools, which only supported AMD SEV-SNP. Those workloads can now run on AKS confidential node pools using TDX.",
+   "architecture_impact": "Choice of confidential computing technology becomes a node pool decision, so teams with existing TDX attestation requirements no longer need to move to another platform. Confirm VM SKU availability, regional coverage and supported attestation flows at the source, as the text is truncated.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Kubernetes Service (AKS)",
+    "Azure Confidential VMs"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
   {
    "id": "updates-38de8f8a830c",
    "source": "updates",
