@@ -3292,5 +3292,95 @@
   "architecture_relevance": 3,
   "reason": "A preview AKS extension providing isolated sandboxes for running untrusted AI-generated code, relevant to agent platform designs but early-stage.",
   "assessed_at": "2026-11-18T07:28:57.393370+00:00"
+ },
+ "updates-0f0306f27bfe": {
+  "hash": "518c4a220eab735197c3a1b5da56117f30484991",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable public preview of a WAF managed ruleset for AI crawlers on Front Door Premium, useful for bot-access policy but not a broad platform change.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "updates-fddaba50c52c": {
+  "hash": "81b6cd7cff173d6f12793e246f75d9550b56947d",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A Beta sovereign-cloud option for Azure Databricks on Azure Government matters to US public sector designs but is an early-stage preview with little detail in the text.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "updates-c9176a7c8dad": {
+  "hash": "e2bd97bf4fa77184d5d10bc277af66b3f0878a4e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A generally available but incremental Azure Backup feature that allows centralised cross-subscription VM protection, which affects backup topology and operating model.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "updates-f17960c37617": {
+  "hash": "832e5d6a999558f781952251de8e7b65f9b875f0",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview tool for assessing and modernizing applications and databases, notable but with limited design consequence until its scope is verified at the source.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "blog-a534c92a0121": {
+  "hash": "5c354e1591c79993e8b19bbd4f15e71e45492a55",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A partnership announcement about AI agents reasoning over Oracle data, with no design guidance or detail in the text.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "blog-f69f7d4afea2": {
+  "hash": "1e4e66d51d36d25a740a1cf0991a719d0ea7978d",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A vague Ignite announcement whose text names capability areas but gives no concrete details to assess.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "blog-9a7327d73791": {
+  "hash": "cb1d42366b4bd193567a808229f8914c57581506",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 1,
+  "architecture_relevance": 1,
+  "reason": "A general Ignite recap of what's new across the platform, with no specific change or design content.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "blog-31e037608805": {
+  "hash": "05702b53cec533d3f8567edc058e833e1380a056",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A new VM generation becoming available is worth knowing for compute selection, but the text gives no specifics on sizes, regions or pricing.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "blog-41dfffbb42dd": {
+  "hash": "e4a018dc3079ef2b17537761dae629dbf78d286e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A product announcement about evaluating and optimizing agents in Foundry, with little concrete design guidance in the text.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "blog-45f082632f76": {
+  "hash": "fbcb64ce09d5d0cc92e0a52af603dbab2c9f32be",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A new enterprise context-management platform for agents is strategically relevant, but the text is high-level and needs checking at the source for specifics.",
+  "assessed_at": "2026-11-18T20:31:44.405755+00:00"
  }
 }
