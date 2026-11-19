@@ -1,6 +1,34 @@
 {
- "updated_at": "2026-11-19T07:25:50.212488+00:00",
+ "updated_at": "2026-11-19T20:37:29.128788+00:00",
  "items": [
+  {
+   "id": "architecture-df722bd14c95",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "Inside the architecture: How connectors work with Azure Functions",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/inside-the-architecture-how-connectors-work-with-azure-functions/ba-p/4573939",
+   "published": "2026-11-18T20:43:32+00:00",
+   "categories": [],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "How Azure Connectors and Connector SDKs let Azure Functions reach SaaS services",
+   "summary": "The guidance covers a Function App that reacts to events from one service, such as new email, and calls another, such as posting to Teams, without custom integration code for each service. It shows how Azure Connectors and per-language SDKs supply authorization, change detection and event delivery on top of the existing Logic Apps connector runtime.",
+   "architecture_impact": "Connection consent and the calling identity are kept separate through access policies, so either can change without the other. Webhook delivery suits push while polling suits sources that cannot send events, and SDK retries apply by default only to safe methods so that message sends are not duplicated. Check the connector catalog and regional availability at the source before adopting.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Functions",
+    "Azure Logic Apps",
+    "Azure Connectors",
+    "Microsoft Entra ID"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
   {
    "id": "updates-32be4e215585",
    "source": "updates",
@@ -861,15 +889,16 @@
     "Networking",
     "Security",
     "Azure Front Door",
-    "Features"
+    "Features",
+    "Post Quantum Crypto"
    ],
    "tier": "major",
    "importance": 4,
    "architecture_relevance": 4,
    "summarised_by": "claude-haiku-5-5",
-   "headline": "Azure Front Door adds configurable TLS key exchange policies with post-quantum support",
-   "summary": "Azure Front Door now lets you choose TLS key exchange policies, including hybrid post-quantum key exchange, that are now generally available. The change lets teams prepare for post-quantum threats while balancing security requirements against client compatibility.",
-   "architecture_impact": "Architects can select a key exchange policy at the edge rather than accepting a fixed default, trading stronger future-proofing against the risk of excluding older clients. Check the predefined policy options and their client support at the source before standardising on one.",
+   "headline": "Azure Front Door adds TLS key exchange policies with post-quantum support",
+   "summary": "Azure Front Door now offers configurable TLS key exchange policies, including hybrid post-quantum key exchange, now generally available. The policies are predefined choices that let teams balance stronger cryptography against the compatibility needs of their clients.",
+   "architecture_impact": "Edge TLS policy becomes a deliberate design decision: teams can prepare for post-quantum threats at the entry point while checking that older clients still connect. The source text is truncated, so the exact policy names, supported clients and any limits need checking at the Azure Updates source before rollout.",
    "status": "ga",
    "recommended_action": "evaluate",
    "services": [

@@ -1638,13 +1638,13 @@
   "assessed_at": "2026-11-05T19:57:13.649855+00:00"
  },
  "updates-73da89b6fea0": {
-  "hash": "9466d5eab23f6f101f9cefd52f35547a6178ba85",
+  "hash": "02aeedcc918963ca5e9531d1bf66e173a33fb287",
   "by": "claude-haiku-5-5:d3fe2398a7",
   "kept": true,
   "importance": 4,
   "architecture_relevance": 4,
-  "reason": "A generally available TLS key exchange policy with hybrid post-quantum support in Azure Front Door opens a real new security design option for edge TLS, though the item text is truncated and client compatibility details need checking at the source.",
-  "assessed_at": "2026-11-06T06:46:23.592139+00:00"
+  "reason": "A generally available TLS policy control in Azure Front Door that opens a real security design option for post-quantum key exchange, with client compatibility trade-offs.",
+  "assessed_at": "2026-11-19T20:37:29.128788+00:00"
  },
  "blog-2725bdfc54b3": {
   "hash": "b3db46fd4e235809c6aba3e8bc8b48e53549af8f",
@@ -3382,5 +3382,23 @@
   "architecture_relevance": 3,
   "reason": "A new enterprise context-management platform for agents is strategically relevant, but the text is high-level and needs checking at the source for specifics.",
   "assessed_at": "2026-11-18T20:31:44.405755+00:00"
+ },
+ "updates-047df3cbd0f6": {
+  "hash": "382ddc6d64a3dce82e05a1ffcb39b47922543d7c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview of a PostgreSQL monitoring tool that adds operational convenience but has little effect on how systems are designed.",
+  "assessed_at": "2026-11-19T20:37:29.128788+00:00"
+ },
+ "architecture-df722bd14c95": {
+  "hash": "cf8424fe8217a427822d321854d54489ed9560af",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "Architecture Blog guidance on how a shared connector platform lets Azure Functions react to and call SaaS services, with clear design decisions about identity separation and push versus pull delivery.",
+  "assessed_at": "2026-11-19T20:37:29.128788+00:00"
  }
 }
