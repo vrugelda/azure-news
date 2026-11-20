@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T07:16:09.491602+00:00",
+ "updated_at": "2026-11-20T20:20:40.256157+00:00",
  "items": [
   {
    "id": "architecture-df722bd14c95",
@@ -704,6 +704,40 @@
    "pillars": [
     "performance",
     "reliability"
+   ]
+  },
+  {
+   "id": "updates-203c03ec6bf6",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Transparent data encryption (TDE) in Azure SQL Database AES keys",
+   "link": "https://azure.microsoft.com/updates?id=579531",
+   "published": "2026-11-17T20:00:24+00:00",
+   "categories": [
+    "Launched",
+    "Databases",
+    "Hybrid + multicloud",
+    "Azure SQL Database",
+    "Microsoft Ignite",
+    "Feature",
+    "Post Quantum Crypto"
+   ],
+   "tier": "detail",
+   "importance": 4,
+   "architecture_relevance": 3,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Azure SQL Database TDE now supports AES-256 keys from Key Vault Premium or Managed HSM",
+   "summary": "Azure SQL Database transparent data encryption can now use AES-256 keys stored in Azure Key Vault Premium or Managed HSM as protectors, as an alternative to RSA keys. The change is aimed at teams protecting data at rest who want a symmetric key option, with the text citing post-quantum cryptography as a reason.",
+   "architecture_impact": "Architects can now choose between RSA and AES-256 TDE protectors when designing key management for data at rest, which affects key lifecycle and HSM placement decisions. Check at the source for any migration steps, supported configurations or limitations, as these are not in the item text.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure SQL Database",
+    "Azure Key Vault",
+    "Azure Managed HSM"
+   ],
+   "pillars": [
+    "security"
    ]
   },
   {
