@@ -3400,5 +3400,41 @@
   "architecture_relevance": 4,
   "reason": "Architecture Blog guidance on how a shared connector platform lets Azure Functions react to and call SaaS services, with clear design decisions about identity separation and push versus pull delivery.",
   "assessed_at": "2026-11-19T20:37:29.128788+00:00"
+ },
+ "updates-ba2ee9fa3cd5": {
+  "hash": "785dcf649ccad48ec731028f4906c930667fa509",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A marketplace commercial feature expanding to two more markets, with no design consequence stated in the text.",
+  "assessed_at": "2026-11-20T07:16:09.491602+00:00"
+ },
+ "updates-4895716e90f3": {
+  "hash": "def20e1e375632e7bb800c116adafd6484be5eaf",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "An incremental GA feature for recovering deleted image versions, which is an operational detail with limited design impact.",
+  "assessed_at": "2026-11-20T07:16:09.491602+00:00"
+ },
+ "updates-8b457ec1fccc": {
+  "hash": "dfa69a95ff5316e1e95a3a9255dc530006f43d9f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview of a new PostgreSQL major version in one region, useful to track but not yet a design change.",
+  "assessed_at": "2026-11-20T07:16:09.491602+00:00"
+ },
+ "updates-b9601e438345": {
+  "hash": "6885d1782a2c299aabff8a58f30752effc91b2cc",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview of zonal VM recovery into another zone that could open a resilience design option, but it is still in preview and the text is truncated.",
+  "assessed_at": "2026-11-20T07:16:09.491602+00:00"
  }
 }
