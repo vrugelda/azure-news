@@ -3445,5 +3445,50 @@
   "architecture_relevance": 4,
   "reason": "A public preview of a container-focused firewall is a notable but not platform-wide change, and it touches network boundaries for containerized workloads.",
   "assessed_at": "2026-11-20T20:20:40.256157+00:00"
+ },
+ "updates-b3f98329612c": {
+  "hash": "63692756471d481e95026e487c1256f2a67b8819",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "An incremental generally available governance guidance feature in Foundry tooling, which surfaces policies for agent types, models and guardrails during development.",
+  "assessed_at": "2026-11-21T07:08:14.634257+00:00"
+ },
+ "updates-9854bd2f663a": {
+  "hash": "fe53b38247ad16cc7ff4088aa0de94e2e3a6e0af",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A preview of developer tooling support in the VS Code extension with little effect on system design.",
+  "assessed_at": "2026-11-21T07:08:14.634257+00:00"
+ },
+ "updates-409948d2260d": {
+  "hash": "64b74bde718e800af41deb15d1c07ba3dcc5904c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "Retirement of a single Azure Functions extension with a April 20, 2027 deadline, requiring code to move to scenario SDKs, which is worth knowing when designing with Functions.",
+  "assessed_at": "2026-11-21T07:08:14.634257+00:00"
+ },
+ "updates-3590474f3255": {
+  "hash": "7abfdaa178aeb6dd41218e812b7ec7c4b8adb06b",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview of an API for custom post-training loops over open-weight models, with limited effect on general architecture and access is by request only.",
+  "assessed_at": "2026-11-21T07:08:14.634257+00:00"
+ },
+ "updates-007c4a4a4e48": {
+  "hash": "4f05bef258fe058b29d91c00b7a48dd5c1bf7356",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview of multi-turn agent evaluation in Foundry, an operational quality-testing detail with modest design consequence.",
+  "assessed_at": "2026-11-21T07:08:14.634257+00:00"
  }
 }
