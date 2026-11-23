@@ -3490,5 +3490,158 @@
   "architecture_relevance": 2,
   "reason": "A notable preview of multi-turn agent evaluation in Foundry, an operational quality-testing detail with modest design consequence.",
   "assessed_at": "2026-11-21T07:08:14.634257+00:00"
+ },
+ "updates-9563ec7ce743": {
+  "hash": "e423837ac9929ba074eafbd088c00aeaca7efac0",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A notable preview that adds a relationship-aware knowledge source to Foundry IQ, which opens a new retrieval design option but is still in preview.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-f589d1117f22": {
+  "hash": "e5de37f191bb07d4280fecd14a3ae8c138b886a3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 3,
+  "reason": "An incremental preview update to runtime safety controls that matters for agent guardrail design but is a UI and configuration change.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-a606c5176672": {
+  "hash": "8a5ae2d82ffd4b06fbc4fbdf43978826fc40dcde",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of an iterative retrieval model with a configured budget, worth knowing when designing Foundry IQ retrieval but not a major platform change.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-5806c7198f40": {
+  "hash": "8747cab2264f675d0b408d8cd03d4758cb253bba",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A voice feature preview with little effect on system design.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-682d4f6c7920": {
+  "hash": "1ae2e3bf9ff1c15b5cf8b06920c7d5f9ba496a47",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A preview evaluation tooling feature with limited design consequence.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-6d9335c81421": {
+  "hash": "77b3aab036a9971fe57dbd93fba84ac98eb1a2ba",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "An incremental GA observability and evaluation feature for agents with little impact on architecture.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-ece11a9be781": {
+  "hash": "29242fe2c6854145bb3ac2d5f19875d14f20dfce",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A GA feature that removes the need for a storage account and indexer for files, a useful simplification but an incremental capability.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-8b4cc7daf69e": {
+  "hash": "e1f1c38b9a750c9fdc721c7390d0559f9fcbe2f6",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview that changes how model router is deployed, which affects deployment design, but is still in preview and regional.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-bc9df30fa98a": {
+  "hash": "251cff66850fee4497e41d088fc8acfa2fc5dfff",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A preview protocol addition for model router that mainly matters to specific client applications.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-85fd4ed3b625": {
+  "hash": "50a715c45946af338c5765b8bd288b2b094eb99e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview that lets model router use existing deployments, a capacity and cost consideration that is notable but not platform-wide.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-373bed523c61": {
+  "hash": "a083dc5d2fb947ae449aacd2fe9d6afc899f4c4f",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A GA protocol support addition for model router that is incremental for Responses-based applications.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-1b8afb48e95f": {
+  "hash": "9d6202575d0f18faf0ed1a825789f00cad4fe2e0",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview that combines model router ranking with AI Gateway alias routing, which affects gateway topology and access control design but is still preview.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-068586fa62f2": {
+  "hash": "0e57c9f7ffdee6cc7c5f0a758bc0e5ec1a4d03cf",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A tooling update that allows deployment from customer-managed registries, with little design consequence.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-c310fe880ffd": {
+  "hash": "a8ddf1443bd72bfa30583173ac7d87bbc71b5702",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "An incremental GA firewall rule capability that affects egress control design but is a narrow feature rather than a platform-wide change.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-afe2a95de7ca": {
+  "hash": "99b7541c23997af2202ae448954d83218e8add79",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A retirement of selected preview capabilities of Azure AI Content Safety with a deadline of April 30, 2027, which needs checking at the source for affected workloads.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-19bad1b9e27a": {
+  "hash": "e4ecd64862a8efb9ea7a120bf4d234c3b624fd84",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview of a new burstable PostgreSQL tier that may change cost-performance choices for steady workloads but is a notable preview only.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "updates-413625cbe6a7": {
+  "hash": "60dba57fef6042c6639667e45d07ef8d69de7122",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 2,
+  "reason": "A GA dashboard experience for WAF logs and metrics with an operational focus and little design consequence.",
+  "assessed_at": "2026-11-23T23:53:57.871081+00:00"
  }
 }
