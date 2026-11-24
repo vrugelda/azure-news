@@ -3661,5 +3661,77 @@
   "architecture_relevance": 5,
   "reason": "A reusable pattern for object-level authorization across microservices that addresses a common, high-impact vulnerability class, with concrete decisions on enforcement points, policy evaluation and fail-closed behaviour that change how endpoints are designed.",
   "assessed_at": "2026-11-24T09:54:30.960758+00:00"
+ },
+ "updates-420d080adab6": {
+  "hash": "c1d2f5c4ef7aed9668d2f83a8e3f26128fbcebb8",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available zone-to-zone disaster recovery option for Ultra disk VMs in a widely used service opens a real resilience design choice, though the text is truncated and limits or recovery objectives need checking at the source.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
+ },
+ "updates-e8334439ad01": {
+  "hash": "1b04255d5381dfe92233298091e14f1e31ee876e",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 2,
+  "reason": "A notable preview that refines how agent instructions and tool descriptions are tuned, with little effect on system architecture.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
+ },
+ "updates-119a3ee722c1": {
+  "hash": "ad598a930955d4344f1eb2f6881f2545efd72582",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview that lets MCP tool traffic route through an organisation's own AI Gateway or API Management, which touches the security boundary but is a preview.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
+ },
+ "updates-b874ade0d937": {
+  "hash": "1e985270f8e3e908eb1932537a3135bed57899d2",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A generally available capability in Azure AI Search that enforces Azure Storage permissions on results is a meaningful access-control design option for search and agent solutions.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
+ },
+ "updates-f2bfeb114b0b": {
+  "hash": "e933c1703f484553b0877fe19fcb7c2044d86055",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A preview that forwards native A2A requests without protocol conversion, which simplifies integration of existing agents but is a notable preview rather than a broad platform change.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
+ },
+ "updates-b75babf27833": {
+  "hash": "6cfd830feee03a5ac832940b0044cdbe92e4af12",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 2,
+  "architecture_relevance": 1,
+  "reason": "A developer tooling extension preview for document analysis with no meaningful design consequence.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
+ },
+ "updates-1281c9b4ec1b": {
+  "hash": "ae049650c91f656b85e3fdf9775e8658516dcc71",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 3,
+  "reason": "A notable preview adding spending and token budgets with alerts or request blocking, which affects the cost model of agent workloads.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
+ },
+ "updates-aca44d173b00": {
+  "hash": "b44bddda854ceb251c2a7e661144e20dd7ce6de3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": false,
+  "importance": 3,
+  "architecture_relevance": 4,
+  "reason": "A preview that lets administrators enforce outbound destination policy for hosted agents, which shapes the egress security boundary but is still in preview.",
+  "assessed_at": "2026-11-24T22:26:56.128122+00:00"
  }
 }

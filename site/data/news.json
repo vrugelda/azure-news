@@ -1,6 +1,72 @@
 {
- "updated_at": "2026-11-24T09:54:30.960758+00:00",
+ "updated_at": "2026-11-24T22:26:56.128122+00:00",
  "items": [
+  {
+   "id": "updates-420d080adab6",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Azure Site Recovery support for zonal disaster recovery for Ultra disks",
+   "link": "https://azure.microsoft.com/updates?id=582171",
+   "published": "2026-11-24T17:48:22+00:00",
+   "categories": [
+    "Launched",
+    "Management and governance",
+    "Migration",
+    "Azure Site Recovery",
+    "Management",
+    "Feature"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Site Recovery adds zone-to-zone disaster recovery for Ultra disk VMs",
+   "summary": "Azure Site Recovery now supports Zone-to-Zone Disaster Recovery for virtual machines on Azure Ultra disks. Teams running performance-intensive workloads can replicate and recover them across Availability Zones to guard against zonal disruption.",
+   "architecture_impact": "Architects can now consider zonal replication for Ultra disk workloads instead of relying only on in-zone redundancy or cross-region designs. Confirm supported configurations, replication behaviour and recovery objectives at the source before committing to the pattern.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure Site Recovery",
+    "Azure Ultra Disks",
+    "Azure Availability Zones"
+   ],
+   "pillars": [
+    "reliability"
+   ]
+  },
+  {
+   "id": "updates-b874ade0d937",
+   "source": "updates",
+   "source_name": "Azure Updates",
+   "title": "[Launched] Generally Available: Use Azure Storage permissions in Azure AI Search and Foundry IQ",
+   "link": "https://azure.microsoft.com/updates?id=581303",
+   "published": "2026-11-24T16:49:39+00:00",
+   "categories": [
+    "Launched",
+    "AI + machine learning",
+    "Microsoft Foundry",
+    "Features",
+    "Microsoft Ignite"
+   ],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "AI Search and Foundry IQ can enforce Azure Storage permissions on results",
+   "summary": "Azure AI Search and Foundry IQ in Microsoft Foundry can apply supported Azure Storage permissions to control which search results are returned. Search applications and AI agents then return only content each user is allowed to see.",
+   "architecture_impact": "Access control can move into the storage layer rather than being duplicated in index-level filters or application code, reducing that duplication. Check which storage permission types are supported and how they are configured before designing around them.",
+   "status": "ga",
+   "recommended_action": "evaluate",
+   "services": [
+    "Azure AI Search",
+    "Foundry IQ",
+    "Azure Storage",
+    "Microsoft Foundry"
+   ],
+   "pillars": [
+    "security"
+   ]
+  },
   {
    "id": "architecture-d16ea9be1708",
    "source": "architecture",
