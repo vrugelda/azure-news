@@ -1,6 +1,61 @@
 {
- "updated_at": "2026-11-23T23:53:57.871081+00:00",
+ "updated_at": "2026-11-24T09:54:30.960758+00:00",
  "items": [
+  {
+   "id": "architecture-d16ea9be1708",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "Evidence before autonomy: Designing multi-agent battery passports on Azure",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/evidence-before-autonomy-designing-multi-agent-battery-passports/ba-p/4575061",
+   "published": "2026-11-23T17:37:56+00:00",
+   "categories": [],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Designing multi-agent battery passport evidence and review controls on Azure",
+   "summary": "This guidance covers EU battery passport operations, where supplier evidence, battery genealogy and review decisions must stay aligned as facts change. It proposes Microsoft Fabric for data preparation, Microsoft Foundry agents to interpret documents and prepare reviews, accountable people to resolve adverse findings, and a passport application that enforces publication controls and records decisions in Azure SQL Database.",
+   "architecture_impact": "Bind every review decision to the specific evidence it judged, so that a changed certificate or transport record invalidates the earlier approval and forces a new decision. Keep AI agents in a preparatory role and keep enforcement and accountable sign-off in the application and in people, which separates the control plane from the agent layer. Check the source for current regulatory details, as the article's dates and scope need confirmation against official guidance.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [
+    "Microsoft Fabric",
+    "Microsoft Foundry",
+    "Azure SQL Database"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
+  {
+   "id": "architecture-f8f5c63f0c2d",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "Who Can See This Record? Designing Reusable Access Control Lists for Azure Microservices",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/who-can-see-this-record-designing-reusable-access-control-lists/ba-p/4575167",
+   "published": "2026-11-23T17:36:03+00:00",
+   "categories": [],
+   "tier": "major",
+   "importance": 5,
+   "architecture_relevance": 5,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Reusable object-level authorization pattern for Azure microservices",
+   "summary": "This guidance addresses broken object-level authorization, where an API authenticates the caller but does not check whether that caller may act on a specific record. It proposes a small reusable enforcement library inside each service, a relationship-aware decision service with authoritative relationship data, trusted identities for users and workloads from Microsoft Entra ID, token validation at Azure API Management, and telemetry that reveals endpoints where no decision was made.",
+   "architecture_impact": "Place the final object-level check inside each service near the business logic, because API Management token validation cannot make that decision. Include subject, tenant, action and resource in every authorization request, deny by default and fail closed, and keep relationship data under the owning business system rather than copying it into local configuration. Use telemetry to find endpoints that skip the check.",
+   "status": "guidance",
+   "recommended_action": "adopt",
+   "services": [
+    "Microsoft Entra ID",
+    "Azure API Management",
+    "Azure Monitor Application Insights",
+    "Log Analytics"
+   ],
+   "pillars": [
+    "security",
+    "operations"
+   ]
+  },
   {
    "id": "architecture-df722bd14c95",
    "source": "architecture",

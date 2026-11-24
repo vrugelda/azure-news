@@ -3643,5 +3643,23 @@
   "architecture_relevance": 2,
   "reason": "A GA dashboard experience for WAF logs and metrics with an operational focus and little design consequence.",
   "assessed_at": "2026-11-23T23:53:57.871081+00:00"
+ },
+ "architecture-d16ea9be1708": {
+  "hash": "cbb597bba7b2b58fb98d52bb3846ce872fb3dd98",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A concrete reference architecture for battery passport evidence, review and publication control on Azure, with clear design decisions, but it is a proposed design tied to one regulatory scenario and has no measured results.",
+  "assessed_at": "2026-11-24T09:54:30.960758+00:00"
+ },
+ "architecture-f8f5c63f0c2d": {
+  "hash": "ccecb1ab685d7b6aece693a3ef49990f8bb43d3c",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 5,
+  "architecture_relevance": 5,
+  "reason": "A reusable pattern for object-level authorization across microservices that addresses a common, high-impact vulnerability class, with concrete decisions on enforcement points, policy evaluation and fail-closed behaviour that change how endpoints are designed.",
+  "assessed_at": "2026-11-24T09:54:30.960758+00:00"
  }
 }
