@@ -1,6 +1,30 @@
 {
- "updated_at": "2026-11-26T08:18:04.557343+00:00",
+ "updated_at": "2026-11-26T21:32:01.080712+00:00",
  "items": [
+  {
+   "id": "architecture-bb56c3fed4b2",
+   "source": "architecture",
+   "source_name": "Azure Architecture Blog",
+   "title": "Running green hydrogen export plants with AI agents on Azure",
+   "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/running-green-hydrogen-export-plants-with-ai-agents-on-azure/ba-p/4576731",
+   "published": "2026-11-26T13:35:43+00:00",
+   "categories": [],
+   "tier": "major",
+   "importance": 4,
+   "architecture_relevance": 4,
+   "summarised_by": "claude-haiku-5-5",
+   "headline": "Running green hydrogen export plants with AI agents around a deterministic core",
+   "summary": "The paper proposes operating a green hydrogen export plant on variable renewables with five AI agents that explain, negotiate, recommend and record around a mixed-integer optimiser that makes the plan. The scenario is a 500 MW solar, wind and electrolysis complex selling into the EU, where hourly matching evidence is needed for premium and carbon-border reporting. The author has not built the design; the logic was tested on a simulated plant and costed at Azure list prices.",
+   "architecture_impact": "Keep the control path deterministic: the agents get tool calls checked by a policy layer that denies when it cannot decide, and all writes to the plant go through one setpoint gateway, with the safety system kept hardwired. Autonomy is set by what a mistake can break rather than by model capability, with certification evidence recorded autonomously as a read-only function. The visible text does not name the Azure services used, so the service mapping and cost assumptions need checking at the source.",
+   "status": "guidance",
+   "recommended_action": "evaluate",
+   "services": [],
+   "pillars": [
+    "security",
+    "reliability",
+    "operations"
+   ]
+  },
   {
    "id": "updates-420d080adab6",
    "source": "updates",

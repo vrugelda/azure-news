@@ -3751,5 +3751,14 @@
   "architecture_relevance": 2,
   "reason": "A routine runtime lifecycle retirement for Java 8, 11 and 17 on Azure Functions, with a deadline but little design consequence beyond upgrading the runtime.",
   "assessed_at": "2026-11-26T08:18:04.557343+00:00"
+ },
+ "architecture-bb56c3fed4b2": {
+  "hash": "abefe17d7eb5c73b62ffa63afe50a4fc58d0dde3",
+  "by": "claude-haiku-5-5:d3fe2398a7",
+  "kept": true,
+  "importance": 4,
+  "architecture_relevance": 4,
+  "reason": "A reusable pattern of AI agents wrapped around a deterministic optimiser, policy gate and single write path is transferable to other control-heavy systems, but it is a single unbuilt capstone case tested in simulation.",
+  "assessed_at": "2026-11-26T21:32:01.080712+00:00"
  }
 }
